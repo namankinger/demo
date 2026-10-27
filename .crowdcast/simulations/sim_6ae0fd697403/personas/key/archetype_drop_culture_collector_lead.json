@@ -28,23 +28,21 @@
       "content": "Rounds 11-20: Bought a number, waited, and received it in round 17, praising the tin while holding back on the tee until it was worn. Kept pressing for a growing method as seed reports started to come in mixed."
     },
     {
-      "round": 22,
-      "type": "action",
-      "content": "Posted: Wore the tee once. I am not comfortable giving a fabric or size verdict when the brand has",
-      "reactions": 0
+      "round": 30,
+      "type": "summary",
+      "content": "Rounds 21-30: Withheld a tee verdict because fabric and size were never stated, asked the founder for product and price on Archive 002, then reported his own seed finally up in round 30 while still calling the open questions open."
     },
     {
-      "round": 25,
-      "type": "action",
-      "content": "Commented: Tell us the product and the price first, then I will tell you if I am in.",
-      "reactions": 0
+      "round": 40,
+      "type": "summary",
+      "content": "Rounds 31-40: Followed the first bloom reports, saw his own marigold bloom in round 39, and ended leaning toward Archive 002 but demanding the product and price first, with fabric and size info still missing."
     }
   ],
   "stats": {
-    "posts": 5,
-    "likes_received": 6,
-    "comments_received": 15,
-    "influence_score": 0.195
+    "posts": 7,
+    "likes_received": 7,
+    "comments_received": 16,
+    "influence_score": 0.4365
   },
   "decision_log": [
     {
@@ -77,6 +75,21 @@
       "reason": "needs Archive 002 product and price, plus fabric and size info",
       "buyer": true,
       "round": 25
+    },
+    {
+      "stage": "marigold",
+      "outcome": "sprouted",
+      "round": 30
+    },
+    {
+      "stage": "repeat",
+      "repeat": "maybe",
+      "reason": "needs Archive 002 product and price plus fabric and size info",
+      "buyer": true,
+      "marigold": "bloomed",
+      "final": true,
+      "lean": "yes",
+      "round": 39
     }
   ]
 }

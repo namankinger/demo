@@ -28,41 +28,21 @@
       "content": "Rounds 11-20: Mocked the collector lead's decision, watched shipping week with scepticism, and conceded 'it exists' once the first unboxing appeared. Kept attacking the missing growing method and absent care guidance."
     },
     {
-      "round": 21,
-      "type": "action",
-      "content": "Commented: Dead seeds reported with no care guide and no germination info. The nice tin is carrying t",
-      "reactions": 0
+      "round": 30,
+      "type": "summary",
+      "content": "Rounds 21-30: Conceded the tin was real and the founder gave one straight answer, but refused to prepay Archive 002 blind, asking for blooms first."
     },
     {
-      "round": 23,
-      "type": "action",
-      "content": "Commented: 'I do not have a number yet' is the most honest line you have written. Still not a refund",
-      "reactions": 0
-    },
-    {
-      "round": 24,
-      "type": "action",
-      "content": "Posted: Credit where due: it arrived, the tin is real, and the founder finally gave a straight ans",
-      "reactions": 1
-    },
-    {
-      "round": 24,
-      "type": "observation",
-      "content": "Own posts drew 0 likes and 1 comments this round",
-      "emotion": "irritation"
-    },
-    {
-      "round": 25,
-      "type": "action",
-      "content": "Commented: 'Settled' means bloomed, and nothing has bloomed. Announce nothing until it does.",
-      "reactions": 0
+      "round": 40,
+      "type": "summary",
+      "content": "Rounds 31-40: Saw the blooms she had asked for, cautioned that one bloom is not a rate, and finished at maybe-leaning-no because the Archive 002 announcement still had no product, price or refund policy."
     }
   ],
   "stats": {
     "posts": 3,
     "likes_received": 3,
-    "comments_received": 11,
-    "influence_score": 0.1319
+    "comments_received": 12,
+    "influence_score": 0.2423
   },
   "decision_log": [
     {
@@ -78,6 +58,16 @@
       "reason": "will not prepay a second time without bloom evidence and a refund policy",
       "buyer": false,
       "round": 24
+    },
+    {
+      "stage": "repeat",
+      "repeat": "maybe",
+      "reason": "blooms seen, but no refund policy and product or price unnamed",
+      "buyer": false,
+      "marigold": "none",
+      "final": true,
+      "lean": "no",
+      "round": 38
     }
   ]
 }

@@ -82,32 +82,20 @@
       "summary": "Compressed rounds 11-20: Gift buyers were relieved by on-time arrivals and loved sprouts, but a dead gift plant and the missing growing guide pushed cautious members back toward hesitation."
     },
     {
-      "round": 21,
-      "summary": "3 active (2 comments, 0 likes, 1 posts, 0 reposts, 0 silent); sentiment strongly negative (-0.43) in phase 4."
+      "round": 30,
+      "summary": "Compressed rounds 21-30: Gift buyers reported one sprout and one dead gift plant and kept asking for delivery dates and care instructions."
     },
     {
-      "round": 22,
-      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mixed (+0.00) in phase 4."
-    },
-    {
-      "round": 23,
-      "summary": "1 active (0 comments, 0 likes, 0 posts, 0 reposts, 1 silent); sentiment mixed (+0.00) in phase 4."
-    },
-    {
-      "round": 24,
-      "summary": "2 active (2 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment positive (+0.45) in phase 4."
-    },
-    {
-      "round": 25,
-      "summary": "No members active this round."
+      "round": 40,
+      "summary": "Compressed rounds 31-40: Gift buyers divided: bloomed buyers would gift again, dead-seed buyers refused or hesitated, and non-buyers mostly stayed at maybe waiting on refund, price and delivery date."
     }
   ],
   "stats": {
-    "total_posts": 1,
-    "total_comments": 22,
-    "total_likes": 10,
-    "avg_sentiment": 0.128,
-    "sentiment_n": 35
+    "total_posts": 3,
+    "total_comments": 34,
+    "total_likes": 16,
+    "avg_sentiment": 0.091,
+    "sentiment_n": 56
   },
   "decision_log": {
     "group_b_gift_buyers_07": [
@@ -132,6 +120,16 @@
         "buyer": false,
         "round": 22,
         "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "price vs gift budget; Archive 002 price unknown",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 39,
+        "kind": "repeat"
       }
     ],
     "group_b_gift_buyers_01": [
@@ -153,6 +151,28 @@
         "outcome": "sprouted",
         "round": 24,
         "kind": "outcome"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "sprouted",
+        "round": 30,
+        "kind": "outcome"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "bloomed",
+        "round": 37,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "gift plant bloomed; wants delivery date and growing guide",
+        "buyer": true,
+        "marigold": "bloomed",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_b_gift_buyers_03": [
@@ -174,6 +194,16 @@
         "outcome": "dead",
         "round": 21,
         "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "seed died, no care instructions or refund info",
+        "buyer": true,
+        "marigold": "dead",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_b_gift_buyers_06": [
@@ -190,6 +220,16 @@
         "blocker": "waits for others to report back",
         "round": 15,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "buyers reported back and blooms appeared",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_b_gift_buyers_08": [
@@ -206,6 +246,16 @@
         "blocker": "refund terms and delivery date unknown",
         "round": 6,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "refund terms and delivery date still absent",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_b_gift_buyers_09": [
@@ -223,6 +273,17 @@
         "reason": "delivered; wants bloom reports",
         "buyer": false,
         "round": 24,
+        "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "delivery worry eased by bloom reports; refund gap remains",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "lean": "yes",
+        "round": 39,
         "kind": "repeat"
       }
     ],
@@ -248,6 +309,16 @@
         "buyer": false,
         "round": 23,
         "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "numbered scarcity meaningless for gifts; prefers known label",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 40,
+        "kind": "repeat"
       }
     ],
     "group_b_gift_buyers_04": [
@@ -264,6 +335,17 @@
         "blocker": "delivery timing for a dated gift",
         "round": 6,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "on-time delivery for the lead buyer helped; wants a firm delivery date",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "lean": "yes",
+        "round": 39,
+        "kind": "repeat"
       }
     ],
     "group_b_gift_buyers_05": [
@@ -279,6 +361,23 @@
         "received": true,
         "round": 18,
         "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "dead",
+        "round": 28,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "seed did not sprout; needs germination answer",
+        "buyer": true,
+        "marigold": "dead",
+        "final": true,
+        "lean": "no",
+        "round": 39,
+        "kind": "repeat"
       }
     ],
     "group_b_gift_buyers_02": [
@@ -295,6 +394,17 @@
         "blocker": "sizes unknown",
         "round": 21,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "tee sizes unknown",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "lean": "no",
+        "round": 39,
+        "kind": "repeat"
       }
     ]
   }

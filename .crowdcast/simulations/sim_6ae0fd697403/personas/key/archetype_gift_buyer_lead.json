@@ -28,35 +28,21 @@
       "content": "Rounds 11-20: Ordered for a friend's birthday with a back-up gift ready. The parcel arrived two days early, a relief, but she then asked loudly how to grow the seed and got only promises of notes to come."
     },
     {
-      "round": 21,
-      "type": "action",
-      "content": "Commented: I gifted this. Please give people a growing guide before more seedlings are lost.",
-      "reactions": 0
+      "round": 30,
+      "type": "summary",
+      "content": "Rounds 21-30: Received the gift in time, asked for a growing guide, and told the founder she would consider Archive 002 as a gift only with a guide and a delivery date."
     },
     {
-      "round": 23,
-      "type": "action",
-      "content": "Commented: Thank you for answering. Is the guide close? A gift needs one.",
-      "reactions": 0
-    },
-    {
-      "round": 24,
-      "type": "observation",
-      "content": "Own posts drew 0 likes and 1 comments this round",
-      "emotion": "irritation"
-    },
-    {
-      "round": 25,
-      "type": "action",
-      "content": "Commented: I would consider Archive 002 as a gift if there is a growing guide and delivery date this",
-      "reactions": 0
+      "round": 40,
+      "type": "summary",
+      "content": "Rounds 31-40: Reported that the gifted marigold died, asked for a delivery date and growing guide with the teaser, and finished at maybe-leaning-no on Archive 002 because none of those were given."
     }
   ],
   "stats": {
-    "posts": 3,
+    "posts": 4,
     "likes_received": 6,
-    "comments_received": 9,
-    "influence_score": 0.1989
+    "comments_received": 14,
+    "influence_score": 0.6074
   },
   "decision_log": [
     {
@@ -90,6 +76,21 @@
       "reason": "needs growing guide, delivery date and refund policy",
       "buyer": true,
       "round": 25
+    },
+    {
+      "stage": "marigold",
+      "outcome": "dead",
+      "round": 31
+    },
+    {
+      "stage": "repeat",
+      "repeat": "maybe",
+      "reason": "seed died; needs growing guide, delivery date and refund policy",
+      "buyer": true,
+      "marigold": "dead",
+      "final": true,
+      "lean": "no",
+      "round": 39
     }
   ]
 }

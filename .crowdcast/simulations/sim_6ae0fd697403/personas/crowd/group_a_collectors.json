@@ -117,32 +117,20 @@
       "summary": "Compressed rounds 11-20: Collectors celebrated unboxings and tin quality while critics said a single batch does not erase prepay risk; first dead-seed reports cooled some enthusiasm, but sprout posts kept sentiment positive for buyers."
     },
     {
-      "round": 21,
-      "summary": "3 active (3 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly positive (+0.22) in phase 4."
+      "round": 30,
+      "summary": "Compressed rounds 21-30: Collectors split: sprouts and leaves for some, dead seeds for others, and Archive 002 met with demands for a price and a face."
     },
     {
-      "round": 22,
-      "summary": "2 active (2 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly positive (+0.25) in phase 4."
-    },
-    {
-      "round": 23,
-      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment positive (+0.80) in phase 4."
-    },
-    {
-      "round": 24,
-      "summary": "3 active (3 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly positive (+0.37) in phase 4."
-    },
-    {
-      "round": 25,
-      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly negative (-0.40) in phase 4."
+      "round": 40,
+      "summary": "Compressed rounds 31-40: Collectors warmed to Archive 002 after the first blooms, with bloomed buyers committing, dead-seed buyers split between no and maybe, and non-buyers still blocked by history, refunds and credibility."
     }
   ],
   "stats": {
-    "total_posts": 3,
-    "total_comments": 32,
-    "total_likes": 14,
-    "avg_sentiment": 0.263,
-    "sentiment_n": 50
+    "total_posts": 10,
+    "total_comments": 59,
+    "total_likes": 18,
+    "avg_sentiment": 0.2,
+    "sentiment_n": 89
   },
   "decision_log": {
     "group_a_collectors_01": [
@@ -172,6 +160,22 @@
         "buyer": true,
         "round": 22,
         "kind": "repeat"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "bloomed",
+        "round": 35,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "tin quality, numbering and a bloomed marigold",
+        "buyer": true,
+        "marigold": "bloomed",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_12": [
@@ -196,6 +200,16 @@
         "buyer": false,
         "round": 22,
         "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "refund policy still unknown",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_02": [
@@ -217,6 +231,22 @@
         "outcome": "dead",
         "round": 20,
         "kind": "outcome"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "dead",
+        "round": 35,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "seed died, no refund or replacement policy stated",
+        "buyer": true,
+        "marigold": "dead",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_04": [
@@ -246,6 +276,22 @@
         "buyer": true,
         "round": 23,
         "kind": "repeat"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "bloomed",
+        "round": 33,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "delivered as promised and bloomed",
+        "buyer": true,
+        "marigold": "bloomed",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_08": [
@@ -262,6 +308,26 @@
         "blocker": "waits for first buyers to prove real",
         "round": 15,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "lean": "yes",
+        "reason": "watching bloom reports before committing",
+        "buyer": false,
+        "final": false,
+        "round": 36,
+        "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "first buyers proved real; bloom reports",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_11": [
@@ -286,6 +352,16 @@
         "buyer": false,
         "round": 24,
         "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "fabric and sizes still unanswered",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 39,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_13": [
@@ -303,6 +379,16 @@
         "reason": "will not prepay a faceless brand",
         "buyer": false,
         "round": 20,
+        "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "will not prepay a faceless brand",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 39,
         "kind": "repeat"
       }
     ],
@@ -325,6 +411,16 @@
         "outcome": "sprouted",
         "round": 24,
         "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "bloomed; delivered as promised; still wants fabric info",
+        "buyer": true,
+        "marigold": "bloomed",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_15": [
@@ -341,6 +437,16 @@
         "blocker": "no founder face or history; unfollowed",
         "round": 7,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "unfollowed earlier; no founder face or history",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 40,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_09": [
@@ -357,6 +463,17 @@
         "blocker": "needs proof from earlier buyers",
         "round": 20,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "bloom proof arrived but product and price unknown",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "lean": "yes",
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_14": [
@@ -373,6 +490,16 @@
         "blocker": "tin and plant dilute streetwear credibility",
         "round": 21,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "tin and plant dilute streetwear credibility",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 40,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_06": [
@@ -382,6 +509,29 @@
         "preorder": true,
         "round": 10,
         "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 26,
+        "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "dead",
+        "round": 29,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "tin and numbering matter more than the plant; needs price",
+        "buyer": true,
+        "marigold": "dead",
+        "final": true,
+        "lean": "yes",
+        "round": 39,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_05": [
@@ -397,6 +547,23 @@
         "received": true,
         "round": 24,
         "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "sprouted",
+        "round": 27,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "display piece appeal; needs product and price",
+        "buyer": true,
+        "marigold": "sprouted",
+        "final": true,
+        "lean": "yes",
+        "round": 39,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_10": [
@@ -413,6 +580,17 @@
         "blocker": "no brand history versus Gully Labs and Comet",
         "round": 25,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "one delivery is not a track record versus Gully Labs and Comet",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "lean": "no",
+        "round": 39,
+        "kind": "repeat"
       }
     ],
     "group_a_collectors_07": [
@@ -428,6 +606,22 @@
         "received": true,
         "round": 18,
         "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "sprouted",
+        "round": 29,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "hand-painted work; wants the artist named",
+        "buyer": true,
+        "marigold": "sprouted",
+        "final": true,
+        "round": 39,
+        "kind": "repeat"
       }
     ]
   }

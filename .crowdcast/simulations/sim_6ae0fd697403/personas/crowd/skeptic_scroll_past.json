@@ -68,32 +68,20 @@
       "summary": "Compressed rounds 11-20: Skeptics grudgingly acknowledged that units shipped while insisting on refund policy and bloom evidence; one skeptic-turned-buyer reported a sprout."
     },
     {
-      "round": 21,
-      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly negative (-0.20) in phase 4."
+      "round": 30,
+      "summary": "Compressed rounds 21-30: Skeptics held position, calling the growing note homework not done and seed-death reports a pattern."
     },
     {
-      "round": 22,
-      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mixed (+0.00) in phase 4."
-    },
-    {
-      "round": 23,
-      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment positive (+0.50) in phase 4."
-    },
-    {
-      "round": 24,
-      "summary": "No members active this round."
-    },
-    {
-      "round": 25,
-      "summary": "No members active this round."
+      "round": 40,
+      "summary": "Compressed rounds 31-40: Skeptics conceded blooms were real but mostly held at no or maybe, while the one skeptic buyer who saw a bloom said yes."
     }
   ],
   "stats": {
     "total_posts": 1,
-    "total_comments": 16,
-    "total_likes": 7,
-    "avg_sentiment": -0.087,
-    "sentiment_n": 25
+    "total_comments": 33,
+    "total_likes": 9,
+    "avg_sentiment": -0.115,
+    "sentiment_n": 44
   },
   "decision_log": {
     "skeptic_scroll_past_03": [
@@ -119,6 +107,16 @@
         "buyer": false,
         "round": 22,
         "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "no founder face",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 39,
+        "kind": "repeat"
       }
     ],
     "skeptic_scroll_past_01": [
@@ -143,6 +141,16 @@
         "buyer": false,
         "round": 21,
         "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "will not prepay a product that does not exist",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "skeptic_scroll_past_02": [
@@ -159,6 +167,16 @@
         "blocker": "burned by earlier preorder that never shipped",
         "round": 6,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "burned by an earlier preorder; will not prepay a nameless product",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 39,
+        "kind": "repeat"
       }
     ],
     "skeptic_scroll_past_07": [
@@ -175,6 +193,16 @@
         "blocker": "payment method and fabric unanswered",
         "round": 6,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "payment method and fabric unanswered",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 40,
+        "kind": "repeat"
       }
     ],
     "skeptic_scroll_past_04": [
@@ -191,6 +219,16 @@
         "blocker": "no refund policy mentioned",
         "round": 6,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "no refund policy mentioned",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 40,
+        "kind": "repeat"
       }
     ],
     "skeptic_scroll_past_08": [
@@ -212,6 +250,16 @@
         "outcome": "sprouted",
         "round": 23,
         "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "won over by tin and bloom",
+        "buyer": true,
+        "marigold": "bloomed",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
       }
     ],
     "skeptic_scroll_past_05": [
@@ -228,6 +276,30 @@
         "blocker": "waits for reviews or delivered units",
         "round": 18,
         "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "reviews and delivered units appeared; needs product and price",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "lean": "yes",
+        "round": 39,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_06": [
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "seen in real hands; needs price",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "lean": "yes",
+        "round": 39,
+        "kind": "repeat"
       }
     ]
   }
