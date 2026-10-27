@@ -1,7 +1,7 @@
 {
   "id": "sim_6ae10675966e",
   "mode": "creative",
-  "status": "simulated",
+  "status": "completed",
   "prompt": "Product team workshop on Preserve pain points and improvements",
   "seed_files": [
     "preserve_seed.md",
@@ -26,7 +26,8 @@
       "total_rounds": 24
     },
     "report": {
-      "status": "pending"
+      "status": "completed",
+      "sections": 13
     }
   }
 }
