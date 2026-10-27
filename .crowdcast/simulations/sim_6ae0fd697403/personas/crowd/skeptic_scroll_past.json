@@ -1,0 +1,68 @@
+{
+  "group_id": "skeptic_scroll_past",
+  "agents": [
+    {
+      "id": "skeptic_scroll_past_01",
+      "name": "Arjun Khanna",
+      "stance": "critical",
+      "activity": 0.8,
+      "personality_brief": "Vocal commenter who asks why anyone should pay before the product exists."
+    },
+    {
+      "id": "skeptic_scroll_past_02",
+      "name": "Divya Menon",
+      "stance": "critical",
+      "activity": 0.6,
+      "personality_brief": "Has been burned by a preorder that never shipped and warns others."
+    },
+    {
+      "id": "skeptic_scroll_past_03",
+      "name": "Harsh Pandey",
+      "stance": "critical",
+      "activity": 0.5,
+      "personality_brief": "Scrolls past new brands with no history and no visible founder."
+    },
+    {
+      "id": "skeptic_scroll_past_04",
+      "name": "Isha Reddy",
+      "stance": "critical",
+      "activity": 0.4,
+      "personality_brief": "Stops on the reel for the visuals but leaves because no refund policy is mentioned."
+    },
+    {
+      "id": "skeptic_scroll_past_05",
+      "name": "Sameer Qureshi",
+      "stance": "neutral",
+      "activity": 0.3,
+      "personality_brief": "Mildly curious but waits to see reviews or delivered units before deciding."
+    },
+    {
+      "id": "skeptic_scroll_past_06",
+      "name": "Pooja Desai",
+      "stance": "neutral",
+      "activity": 0.55,
+      "personality_brief": "Likes the concept, but will only reconsider after Archive 001 is seen in real hands."
+    },
+    {
+      "id": "skeptic_scroll_past_07",
+      "name": "Karan Bhatia",
+      "stance": "neutral",
+      "activity": 0.7,
+      "personality_brief": "Asks neutral questions in comments about payment method and fabric without taking sides."
+    },
+    {
+      "id": "skeptic_scroll_past_08",
+      "name": "Neha Chopra",
+      "stance": "supportive",
+      "activity": 0.45,
+      "personality_brief": "Skeptic by habit who is quietly won over by the hand-painted tin and might preorder."
+    }
+  ],
+  "collective_memory": [],
+  "stats": {
+    "total_posts": 0,
+    "total_comments": 0,
+    "total_likes": 0,
+    "avg_sentiment": 0.0
+  }
+}

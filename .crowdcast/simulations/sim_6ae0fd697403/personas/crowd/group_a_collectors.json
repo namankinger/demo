@@ -1,0 +1,117 @@
+{
+  "group_id": "group_a_collectors",
+  "agents": [
+    {
+      "id": "group_a_collectors_01",
+      "name": "Aarav Mehta",
+      "stance": "supportive",
+      "activity": 0.85,
+      "personality_brief": "Numbered-drop hunter who sets alerts for every Gully Labs and Comet release and wants to know which number he gets."
+    },
+    {
+      "id": "group_a_collectors_02",
+      "name": "Rohan Sethi",
+      "stance": "supportive",
+      "activity": 0.7,
+      "personality_brief": "Sneaker reseller-turned-collector who judges a drop by how clean the numbering and packaging look."
+    },
+    {
+      "id": "group_a_collectors_03",
+      "name": "Ishaan Verma",
+      "stance": "supportive",
+      "activity": 0.6,
+      "personality_brief": "College collector who shares every drop in group chats and tags friends under reels."
+    },
+    {
+      "id": "group_a_collectors_04",
+      "name": "Kabir Malhotra",
+      "stance": "supportive",
+      "activity": 0.9,
+      "personality_brief": "Highly active scene regular who comments first on new brand reels and hypes anything hand-made."
+    },
+    {
+      "id": "group_a_collectors_05",
+      "name": "Zoya Khan",
+      "stance": "supportive",
+      "activity": 0.5,
+      "personality_brief": "Streetwear stylist drawn to the hand-painted tin as a display piece rather than packaging."
+    },
+    {
+      "id": "group_a_collectors_06",
+      "name": "Dev Patel",
+      "stance": "supportive",
+      "activity": 0.4,
+      "personality_brief": "Weekend collector who likes numbered scarcity but rarely posts, mostly saves reels."
+    },
+    {
+      "id": "group_a_collectors_07",
+      "name": "Tanvi Rao",
+      "stance": "supportive",
+      "activity": 0.75,
+      "personality_brief": "Art-school collector who values hand-painted work and asks about the artist behind it."
+    },
+    {
+      "id": "group_a_collectors_08",
+      "name": "Arjun Nair",
+      "stance": "supportive",
+      "activity": 0.3,
+      "personality_brief": "Quiet 001-100 completionist who will preorder if the first buyers seem real."
+    },
+    {
+      "id": "group_a_collectors_09",
+      "name": "Simran Kaur",
+      "stance": "neutral",
+      "activity": 0.55,
+      "personality_brief": "Cautious collector who wants proof from earlier buyers before she pays up front."
+    },
+    {
+      "id": "group_a_collectors_10",
+      "name": "Vihaan Joshi",
+      "stance": "neutral",
+      "activity": 0.45,
+      "personality_brief": "Compares every claim to Gully Labs and Comet and asks what Preserve has done before."
+    },
+    {
+      "id": "group_a_collectors_11",
+      "name": "Meera Iyer",
+      "stance": "neutral",
+      "activity": 0.65,
+      "personality_brief": "Collector who likes the marigold idea but keeps asking about the unanswered fabric and size details."
+    },
+    {
+      "id": "group_a_collectors_12",
+      "name": "Yash Bansal",
+      "stance": "neutral",
+      "activity": 0.35,
+      "personality_brief": "Lurker who watches comment threads for refund and delivery answers before deciding."
+    },
+    {
+      "id": "group_a_collectors_13",
+      "name": "Nikhil Reddy",
+      "stance": "critical",
+      "activity": 0.8,
+      "personality_brief": "Veteran drop-watcher who calls out faceless unknown brands that take payment before a product exists."
+    },
+    {
+      "id": "group_a_collectors_14",
+      "name": "Aditi Singh",
+      "stance": "critical",
+      "activity": 0.5,
+      "personality_brief": "Skeptical collector who says a plant and a tin dilute the streetwear credibility of the drop."
+    },
+    {
+      "id": "group_a_collectors_15",
+      "name": "Farhan Qureshi",
+      "stance": "critical",
+      "activity": 0.25,
+      "personality_brief": "Rarely comments but quietly unfollows brands that give no founder face or history."
+    }
+  ],
+  "collective_memory": [],
+  "stats": {
+    "total_posts": 0,
+    "total_comments": 0,
+    "total_likes": 0,
+    "avg_sentiment": 0.0
+  }
+}

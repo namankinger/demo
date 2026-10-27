@@ -1,0 +1,82 @@
+{
+  "group_id": "group_b_gift_buyers",
+  "agents": [
+    {
+      "id": "group_b_gift_buyers_01",
+      "name": "Ananya Iyer",
+      "stance": "supportive",
+      "activity": 0.7,
+      "personality_brief": "Buys plant-themed gifts for her partner and loves the idea of growing marigolds together, but wants to know delivery is safe."
+    },
+    {
+      "id": "group_b_gift_buyers_02",
+      "name": "Rohan Mehta",
+      "stance": "supportive",
+      "activity": 0.5,
+      "personality_brief": "Looks for unusual birthday gifts for friends and is charmed by the hand-painted tin, though he asks about sizes before committing."
+    },
+    {
+      "id": "group_b_gift_buyers_03",
+      "name": "Priya Nair",
+      "stance": "supportive",
+      "activity": 0.8,
+      "personality_brief": "Shares gift ideas in her friend group chats and would tag a friend under the reel."
+    },
+    {
+      "id": "group_b_gift_buyers_04",
+      "name": "Kabir Malhotra",
+      "stance": "supportive",
+      "activity": 0.4,
+      "personality_brief": "Anniversary shopper who likes the story but quietly worries the gift might arrive late."
+    },
+    {
+      "id": "group_b_gift_buyers_05",
+      "name": "Sneha Kulkarni",
+      "stance": "supportive",
+      "activity": 0.6,
+      "personality_brief": "Gardening hobbyist who is drawn to the marigold seed and asks how it is meant to be grown."
+    },
+    {
+      "id": "group_b_gift_buyers_06",
+      "name": "Aditya Rao",
+      "stance": "neutral",
+      "activity": 0.3,
+      "personality_brief": "Interested in the concept but waits for someone else to preorder and report back before paying."
+    },
+    {
+      "id": "group_b_gift_buyers_07",
+      "name": "Meera Sethi",
+      "stance": "neutral",
+      "activity": 0.5,
+      "personality_brief": "Weighs the Rs 1,099 price against typical gift budgets and wants to see a finished product first."
+    },
+    {
+      "id": "group_b_gift_buyers_08",
+      "name": "Vikram Joshi",
+      "stance": "neutral",
+      "activity": 0.6,
+      "personality_brief": "Practical gifter who cares about refund terms and a clear delivery date before gifting anything."
+    },
+    {
+      "id": "group_b_gift_buyers_09",
+      "name": "Tanya Bose",
+      "stance": "critical",
+      "activity": 0.7,
+      "personality_brief": "Distrusts prepaying for a gift from a faceless new brand and says so in comments."
+    },
+    {
+      "id": "group_b_gift_buyers_10",
+      "name": "Nikhil Verma",
+      "stance": "critical",
+      "activity": 0.35,
+      "personality_brief": "Thinks the numbered scarcity is meaningless for gifting and would rather buy from a known label."
+    }
+  ],
+  "collective_memory": [],
+  "stats": {
+    "total_posts": 0,
+    "total_comments": 0,
+    "total_likes": 0,
+    "avg_sentiment": 0.0
+  }
+}
