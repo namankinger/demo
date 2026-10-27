@@ -16,11 +16,68 @@
     ],
     "influence": 0.7
   },
-  "memory": [],
+  "memory": [
+    {
+      "round": 10,
+      "type": "summary",
+      "content": "Rounds 1-10: Called out the preorder trust gap from the first hour, ran the numbers on what 100 prepaid units mean, and mocked the founder's 'proper post later' promises. Amplified doubt around the reseller rumour without claiming proof, then watched the collector lead commit."
+    },
+    {
+      "round": 20,
+      "type": "summary",
+      "content": "Rounds 11-20: Mocked the collector lead's decision, watched shipping week with scepticism, and conceded 'it exists' once the first unboxing appeared. Kept attacking the missing growing method and absent care guidance."
+    },
+    {
+      "round": 21,
+      "type": "action",
+      "content": "Commented: Dead seeds reported with no care guide and no germination info. The nice tin is carrying t",
+      "reactions": 0
+    },
+    {
+      "round": 23,
+      "type": "action",
+      "content": "Commented: 'I do not have a number yet' is the most honest line you have written. Still not a refund",
+      "reactions": 0
+    },
+    {
+      "round": 24,
+      "type": "action",
+      "content": "Posted: Credit where due: it arrived, the tin is real, and the founder finally gave a straight ans",
+      "reactions": 1
+    },
+    {
+      "round": 24,
+      "type": "observation",
+      "content": "Own posts drew 0 likes and 1 comments this round",
+      "emotion": "irritation"
+    },
+    {
+      "round": 25,
+      "type": "action",
+      "content": "Commented: 'Settled' means bloomed, and nothing has bloomed. Announce nothing until it does.",
+      "reactions": 0
+    }
+  ],
   "stats": {
-    "posts": 0,
-    "likes_received": 0,
-    "comments_received": 0,
-    "influence_score": 0.0
-  }
+    "posts": 3,
+    "likes_received": 3,
+    "comments_received": 11,
+    "influence_score": 0.1319
+  },
+  "decision_log": [
+    {
+      "stage": "discovery",
+      "stopped": true,
+      "preorder": false,
+      "blocker": "pay before product exists, no brand history, no face",
+      "round": 1
+    },
+    {
+      "stage": "repeat",
+      "repeat": "no",
+      "reason": "will not prepay a second time without bloom evidence and a refund policy",
+      "buyer": false,
+      "round": 24
+    }
+  ]
 }

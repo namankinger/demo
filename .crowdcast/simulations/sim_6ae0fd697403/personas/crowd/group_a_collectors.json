@@ -107,11 +107,328 @@
       "personality_brief": "Rarely comments but quietly unfollows brands that give no founder face or history."
     }
   ],
-  "collective_memory": [],
+  "collective_memory": [
+    {
+      "round": 10,
+      "summary": "Compressed rounds 1-10: Collectors split between early hype buyers chasing numbers and critics who cited faceless prepay risk and the tin-and-plant mismatch; fabric and size questions stayed unanswered and sentiment hovered mildly positive-to-mixed."
+    },
+    {
+      "round": 20,
+      "summary": "Compressed rounds 11-20: Collectors celebrated unboxings and tin quality while critics said a single batch does not erase prepay risk; first dead-seed reports cooled some enthusiasm, but sprout posts kept sentiment positive for buyers."
+    },
+    {
+      "round": 21,
+      "summary": "3 active (3 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly positive (+0.22) in phase 4."
+    },
+    {
+      "round": 22,
+      "summary": "2 active (2 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly positive (+0.25) in phase 4."
+    },
+    {
+      "round": 23,
+      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment positive (+0.80) in phase 4."
+    },
+    {
+      "round": 24,
+      "summary": "3 active (3 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly positive (+0.37) in phase 4."
+    },
+    {
+      "round": 25,
+      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly negative (-0.40) in phase 4."
+    }
+  ],
   "stats": {
-    "total_posts": 0,
-    "total_comments": 0,
-    "total_likes": 0,
-    "avg_sentiment": 0.0
+    "total_posts": 3,
+    "total_comments": 32,
+    "total_likes": 14,
+    "avg_sentiment": 0.263,
+    "sentiment_n": 50
+  },
+  "decision_log": {
+    "group_a_collectors_01": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 2,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 18,
+        "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "sprouted",
+        "round": 21,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "numbering and tin quality; wants product and price",
+        "buyer": true,
+        "round": 22,
+        "kind": "repeat"
+      }
+    ],
+    "group_a_collectors_12": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 2,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "no refund or delivery answers",
+        "round": 7,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "refund policy still unknown",
+        "buyer": false,
+        "round": 22,
+        "kind": "repeat"
+      }
+    ],
+    "group_a_collectors_02": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 3,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 18,
+        "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "dead",
+        "round": 20,
+        "kind": "outcome"
+      }
+    ],
+    "group_a_collectors_04": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 3,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 15,
+        "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "sprouted",
+        "round": 19,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "delivered as promised; sprouted",
+        "buyer": true,
+        "round": 23,
+        "kind": "repeat"
+      }
+    ],
+    "group_a_collectors_08": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "waits for first buyers to prove real",
+        "round": 15,
+        "kind": "blocker"
+      }
+    ],
+    "group_a_collectors_11": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "fabric and sizes unanswered",
+        "round": 6,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "needs fabric and size details",
+        "buyer": false,
+        "round": 24,
+        "kind": "repeat"
+      }
+    ],
+    "group_a_collectors_13": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "prepay to faceless brand, product not yet existing",
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "will not prepay a faceless brand",
+        "buyer": false,
+        "round": 20,
+        "kind": "repeat"
+      }
+    ],
+    "group_a_collectors_03": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 4,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 18,
+        "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "sprouted",
+        "round": 24,
+        "kind": "outcome"
+      }
+    ],
+    "group_a_collectors_15": [
+      {
+        "stage": "discovery",
+        "stopped": false,
+        "round": 4,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": false,
+        "preorder": false,
+        "blocker": "no founder face or history; unfollowed",
+        "round": 7,
+        "kind": "blocker"
+      }
+    ],
+    "group_a_collectors_09": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 9,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "needs proof from earlier buyers",
+        "round": 20,
+        "kind": "blocker"
+      }
+    ],
+    "group_a_collectors_14": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 9,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "tin and plant dilute streetwear credibility",
+        "round": 21,
+        "kind": "blocker"
+      }
+    ],
+    "group_a_collectors_06": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 10,
+        "kind": "buy"
+      }
+    ],
+    "group_a_collectors_05": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 12,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 24,
+        "kind": "receive"
+      }
+    ],
+    "group_a_collectors_10": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 12,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "no brand history versus Gully Labs and Comet",
+        "round": 25,
+        "kind": "blocker"
+      }
+    ],
+    "group_a_collectors_07": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 15,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 18,
+        "kind": "receive"
+      }
+    ]
   }
 }

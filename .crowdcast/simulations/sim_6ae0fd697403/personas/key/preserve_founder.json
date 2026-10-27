@@ -16,11 +16,71 @@
     ],
     "influence": 0.9
   },
-  "memory": [],
+  "memory": [
+    {
+      "round": 10,
+      "type": "summary",
+      "content": "Rounds 1-10: Launched Archive 001 with a firm, terse post and defended the faceless approach against collectors and skeptics alike. Deferred every question about fabric, sizes, tin size, growing method and refunds to a later post that never fully arrived, and answered the reseller rumour only by saying he made every decision himself. Closed the stretch by thanking the collector lead for committing."
+    },
+    {
+      "round": 20,
+      "type": "summary",
+      "content": "Rounds 11-20: Thanked the collector lead, announced shipping in round 13, and thanked early unboxers. Asked buyers to plant the seed while still withholding a growing method, which drew criticism. Went quiet as the first dead-seed reports appeared."
+    },
+    {
+      "round": 21,
+      "type": "observation",
+      "content": "Own posts drew 0 likes and 2 comments this round",
+      "emotion": "irritation"
+    },
+    {
+      "round": 22,
+      "type": "action",
+      "content": "Posted: Germination varies. I do not have a number to give you yet. If your seed did not sprout, m",
+      "reactions": 1
+    },
+    {
+      "round": 22,
+      "type": "observation",
+      "content": "Own posts drew 0 likes and 1 comments this round",
+      "emotion": "irritation"
+    },
+    {
+      "round": 23,
+      "type": "observation",
+      "content": "Own posts drew 0 likes and 4 comments this round",
+      "emotion": "irritation"
+    },
+    {
+      "round": 24,
+      "type": "action",
+      "content": "Commented: Respect. Judge Archive 001 by the blooms, not by me.",
+      "reactions": 2
+    },
+    {
+      "round": 24,
+      "type": "observation",
+      "content": "Own posts drew 0 likes and 2 comments this round",
+      "emotion": "irritation"
+    },
+    {
+      "round": 25,
+      "type": "action",
+      "content": "Posted: People are asking about Archive 002. It comes after Archive 001 has settled, and I will an",
+      "reactions": 4
+    },
+    {
+      "round": 25,
+      "type": "observation",
+      "content": "Own posts drew 0 likes and 4 comments this round",
+      "emotion": "irritation"
+    }
+  ],
   "stats": {
-    "posts": 0,
-    "likes_received": 0,
-    "comments_received": 0,
-    "influence_score": 0.0
-  }
+    "posts": 8,
+    "likes_received": 20,
+    "comments_received": 52,
+    "influence_score": 0.9523
+  },
+  "decision_log": []
 }

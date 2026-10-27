@@ -1,0 +1,258 @@
+{
+  "posts": [
+    {
+      "id": "post_001",
+      "author": "preserve_founder",
+      "content": "Preserve Archive 001. Numbered 001-100. A hand-painted tin, a T-shirt and one marigold seed for Rs 1,099. Preorder only, link in bio, ships 3-4 weeks after you pay.",
+      "round": 1,
+      "likes": 6,
+      "comments": 12,
+      "reposts": 0,
+      "sentiment_avg": 0.081
+    },
+    {
+      "id": "post_002",
+      "author": "archetype_drop_culture_collector_lead",
+      "content": "New numbered drop from a brand nobody has heard of: tin, tee, marigold seed, Rs 1,099, all preorder. The 001-100 numbering I like. Paying up front with no fabric, no sizes and no refund info, I do not. Who is behind this?",
+      "round": 2,
+      "likes": 5,
+      "comments": 8,
+      "reposts": 0,
+      "sentiment_avg": 0.156
+    },
+    {
+      "id": "post_003",
+      "author": "preserve_founder",
+      "content": "The link stays live while numbers remain. I have read every question about fabric, sizes, the tin and how to grow the seed, and I will answer them properly in one post rather than piecemeal.",
+      "round": 3,
+      "likes": 1,
+      "comments": 2,
+      "reposts": 0,
+      "sentiment_avg": -0.167
+    },
+    {
+      "id": "post_004",
+      "author": "archetype_gift_buyer_lead",
+      "content": "Gift check: I love the plant-to-grow idea, but there is nothing to see yet and the wait is 3-4 weeks. If you have preordered as a gift, how are you handling the what-if-it-is-late part?",
+      "round": 3,
+      "likes": 5,
+      "comments": 5,
+      "reposts": 1,
+      "sentiment_avg": -0.05
+    },
+    {
+      "id": "post_005",
+      "author": "archetype_skeptical_scroller",
+      "content": "Quick maths: 100 units x Rs 1,099 is Rs 1,09,900 sitting with someone with no face, no history and no refund policy, for a product that does not exist. Call it faith if you like.",
+      "round": 4,
+      "likes": 2,
+      "comments": 8,
+      "reposts": 0,
+      "sentiment_avg": -0.367
+    },
+    {
+      "id": "post_006",
+      "author": "preserve_founder",
+      "content": "Archive 001 is in the making. I will not post unfinished photos. The first thing you see of the tin will be the real tin.",
+      "round": 6,
+      "likes": 8,
+      "comments": 9,
+      "reposts": 1,
+      "sentiment_avg": 0.08
+    },
+    {
+      "id": "post_007",
+      "author": "skeptic_scroll_past_03",
+      "content": "No proof, only a hunch: faceless plus prepay plus 'limited 100' smells like a reseller job.",
+      "round": 8,
+      "likes": 1,
+      "comments": 1,
+      "reposts": 0,
+      "sentiment_avg": -0.6
+    },
+    {
+      "id": "post_008",
+      "author": "preserve_founder",
+      "content": "To the rumour that Preserve resells blanks: I made every decision on Archive 001 myself. You will see it when it ships. That is my answer.",
+      "round": 9,
+      "likes": 1,
+      "comments": 3,
+      "reposts": 0,
+      "sentiment_avg": -0.075
+    },
+    {
+      "id": "post_009",
+      "author": "archetype_drop_culture_collector_lead",
+      "content": "Decision time: I am in for a number. The founder dodged the rumour but did not deny the work, and 001-100 on a hand-painted tin is not something I want to watch from outside. Fabric and sizes are still on them, though.",
+      "round": 10,
+      "likes": 0,
+      "comments": 3,
+      "reposts": 0,
+      "sentiment_avg": 0.225
+    },
+    {
+      "id": "post_010",
+      "author": "archetype_gift_buyer_lead",
+      "content": "If delivery is tight for the occasion, a gift that arrives late is worse than no gift. I am torn, and I would rather say so than pretend otherwise.",
+      "round": 10,
+      "likes": 1,
+      "comments": 2,
+      "reposts": 1,
+      "sentiment_avg": 0.107
+    },
+    {
+      "id": "post_011",
+      "author": "preserve_founder",
+      "content": "Archive 001 starts shipping this week. I will post when the first ones land.",
+      "round": 13,
+      "likes": 4,
+      "comments": 9,
+      "reposts": 1,
+      "sentiment_avg": 0.291
+    },
+    {
+      "id": "post_012",
+      "author": "archetype_skeptical_scroller",
+      "content": "Shipping week. This is where we find out whether the preorder crowd got a tin or a story.",
+      "round": 14,
+      "likes": 1,
+      "comments": 2,
+      "reposts": 0,
+      "sentiment_avg": -0.16
+    },
+    {
+      "id": "post_013",
+      "author": "archetype_drop_culture_collector_lead",
+      "content": "First unboxings are coming in, mine is not here yet. Calling it fairly: so far the brand is doing what it said.",
+      "round": 15,
+      "likes": 0,
+      "comments": 0,
+      "reposts": 0,
+      "sentiment_avg": 0.3
+    },
+    {
+      "id": "post_014",
+      "author": "group_a_collectors_04",
+      "content": "Mine arrived. Hand-painted tin, brush marks visible, number on it. Tee still in the wrapping; I am checking fabric and fit before I say a word on those.",
+      "round": 15,
+      "likes": 0,
+      "comments": 9,
+      "reposts": 0,
+      "sentiment_avg": 0.53
+    },
+    {
+      "id": "post_015",
+      "author": "archetype_drop_culture_collector_lead",
+      "content": "Mine landed. Tin first impressions: genuinely good. Tee review after I have worn it. I will not hype what I have not worn.",
+      "round": 17,
+      "likes": 1,
+      "comments": 4,
+      "reposts": 0,
+      "sentiment_avg": 0.28
+    },
+    {
+      "id": "post_016",
+      "author": "preserve_founder",
+      "content": "Thank you for the first unboxings. Now the real test: put the seed in soil and tell me how it goes, good or bad.",
+      "round": 18,
+      "likes": 0,
+      "comments": 10,
+      "reposts": 0,
+      "sentiment_avg": 0.26
+    },
+    {
+      "id": "post_017",
+      "author": "archetype_gift_buyer_lead",
+      "content": "It arrived two days before the birthday. Relief. The tin is beautiful. Now, how do you actually grow this? Nobody has told us.",
+      "round": 18,
+      "likes": 0,
+      "comments": 2,
+      "reposts": 0,
+      "sentiment_avg": 0.467
+    },
+    {
+      "id": "post_018",
+      "author": "group_a_collectors_04",
+      "content": "Day five and the marigold is up. Pictures on my stories.",
+      "round": 19,
+      "likes": 0,
+      "comments": 1,
+      "reposts": 0,
+      "sentiment_avg": 0.8
+    },
+    {
+      "id": "post_019",
+      "author": "group_a_collectors_02",
+      "content": "Planted the seed on day two. Nothing so far. Is it only me?",
+      "round": 20,
+      "likes": 0,
+      "comments": 9,
+      "reposts": 0,
+      "sentiment_avg": -0.29
+    },
+    {
+      "id": "post_020",
+      "author": "group_b_gift_buyers_03",
+      "content": "My cousin's marigold died within a week. No care instructions anywhere.",
+      "round": 21,
+      "likes": 0,
+      "comments": 0,
+      "reposts": 0,
+      "sentiment_avg": -0.6
+    },
+    {
+      "id": "post_021",
+      "author": "preserve_founder",
+      "content": "Germination varies. I do not have a number to give you yet. If your seed did not sprout, message me.",
+      "round": 22,
+      "likes": 0,
+      "comments": 4,
+      "reposts": 0,
+      "sentiment_avg": -0.2
+    },
+    {
+      "id": "post_022",
+      "author": "archetype_drop_culture_collector_lead",
+      "content": "Wore the tee once. I am not comfortable giving a fabric or size verdict when the brand has stated neither, so my review is 'looks good on me', no advice for you.",
+      "round": 22,
+      "likes": 0,
+      "comments": 0,
+      "reposts": 0,
+      "sentiment_avg": 0.1
+    },
+    {
+      "id": "post_023",
+      "author": "archetype_skeptical_scroller",
+      "content": "Credit where due: it arrived, the tin is real, and the founder finally gave a straight answer. I am still not prepaying for Archive 002 blind. Show me blooms first.",
+      "round": 24,
+      "likes": 0,
+      "comments": 1,
+      "reposts": 0,
+      "sentiment_avg": 0.25
+    },
+    {
+      "id": "post_024",
+      "author": "preserve_founder",
+      "content": "People are asking about Archive 002. It comes after Archive 001 has settled, and I will announce it when it is ready. The product and the price are not decided.",
+      "round": 25,
+      "likes": 0,
+      "comments": 3,
+      "reposts": 0,
+      "sentiment_avg": 0.1
+    }
+  ],
+  "trending_topics": [
+    "marigold_seed",
+    "fabric_sizes_refund_unknown",
+    "archive_002",
+    "hand_painted_tin",
+    "numbered_scarcity"
+  ],
+  "aggregate_sentiment": {
+    "positive": 0.3304,
+    "negative": 0.2162,
+    "neutral": 0.4534
+  },
+  "total_actions": 171,
+  "current_round": 25
+}

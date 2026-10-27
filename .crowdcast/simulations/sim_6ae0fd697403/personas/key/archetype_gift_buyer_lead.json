@@ -16,11 +16,80 @@
     ],
     "influence": 0.75
   },
-  "memory": [],
+  "memory": [
+    {
+      "round": 10,
+      "type": "summary",
+      "content": "Rounds 1-10: Loved the grow-it gift idea but kept raising delivery timing and refund uncertainty. Asked for a date repeatedly without getting one and posted that a late gift is worse than none. Still undecided at round 10."
+    },
+    {
+      "round": 20,
+      "type": "summary",
+      "content": "Rounds 11-20: Ordered for a friend's birthday with a back-up gift ready. The parcel arrived two days early, a relief, but she then asked loudly how to grow the seed and got only promises of notes to come."
+    },
+    {
+      "round": 21,
+      "type": "action",
+      "content": "Commented: I gifted this. Please give people a growing guide before more seedlings are lost.",
+      "reactions": 0
+    },
+    {
+      "round": 23,
+      "type": "action",
+      "content": "Commented: Thank you for answering. Is the guide close? A gift needs one.",
+      "reactions": 0
+    },
+    {
+      "round": 24,
+      "type": "observation",
+      "content": "Own posts drew 0 likes and 1 comments this round",
+      "emotion": "irritation"
+    },
+    {
+      "round": 25,
+      "type": "action",
+      "content": "Commented: I would consider Archive 002 as a gift if there is a growing guide and delivery date this",
+      "reactions": 0
+    }
+  ],
   "stats": {
-    "posts": 0,
-    "likes_received": 0,
-    "comments_received": 0,
-    "influence_score": 0.0
-  }
+    "posts": 3,
+    "likes_received": 6,
+    "comments_received": 9,
+    "influence_score": 0.1989
+  },
+  "decision_log": [
+    {
+      "stage": "discovery",
+      "stopped": true,
+      "preorder": false,
+      "blocker": "delivery date uncertainty",
+      "round": 2
+    },
+    {
+      "stage": "preorder",
+      "stopped": true,
+      "preorder": false,
+      "blocker": "delivery uncertainty, 3-4 week wait, refund policy unknown",
+      "round": 3
+    },
+    {
+      "stage": "preorder",
+      "stopped": true,
+      "preorder": true,
+      "round": 11
+    },
+    {
+      "stage": "delivery",
+      "received": true,
+      "round": 18
+    },
+    {
+      "stage": "repeat",
+      "repeat": "maybe",
+      "reason": "needs growing guide, delivery date and refund policy",
+      "buyer": true,
+      "round": 25
+    }
+  ]
 }

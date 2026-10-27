@@ -72,11 +72,230 @@
       "personality_brief": "Thinks the numbered scarcity is meaningless for gifting and would rather buy from a known label."
     }
   ],
-  "collective_memory": [],
+  "collective_memory": [
+    {
+      "round": 10,
+      "summary": "Compressed rounds 1-10: Gift buyers loved the grow-it idea but repeatedly raised delivery date, refund terms and sizes; a few preordered early, most hesitated, and sentiment stayed cautiously mixed."
+    },
+    {
+      "round": 20,
+      "summary": "Compressed rounds 11-20: Gift buyers were relieved by on-time arrivals and loved sprouts, but a dead gift plant and the missing growing guide pushed cautious members back toward hesitation."
+    },
+    {
+      "round": 21,
+      "summary": "3 active (2 comments, 0 likes, 1 posts, 0 reposts, 0 silent); sentiment strongly negative (-0.43) in phase 4."
+    },
+    {
+      "round": 22,
+      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mixed (+0.00) in phase 4."
+    },
+    {
+      "round": 23,
+      "summary": "1 active (0 comments, 0 likes, 0 posts, 0 reposts, 1 silent); sentiment mixed (+0.00) in phase 4."
+    },
+    {
+      "round": 24,
+      "summary": "2 active (2 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment positive (+0.45) in phase 4."
+    },
+    {
+      "round": 25,
+      "summary": "No members active this round."
+    }
+  ],
   "stats": {
-    "total_posts": 0,
-    "total_comments": 0,
-    "total_likes": 0,
-    "avg_sentiment": 0.0
+    "total_posts": 1,
+    "total_comments": 22,
+    "total_likes": 10,
+    "avg_sentiment": 0.128,
+    "sentiment_n": 35
+  },
+  "decision_log": {
+    "group_b_gift_buyers_07": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 2,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "price vs gift budget, no finished product",
+        "round": 6,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "price still high",
+        "buyer": false,
+        "round": 22,
+        "kind": "repeat"
+      }
+    ],
+    "group_b_gift_buyers_01": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 3,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 16,
+        "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "sprouted",
+        "round": 24,
+        "kind": "outcome"
+      }
+    ],
+    "group_b_gift_buyers_03": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 3,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 18,
+        "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "dead",
+        "round": 21,
+        "kind": "outcome"
+      }
+    ],
+    "group_b_gift_buyers_06": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "waits for others to report back",
+        "round": 15,
+        "kind": "blocker"
+      }
+    ],
+    "group_b_gift_buyers_08": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "refund terms and delivery date unknown",
+        "round": 6,
+        "kind": "blocker"
+      }
+    ],
+    "group_b_gift_buyers_09": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "prepaying faceless new brand for a gift",
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "delivered; wants bloom reports",
+        "buyer": false,
+        "round": 24,
+        "kind": "repeat"
+      }
+    ],
+    "group_b_gift_buyers_10": [
+      {
+        "stage": "discovery",
+        "stopped": false,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": false,
+        "preorder": false,
+        "blocker": "numbered scarcity meaningless for gifts; prefers known label",
+        "round": 18,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "prefers known label",
+        "buyer": false,
+        "round": 23,
+        "kind": "repeat"
+      }
+    ],
+    "group_b_gift_buyers_04": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 5,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "delivery timing for a dated gift",
+        "round": 6,
+        "kind": "blocker"
+      }
+    ],
+    "group_b_gift_buyers_05": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 8,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 18,
+        "kind": "receive"
+      }
+    ],
+    "group_b_gift_buyers_02": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 9,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "sizes unknown",
+        "round": 21,
+        "kind": "blocker"
+      }
+    ]
   }
 }

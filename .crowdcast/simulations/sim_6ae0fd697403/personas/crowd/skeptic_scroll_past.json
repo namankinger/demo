@@ -58,11 +58,177 @@
       "personality_brief": "Skeptic by habit who is quietly won over by the hand-painted tin and might preorder."
     }
   ],
-  "collective_memory": [],
+  "collective_memory": [
+    {
+      "round": 10,
+      "summary": "Compressed rounds 1-10: Skeptics dominated with prepay and no-history objections, a reseller rumour was floated without proof, and only one skeptic was won over by the tin; sentiment strongly negative."
+    },
+    {
+      "round": 20,
+      "summary": "Compressed rounds 11-20: Skeptics grudgingly acknowledged that units shipped while insisting on refund policy and bloom evidence; one skeptic-turned-buyer reported a sprout."
+    },
+    {
+      "round": 21,
+      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mildly negative (-0.20) in phase 4."
+    },
+    {
+      "round": 22,
+      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment mixed (+0.00) in phase 4."
+    },
+    {
+      "round": 23,
+      "summary": "1 active (1 comments, 0 likes, 0 posts, 0 reposts, 0 silent); sentiment positive (+0.50) in phase 4."
+    },
+    {
+      "round": 24,
+      "summary": "No members active this round."
+    },
+    {
+      "round": 25,
+      "summary": "No members active this round."
+    }
+  ],
   "stats": {
-    "total_posts": 0,
-    "total_comments": 0,
-    "total_likes": 0,
-    "avg_sentiment": 0.0
+    "total_posts": 1,
+    "total_comments": 16,
+    "total_likes": 7,
+    "avg_sentiment": -0.087,
+    "sentiment_n": 25
+  },
+  "decision_log": {
+    "skeptic_scroll_past_03": [
+      {
+        "stage": "discovery",
+        "stopped": false,
+        "round": 2,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": false,
+        "preorder": false,
+        "blocker": "no history, no visible founder",
+        "note": "started reseller rumour, unverified",
+        "round": 8,
+        "kind": "rumor"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "no founder face",
+        "buyer": false,
+        "round": 22,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_01": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "prepay to faceless brand",
+        "round": 6,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "will not prepay again",
+        "buyer": false,
+        "round": 21,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_02": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "burned by earlier preorder that never shipped",
+        "round": 6,
+        "kind": "blocker"
+      }
+    ],
+    "skeptic_scroll_past_07": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "payment method and fabric unanswered",
+        "round": 6,
+        "kind": "blocker"
+      }
+    ],
+    "skeptic_scroll_past_04": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 5,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "no refund policy mentioned",
+        "round": 6,
+        "kind": "blocker"
+      }
+    ],
+    "skeptic_scroll_past_08": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 5,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 19,
+        "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "sprouted",
+        "round": 23,
+        "kind": "outcome"
+      }
+    ],
+    "skeptic_scroll_past_05": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 6,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "waits for reviews or delivered units",
+        "round": 18,
+        "kind": "blocker"
+      }
+    ]
   }
 }
