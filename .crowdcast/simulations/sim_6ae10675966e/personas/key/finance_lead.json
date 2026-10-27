@@ -16,11 +16,41 @@
     ],
     "influence": 0.7
   },
-  "memory": [],
+  "memory": [
+    {
+      "round": 15,
+      "type": "summary",
+      "content": "Rounds 1-15: Guarded the Rs 1,09,900 gross envelope. Modelled replacement exposure as a formula still waiting on quotes. Clashed with CX on refunds for late dispatch and won a cap by limiting preorders to dispatch capacity. Sign-off on the damage refund is still open. Backed Ops' buffered date as refund insurance. Owns the payment method comparison."
+    },
+    {
+      "round": 17,
+      "type": "action",
+      "content": "Proposed a cost-based price guardrail method and a price test, with no number",
+      "emotion": "disciplined"
+    },
+    {
+      "round": 18,
+      "type": "action",
+      "content": "Gave rough cost tiers and proposed one combined professional review",
+      "emotion": "constructive"
+    },
+    {
+      "round": 21,
+      "type": "emotion",
+      "content": "Signed the damage refund with a review; chose learning the rate over blocking",
+      "emotion": "trust extended"
+    },
+    {
+      "round": 24,
+      "type": "emotion",
+      "content": "The envelope is still thin but now bounded",
+      "emotion": "measured relief"
+    }
+  ],
   "stats": {
-    "posts": 0,
+    "posts": 13,
     "likes_received": 0,
-    "comments_received": 0,
-    "influence_score": 0.0
+    "comments_received": 9,
+    "influence_score": 0.306
   }
 }

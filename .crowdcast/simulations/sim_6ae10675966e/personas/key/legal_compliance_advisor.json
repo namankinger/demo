@@ -16,11 +16,35 @@
     ],
     "influence": 0.6
   },
-  "memory": [],
+  "memory": [
+    {
+      "round": 15,
+      "type": "summary",
+      "content": "Rounds 1-15: Labelled everything 'verify with a professional'. Warned that buyers may have rights wording cannot remove, that dispatch and scarcity claims must be accurate when seen (no static counts in evergreen reels), and that grow claims must match tests. Proposed the business name and contact on the preorder terms, and the consent rule for reposting buyer content."
+    },
+    {
+      "round": 18,
+      "type": "emotion",
+      "content": "Delighted to bundle all reviews into one pack",
+      "emotion": "satisfaction"
+    },
+    {
+      "round": 23,
+      "type": "action",
+      "content": "Committed to one combined professional review in W2",
+      "emotion": "orderly"
+    },
+    {
+      "round": 24,
+      "type": "action",
+      "content": "Committed to the review pack by Wednesday",
+      "emotion": "calm"
+    }
+  ],
   "stats": {
-    "posts": 0,
+    "posts": 21,
     "likes_received": 0,
     "comments_received": 0,
-    "influence_score": 0.0
+    "influence_score": 0.292
   }
 }

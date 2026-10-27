@@ -1,0 +1,78 @@
+{
+  "current_scene": "The board is photographed and the brown paper rolled up for Ops' bench. One last box remains in the corner, headed 'OPEN - NOT RESOLVED', and the seedling in its paper cup has been moved to the windowsill, out of direct sun.",
+  "time": "Early afternoon, Day 5 - Close: open disagreements and commitments",
+  "active_locations": [
+    "workshop_room",
+    "whiteboard_wall",
+    "packing_bench",
+    "seed_shelf",
+    "video_call"
+  ],
+  "recent_events": [
+    {
+      "round": 21,
+      "event": "Research finalised the pre-registered test list",
+      "impact": "medium"
+    },
+    {
+      "round": 22,
+      "event": "The ranked priority list (F1 to F9) was approved and initialled by the Founder",
+      "impact": "high"
+    },
+    {
+      "round": 22,
+      "event": "Growth formally dissented: Archive 002 product/price should rank 2nd, not 4th",
+      "impact": "medium"
+    },
+    {
+      "round": 22,
+      "event": "Research added a footnote: re-rank at the week-4 gate using real test results",
+      "impact": "medium"
+    },
+    {
+      "round": 23,
+      "event": "30-day plan agreed week by week: W1 start long-lead tests, W2 build artefacts, W3 decide, W4 gate review on day 26-27",
+      "impact": "high"
+    },
+    {
+      "round": 23,
+      "event": "Every role wrote their own commitments, rough cost and test onto the plan",
+      "impact": "medium"
+    },
+    {
+      "round": 23,
+      "event": "Finance's cost summary: all fixes low cost except Archive 002 product sourcing and one professional review fee",
+      "impact": "medium"
+    },
+    {
+      "round": 24,
+      "event": "Workshop closed: the Founder approved the ranked list, 30-day plan and gate; 8 open disagreements were logged, each with the evidence that will settle it",
+      "impact": "high"
+    },
+    {
+      "round": 24,
+      "event": "CX deleted the 'message me' saved reply and scheduled the bloom-or-not and retroactive remedy messages for Monday",
+      "impact": "medium"
+    },
+    {
+      "round": 24,
+      "event": "Ops restarted the stopwatch on the remaining pilot tins",
+      "impact": "low"
+    }
+  ],
+  "character_positions": {
+    "founder_ceo": "workshop_room",
+    "head_of_product": "packing_bench",
+    "user_research_data_lead": "workshop_room",
+    "brand_creative_director": "workshop_room",
+    "product_industrial_designer": "packing_bench",
+    "plant_horticulture_specialist": "seed_shelf",
+    "growth_performance_marketing_lead": "workshop_room",
+    "community_social_lead": "workshop_room",
+    "customer_experience_cx_lead": "workshop_room",
+    "operations_supply_chain_lead": "packing_bench",
+    "finance_lead": "workshop_room",
+    "legal_compliance_advisor": "video_call"
+  },
+  "tension_level": 0.48
+}

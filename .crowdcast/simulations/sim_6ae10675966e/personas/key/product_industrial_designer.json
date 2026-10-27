@@ -16,11 +16,29 @@
     ],
     "influence": 0.75
   },
-  "memory": [],
+  "memory": [
+    {
+      "round": 15,
+      "type": "summary",
+      "content": "Rounds 1-15: Opened an empty Archive 001 tin to show there was no guide. Prototyped the lid card (number and story on the front, grow steps and remedy line on the back), matching numbers on tin and card, a layered unboxing sequence, and the spec card for Archive 002, every line measured rather than assumed. Owns function and hierarchy while Brand owns the words."
+    },
+    {
+      "round": 21,
+      "type": "action",
+      "content": "Trimmed F1/F8 to a single lid card",
+      "emotion": "disciplined"
+    },
+    {
+      "round": 24,
+      "type": "action",
+      "content": "Put the lid card prototype into tin 001, numbered side up",
+      "emotion": "pride"
+    }
+  ],
   "stats": {
-    "posts": 0,
+    "posts": 18,
     "likes_received": 0,
-    "comments_received": 0,
-    "influence_score": 0.0
+    "comments_received": 7,
+    "influence_score": 0.347
   }
 }

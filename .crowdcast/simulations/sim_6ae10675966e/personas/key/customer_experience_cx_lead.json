@@ -16,11 +16,41 @@
     ],
     "influence": 0.85
   },
-  "memory": [],
+  "memory": [
+    {
+      "round": 15,
+      "type": "summary",
+      "content": "Rounds 1-15: Replaced 'message me' with the dead-seed photo-replacement flow (retroactive for Archive 001) and a three-line public remedy promise, merged with Finance's preorder cap. Proposed weekly order updates with bench photos and named support signatures. Insisted the registry show dead seeds and remedies too. Raised size exchanges, which Ops resists."
+    },
+    {
+      "round": 20,
+      "type": "action",
+      "content": "Drafted an 'If we slip' update template",
+      "emotion": "readiness"
+    },
+    {
+      "round": 21,
+      "type": "emotion",
+      "content": "Got the damage line signed; size-exchange spares remain an open item",
+      "emotion": "mixed"
+    },
+    {
+      "round": 22,
+      "type": "emotion",
+      "content": "Dead-seed bundle and remedy promise ranked 1 and 2",
+      "emotion": "vindication"
+    },
+    {
+      "round": 24,
+      "type": "action",
+      "content": "Deleted the 'message me' reply; scheduled Monday's remedy and follow-up messages",
+      "emotion": "triumph"
+    }
+  ],
   "stats": {
-    "posts": 0,
-    "likes_received": 0,
-    "comments_received": 0,
-    "influence_score": 0.0
+    "posts": 22,
+    "likes_received": 1,
+    "comments_received": 18,
+    "influence_score": 0.569
   }
 }

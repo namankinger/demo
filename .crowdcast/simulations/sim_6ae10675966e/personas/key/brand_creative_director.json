@@ -16,11 +16,47 @@
     ],
     "influence": 0.8
   },
-  "memory": [],
+  "memory": [
+    {
+      "round": 15,
+      "type": "summary",
+      "content": "Rounds 1-15: Feared fixes would strip the mystique, then found ways to keep it: wrote the plain three-sentence remedy promise, proposed hands-not-face bench content (a turning point on trust), 'never remade, 100 means 100', and the identity line 'A numbered object that grows', with the drop leading and the plant as the reveal. Fought Growth over shouted urgency hooks (open disagreement), then made up over a shared framing test."
+    },
+    {
+      "round": 16,
+      "type": "emotion",
+      "content": "Realised the identity order depends on the unknown split",
+      "emotion": "doubt"
+    },
+    {
+      "round": 18,
+      "type": "emotion",
+      "content": "Admitted they would have scored the remedy line a 2 on Monday; now it's a 5",
+      "emotion": "changed mind"
+    },
+    {
+      "round": 19,
+      "type": "observation",
+      "content": "Suspected the Founder already knows Ops is right",
+      "emotion": "empathy"
+    },
+    {
+      "round": 20,
+      "type": "action",
+      "content": "Offered to co-write any slip notice in the brand's voice",
+      "emotion": "loyalty"
+    },
+    {
+      "round": 24,
+      "type": "action",
+      "content": "Handed tin 001 back: still numbered, easier to believe",
+      "emotion": "warmth"
+    }
+  ],
   "stats": {
-    "posts": 0,
-    "likes_received": 0,
-    "comments_received": 0,
-    "influence_score": 0.0
+    "posts": 19,
+    "likes_received": 1,
+    "comments_received": 16,
+    "influence_score": 0.5
   }
 }

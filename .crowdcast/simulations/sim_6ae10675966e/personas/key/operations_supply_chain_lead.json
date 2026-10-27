@@ -16,11 +16,53 @@
     ],
     "influence": 0.7
   },
-  "memory": [],
+  "memory": [
+    {
+      "round": 15,
+      "type": "summary",
+      "content": "Rounds 1-15: The reality check. Stated that painting time was never measured, refused Growth's '21 days', and won a timed 10-tin painting and packing pilot followed by a buffered dispatch date that gates both the refund and the date fixes. Started logging seed storage. Proposed repainting the same number for damage replacements and ordering tees to checkout sizes, with exchanges only if in stock."
+    },
+    {
+      "round": 17,
+      "type": "action",
+      "content": "Warned that the 8-week target only holds if Archive 002 reuses Archive 001's suppliers and method",
+      "emotion": "grim clarity"
+    },
+    {
+      "round": 18,
+      "type": "observation",
+      "content": "F5 is the only row that could break the timeline",
+      "emotion": "wary"
+    },
+    {
+      "round": 19,
+      "type": "action",
+      "content": "Used the Founder's own timed painting run to challenge the 8-week date without naming a number",
+      "emotion": "steely"
+    },
+    {
+      "round": 20,
+      "type": "emotion",
+      "content": "The Founder conceded; promised to sign only a date they keep",
+      "emotion": "quiet warmth"
+    },
+    {
+      "round": 23,
+      "type": "action",
+      "content": "Committed to finishing the pilot in W1 and signing a buffered date in W3",
+      "emotion": "determined"
+    },
+    {
+      "round": 24,
+      "type": "action",
+      "content": "Went back to the pilot tins and started the stopwatch",
+      "emotion": "focused"
+    }
+  ],
   "stats": {
-    "posts": 0,
+    "posts": 19,
     "likes_received": 0,
-    "comments_received": 0,
-    "influence_score": 0.0
+    "comments_received": 12,
+    "influence_score": 0.431
   }
 }
