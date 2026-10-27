@@ -1,0 +1,548 @@
+{
+  "sentiment_by_round": [
+    {
+      "round": 1,
+      "positive": 0.33,
+      "negative": 0.33,
+      "neutral": 0.34,
+      "avg_sentiment": -0.067,
+      "actions": 3
+    },
+    {
+      "round": 2,
+      "positive": 0.25,
+      "negative": 0.12,
+      "neutral": 0.63,
+      "avg_sentiment": 0.087,
+      "actions": 8
+    },
+    {
+      "round": 3,
+      "positive": 0.5,
+      "negative": 0.27,
+      "neutral": 0.23,
+      "avg_sentiment": 0.079,
+      "actions": 22
+    },
+    {
+      "round": 4,
+      "positive": 0.2,
+      "negative": 0.2,
+      "neutral": 0.6,
+      "avg_sentiment": -0.028,
+      "actions": 5
+    },
+    {
+      "round": 5,
+      "positive": 0.56,
+      "negative": 0.22,
+      "neutral": 0.22,
+      "avg_sentiment": 0.109,
+      "actions": 9
+    },
+    {
+      "round": 6,
+      "positive": 0.17,
+      "negative": 0.57,
+      "neutral": 0.26,
+      "avg_sentiment": -0.143,
+      "actions": 23
+    },
+    {
+      "round": 7,
+      "positive": 0.38,
+      "negative": 0.38,
+      "neutral": 0.24,
+      "avg_sentiment": 0.017,
+      "actions": 8
+    },
+    {
+      "round": 8,
+      "positive": 0.33,
+      "negative": 0.33,
+      "neutral": 0.34,
+      "avg_sentiment": -0.032,
+      "actions": 6
+    },
+    {
+      "round": 9,
+      "positive": 0.12,
+      "negative": 0.5,
+      "neutral": 0.38,
+      "avg_sentiment": -0.131,
+      "actions": 8
+    },
+    {
+      "round": 10,
+      "positive": 0.5,
+      "negative": 0.17,
+      "neutral": 0.33,
+      "avg_sentiment": 0.073,
+      "actions": 6
+    },
+    {
+      "round": 11,
+      "positive": 0.57,
+      "negative": 0.29,
+      "neutral": 0.14,
+      "avg_sentiment": 0.124,
+      "actions": 7
+    },
+    {
+      "round": 12,
+      "positive": 0.75,
+      "negative": 0.0,
+      "neutral": 0.25,
+      "avg_sentiment": 0.28,
+      "actions": 4
+    },
+    {
+      "round": 13,
+      "positive": 0.33,
+      "negative": 0.17,
+      "neutral": 0.5,
+      "avg_sentiment": 0.1,
+      "actions": 6
+    },
+    {
+      "round": 14,
+      "positive": 0.29,
+      "negative": 0.43,
+      "neutral": 0.28,
+      "avg_sentiment": 0.046,
+      "actions": 7
+    },
+    {
+      "round": 15,
+      "positive": 0.42,
+      "negative": 0.16,
+      "neutral": 0.42,
+      "avg_sentiment": 0.142,
+      "actions": 19
+    },
+    {
+      "round": 16,
+      "positive": 0.6,
+      "negative": 0.0,
+      "neutral": 0.4,
+      "avg_sentiment": 0.26,
+      "actions": 5
+    },
+    {
+      "round": 17,
+      "positive": 0.67,
+      "negative": 0.0,
+      "neutral": 0.33,
+      "avg_sentiment": 0.31,
+      "actions": 3
+    },
+    {
+      "round": 18,
+      "positive": 0.36,
+      "negative": 0.09,
+      "neutral": 0.55,
+      "avg_sentiment": 0.17,
+      "actions": 22
+    },
+    {
+      "round": 19,
+      "positive": 1.0,
+      "negative": 0.0,
+      "neutral": 0.0,
+      "avg_sentiment": 0.533,
+      "actions": 3
+    },
+    {
+      "round": 20,
+      "positive": 0.0,
+      "negative": 0.4,
+      "neutral": 0.6,
+      "avg_sentiment": -0.22,
+      "actions": 5
+    },
+    {
+      "round": 21,
+      "positive": 0.22,
+      "negative": 0.67,
+      "neutral": 0.11,
+      "avg_sentiment": -0.194,
+      "actions": 9
+    },
+    {
+      "round": 22,
+      "positive": 0.17,
+      "negative": 0.17,
+      "neutral": 0.66,
+      "avg_sentiment": 0.083,
+      "actions": 6
+    },
+    {
+      "round": 23,
+      "positive": 0.4,
+      "negative": 0.4,
+      "neutral": 0.2,
+      "avg_sentiment": 0.18,
+      "actions": 5
+    },
+    {
+      "round": 24,
+      "positive": 0.71,
+      "negative": 0.14,
+      "neutral": 0.15,
+      "avg_sentiment": 0.357,
+      "actions": 7
+    },
+    {
+      "round": 25,
+      "positive": 0.4,
+      "negative": 0.4,
+      "neutral": 0.2,
+      "avg_sentiment": 0.0,
+      "actions": 5
+    },
+    {
+      "round": 26,
+      "positive": 0.38,
+      "negative": 0.25,
+      "neutral": 0.37,
+      "avg_sentiment": 0.006,
+      "actions": 8
+    },
+    {
+      "round": 27,
+      "positive": 0.29,
+      "negative": 0.14,
+      "neutral": 0.57,
+      "avg_sentiment": 0.086,
+      "actions": 7
+    },
+    {
+      "round": 28,
+      "positive": 0.0,
+      "negative": 1.0,
+      "neutral": 0.0,
+      "avg_sentiment": -0.4,
+      "actions": 3
+    },
+    {
+      "round": 29,
+      "positive": 0.33,
+      "negative": 0.33,
+      "neutral": 0.34,
+      "avg_sentiment": -0.033,
+      "actions": 3
+    },
+    {
+      "round": 30,
+      "positive": 0.5,
+      "negative": 0.0,
+      "neutral": 0.5,
+      "avg_sentiment": 0.2,
+      "actions": 6
+    },
+    {
+      "round": 31,
+      "positive": 0.17,
+      "negative": 0.67,
+      "neutral": 0.16,
+      "avg_sentiment": -0.183,
+      "actions": 6
+    },
+    {
+      "round": 32,
+      "positive": 0.0,
+      "negative": 1.0,
+      "neutral": 0.0,
+      "avg_sentiment": -0.45,
+      "actions": 2
+    },
+    {
+      "round": 33,
+      "positive": 1.0,
+      "negative": 0.0,
+      "neutral": 0.0,
+      "avg_sentiment": 0.575,
+      "actions": 4
+    },
+    {
+      "round": 34,
+      "positive": 0.62,
+      "negative": 0.25,
+      "neutral": 0.13,
+      "avg_sentiment": 0.2,
+      "actions": 8
+    },
+    {
+      "round": 35,
+      "positive": 0.29,
+      "negative": 0.43,
+      "neutral": 0.28,
+      "avg_sentiment": -0.036,
+      "actions": 7
+    },
+    {
+      "round": 36,
+      "positive": 0.5,
+      "negative": 0.25,
+      "neutral": 0.25,
+      "avg_sentiment": 0.075,
+      "actions": 4
+    },
+    {
+      "round": 37,
+      "positive": 0.6,
+      "negative": 0.2,
+      "neutral": 0.2,
+      "avg_sentiment": 0.33,
+      "actions": 5
+    },
+    {
+      "round": 38,
+      "positive": 0.6,
+      "negative": 0.4,
+      "neutral": 0.0,
+      "avg_sentiment": 0.127,
+      "actions": 15
+    },
+    {
+      "round": 39,
+      "positive": 0.35,
+      "negative": 0.35,
+      "neutral": 0.3,
+      "avg_sentiment": -0.024,
+      "actions": 17
+    },
+    {
+      "round": 40,
+      "positive": 0.29,
+      "negative": 0.29,
+      "neutral": 0.42,
+      "avg_sentiment": -0.043,
+      "actions": 7
+    }
+  ],
+  "tipping_points": [
+    {
+      "round": 19,
+      "event": "First sprout report (group_a_collectors_04: 'Day five and the marigold is up')",
+      "sentiment_shift": 0.36
+    },
+    {
+      "round": 20,
+      "event": "First non-sprouting seed (group_a_collectors_02: 'Nothing so far. Is it only me?')",
+      "sentiment_shift": -0.75
+    },
+    {
+      "round": 31,
+      "event": "Gift buyer lead reports gifted marigold did not come up",
+      "sentiment_shift": -0.38
+    },
+    {
+      "round": 33,
+      "event": "First bloom posted (group_a_collectors_04); compared with a 2-action round 32",
+      "sentiment_shift": 1.02
+    },
+    {
+      "round": 35,
+      "event": "Dead-seed tally post and founder's 'I will not invent' germination figure reply",
+      "sentiment_shift": -0.24
+    }
+  ],
+  "most_influential_agents": [
+    {
+      "id": "preserve_founder",
+      "influence_score": 0.9656,
+      "total_reactions": 118
+    },
+    {
+      "id": "archetype_gift_buyer_lead",
+      "influence_score": 0.6074,
+      "total_reactions": 20
+    },
+    {
+      "id": "archetype_drop_culture_collector_lead",
+      "influence_score": 0.4365,
+      "total_reactions": 23
+    },
+    {
+      "id": "archetype_skeptical_scroller",
+      "influence_score": 0.2423,
+      "total_reactions": 15
+    }
+  ],
+  "topic_trends": [
+    {
+      "topic": "marigold_bloom",
+      "peak_round": 38,
+      "mentions": 62
+    },
+    {
+      "topic": "delivery_timing",
+      "peak_round": 6,
+      "mentions": 46
+    },
+    {
+      "topic": "numbered_scarcity",
+      "peak_round": 3,
+      "mentions": 34
+    },
+    {
+      "topic": "fabric_sizes",
+      "peak_round": 3,
+      "mentions": 26
+    },
+    {
+      "topic": "prepay_trust",
+      "peak_round": 3,
+      "mentions": 24
+    },
+    {
+      "topic": "archive_002",
+      "peak_round": 24,
+      "mentions": 20
+    },
+    {
+      "topic": "refund_policy",
+      "peak_round": 38,
+      "mentions": 17
+    }
+  ],
+  "final_sentiment": {
+    "positive": 0.3407,
+    "negative": 0.2569,
+    "neutral": 0.4024
+  },
+  "notes": "All agents are LLM-generated hypotheses, not evidence. Mentions are approximate keyword counts over round content. Per-round proportions use +/-0.1 thresholds and are noisy for rounds with few actions.",
+  "preorder": {
+    "collectors": {
+      "observed": "8/16",
+      "observed_pct_range": [
+        47,
+        50
+      ],
+      "wilson95_pct": [
+        28,
+        72
+      ]
+    },
+    "gift_buyers": {
+      "observed": "4/11",
+      "observed_pct_range": [
+        30,
+        36
+      ],
+      "wilson95_pct": [
+        15,
+        65
+      ]
+    },
+    "skeptics": {
+      "observed": "1/9",
+      "observed_pct_range": [
+        11,
+        13
+      ],
+      "wilson95_pct": [
+        2,
+        44
+      ]
+    },
+    "all": {
+      "observed": "13/36",
+      "observed_pct": 36,
+      "wilson95_pct": [
+        22,
+        52
+      ]
+    }
+  },
+  "repeat_final_decisions": {
+    "collectors": {
+      "n": 16,
+      "yes": 5,
+      "maybe_lean_yes": 4,
+      "maybe": 1,
+      "maybe_lean_no": 1,
+      "no": 5,
+      "strict_pct": 31,
+      "lenient_pct": 56
+    },
+    "gift_buyers": {
+      "n": 11,
+      "yes": 2,
+      "maybe_lean_yes": 2,
+      "maybe": 1,
+      "maybe_lean_no": 3,
+      "no": 3,
+      "strict_pct": 18,
+      "lenient_pct": 36
+    },
+    "skeptics": {
+      "n": 9,
+      "yes": 1,
+      "maybe_lean_yes": 2,
+      "maybe": 1,
+      "maybe_lean_no": 1,
+      "no": 4,
+      "strict_pct": 11,
+      "lenient_pct": 33
+    },
+    "all": {
+      "n": 36,
+      "yes": 8,
+      "maybe_lean_yes": 8,
+      "maybe": 3,
+      "maybe_lean_no": 5,
+      "no": 12,
+      "strict_pct": 22,
+      "lenient_pct": 44
+    }
+  },
+  "repeat_by_marigold_all_groups": {
+    "bloomed": {
+      "n": 6,
+      "yes": 5,
+      "maybe_lean_yes": 1,
+      "maybe": 0,
+      "maybe_lean_no": 0,
+      "no": 0
+    },
+    "sprouted": {
+      "n": 2,
+      "yes": 1,
+      "maybe_lean_yes": 1,
+      "maybe": 0,
+      "maybe_lean_no": 0,
+      "no": 0
+    },
+    "dead": {
+      "n": 5,
+      "yes": 0,
+      "maybe_lean_yes": 1,
+      "maybe": 0,
+      "maybe_lean_no": 2,
+      "no": 2
+    },
+    "none": {
+      "n": 23,
+      "yes": 2,
+      "maybe_lean_yes": 5,
+      "maybe": 3,
+      "maybe_lean_no": 3,
+      "no": 10
+    }
+  },
+  "top_non_return_reasons_count_of_28_non_yes": {
+    "dead_seed_no_remedy_or_guide": 4,
+    "no_refund_or_replacement_policy": 8,
+    "archive_002_product_price_unnamed": 8,
+    "prepay_trust_gap": 6,
+    "fabric_sizes_payment_unanswered": 4,
+    "delivery_date_unanswered": 3
+  },
+  "buyer_split_observed": {
+    "collectors": 8,
+    "gift_buyers": 4,
+    "skeptic_group": 1
+  }
+}
