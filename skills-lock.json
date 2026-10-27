@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "crowdcast": {
+      "source": "TheQmaks/crowdcast",
+      "sourceType": "github",
+      "skillPath": "skills/crowdcast/SKILL.md",
+      "computedHash": "d48b3b834abf228d53d29d1746064d77e287e3d184ecfef4d0d1d7d1847e052b"
+    }
+  }
+}
