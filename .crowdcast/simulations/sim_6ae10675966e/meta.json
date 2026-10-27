@@ -1,0 +1,28 @@
+{
+  "id": "sim_6ae10675966e",
+  "mode": "creative",
+  "status": "analyzing",
+  "prompt": "Product team workshop on Preserve pain points and improvements",
+  "seed_files": [
+    "preserve_seed.md",
+    "team_brief.md",
+    "sim1_report.md"
+  ],
+  "created_at": "2026-10-27T20:15:49",
+  "phases": {
+    "analyze": {
+      "status": "completed",
+      "entities": 37,
+      "edges": 91
+    },
+    "profile": {
+      "status": "pending"
+    },
+    "simulate": {
+      "status": "pending"
+    },
+    "report": {
+      "status": "pending"
+    }
+  }
+}

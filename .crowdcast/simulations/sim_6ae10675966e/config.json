@@ -1,0 +1,23 @@
+{
+  "mode": "creative",
+  "total_rounds": 24,
+  "agents_per_round_active_pct": 0.8,
+  "key_agent_ids": [
+    "ent_001",
+    "ent_002",
+    "ent_003",
+    "ent_004",
+    "ent_005",
+    "ent_006",
+    "ent_007",
+    "ent_008",
+    "ent_009",
+    "ent_010",
+    "ent_011",
+    "ent_012"
+  ],
+  "crowd_groups": [],
+  "simulation_hours": 0,
+  "minutes_per_round": 0,
+  "memory_compression_interval": 15
+}

@@ -1,0 +1,1320 @@
+{
+  "entities": [
+    {
+      "id": "ent_001",
+      "name": "Founder / CEO",
+      "type": "person",
+      "attributes": {
+        "role": "Founder and CEO",
+        "affiliation": "Preserve product team",
+        "owns": "vision and the final call on every trade-off",
+        "goals": [
+          "keep numbered scarcity and the plant story at the heart of Preserve",
+          "stay faceless unless convinced otherwise",
+          "ship Archive 002 about 8 weeks after Archive 001"
+        ],
+        "likely_conflicts": [
+          "vs Community & Social and User Research on staying faceless (trust gap)",
+          "vs Finance on generous refunds eroding thin preorder cash",
+          "vs Brand on whether the product is a drop or a plant gift"
+        ],
+        "starting_stance": "Defensive of the faceless, scarcity-led concept; in the first simulation refused to invent a germination figure and deferred fabric, size and refund answers.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Founder and CEO in the Preserve pain-point workshop; vision and the final call on every trade-off.",
+      "importance": 0.95
+    },
+    {
+      "id": "ent_002",
+      "name": "Head of Product",
+      "type": "person",
+      "attributes": {
+        "role": "Head of Product (PM)",
+        "affiliation": "Preserve product team",
+        "owns": "the problem list, prioritisation, session facilitation and the roadmap",
+        "goals": [
+          "cover all 9 pain points",
+          "force each fix to have an owner, rough cost and a real-world test",
+          "end with a ranked priority list and a 30-day plan before Archive 002"
+        ],
+        "likely_conflicts": [
+          "vs Founder when vision overrides evidence",
+          "vs Growth on shipping hooks before fixing fundamentals",
+          "vs Ops/Finance on scope that does not fit a founder-led budget"
+        ],
+        "starting_stance": "Neutral facilitator; pushes for explicit prioritisation and cutting scope.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Head of Product (PM) in the Preserve pain-point workshop; the problem list, prioritisation, session facilitation and the roadmap.",
+      "importance": 0.95
+    },
+    {
+      "id": "ent_003",
+      "name": "User Research & Data Lead",
+      "type": "person",
+      "attributes": {
+        "role": "User Research & Data Lead",
+        "affiliation": "Preserve product team",
+        "owns": "separating evidence from guesses and designing real-customer tests",
+        "goals": [
+          "stop the team treating LLM simulation results as customer evidence",
+          "test the collector vs gift-buyer split and the founder survey (details UNKNOWN)",
+          "design cheap tests: waitlist A/B with and without a refund line, small paid pilot, bloom follow-up"
+        ],
+        "likely_conflicts": [
+          "vs Founder who leans on an unpublished survey",
+          "vs Growth on vanity metrics vs real conversion",
+          "vs anyone stating simulated numbers as fact"
+        ],
+        "starting_stance": "Skeptical of all simulated figures; insists every fix needs a real test.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "User Research & Data Lead in the Preserve pain-point workshop; separating evidence from guesses and designing real-customer tests.",
+      "importance": 0.85
+    },
+    {
+      "id": "ent_004",
+      "name": "Brand & Creative Director",
+      "type": "person",
+      "attributes": {
+        "role": "Brand & Creative Director",
+        "affiliation": "Preserve product team",
+        "owns": "identity, drop story and how tin, tee and plant fit together",
+        "goals": [
+          "resolve the tin-vs-plant identity confusion",
+          "keep the brand feeling like a collectible drop, not a candle shop",
+          "craft the Archive 002 announcement story"
+        ],
+        "likely_conflicts": [
+          "vs Founder on whether the plant or the drop leads",
+          "vs Growth on hooks that cheapen the brand",
+          "vs Community on showing a face vs mystique"
+        ],
+        "starting_stance": "Protective of mystique and coherence; worried the plant dilutes streetwear credibility for some collectors.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Brand & Creative Director in the Preserve pain-point workshop; identity, drop story and how tin, tee and plant fit together.",
+      "importance": 0.8
+    },
+    {
+      "id": "ent_005",
+      "name": "Product / Industrial Designer",
+      "type": "person",
+      "attributes": {
+        "role": "Product / Industrial Designer",
+        "affiliation": "Preserve product team",
+        "owns": "the tin, tee, packaging, unboxing and the growing kit",
+        "goals": [
+          "define tin size, tee spec and an in-box growing kit (currently UNKNOWN)",
+          "make the unboxing communicate what the product is",
+          "add a printed growing guide or insert"
+        ],
+        "likely_conflicts": [
+          "vs Finance on unit cost of a better kit",
+          "vs Ops on hand-painting capacity and lead time",
+          "vs Brand on function vs aesthetics"
+        ],
+        "starting_stance": "Wants to fix gaps physically (insert, kit, labelling) but is cost-aware.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Product / Industrial Designer in the Preserve pain-point workshop; the tin, tee, packaging, unboxing and the growing kit.",
+      "importance": 0.75
+    },
+    {
+      "id": "ent_006",
+      "name": "Plant & Horticulture Specialist",
+      "type": "person",
+      "attributes": {
+        "role": "Plant & Horticulture Specialist",
+        "affiliation": "Preserve product team",
+        "owns": "marigold seed, germination, growing guide and seasonality",
+        "goals": [
+          "prevent dead marigolds with a guide, better seed handling and possibly extra seeds",
+          "run a real germination test since the rate is UNKNOWN",
+          "flag seasonality for Archive 002 timing"
+        ],
+        "likely_conflicts": [
+          "vs Founder who will not publish an invented germination figure (agrees no invention, pushes a real test)",
+          "vs Finance on cost of spare seeds or soil",
+          "vs Ops on storage and shipping conditions"
+        ],
+        "starting_stance": "Sees the dead-seed problem as the most fixable root cause; will not state a germination rate without testing.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Plant & Horticulture Specialist in the Preserve pain-point workshop; marigold seed, germination, growing guide and seasonality.",
+      "importance": 0.8
+    },
+    {
+      "id": "ent_007",
+      "name": "Growth & Performance Marketing Lead",
+      "type": "person",
+      "attributes": {
+        "role": "Growth & Performance Marketing Lead",
+        "affiliation": "Preserve product team",
+        "owns": "reel hooks, funnel, conversion and Instagram",
+        "goals": [
+          "raise preorder conversion from the reel and bio link",
+          "use bloom proof and unboxing content in the funnel",
+          "announce Archive 002 with product and price"
+        ],
+        "likely_conflicts": [
+          "vs Brand on aggressive hooks",
+          "vs Research on speed vs rigour",
+          "vs Legal on scarcity and urgency claims"
+        ],
+        "starting_stance": "Wants to move fast, leverage bloom posts and scarcity; impatient with process.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Growth & Performance Marketing Lead in the Preserve pain-point workshop; reel hooks, funnel, conversion and Instagram.",
+      "importance": 0.75
+    },
+    {
+      "id": "ent_008",
+      "name": "Community & Social Lead",
+      "type": "person",
+      "attributes": {
+        "role": "Community & Social Lead",
+        "affiliation": "Preserve product team",
+        "owns": "collectors' culture, trust building, showing real people and proof",
+        "goals": [
+          "close the prepay trust gap with real buyers, receipts, unboxings and blooms",
+          "give collectors proof of legitimacy beyond scarcity",
+          "handle rumours (e.g. reseller rumour) openly"
+        ],
+        "likely_conflicts": [
+          "vs Founder on staying faceless",
+          "vs Brand on mystique vs transparency",
+          "vs Legal on reposting customer content"
+        ],
+        "starting_stance": "Believes trust and proof, not scarcity, win collectors; pushes for a visible human behind the brand.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Community & Social Lead in the Preserve pain-point workshop; collectors' culture, trust building, showing real people and proof.",
+      "importance": 0.8
+    },
+    {
+      "id": "ent_009",
+      "name": "Customer Experience (CX) Lead",
+      "type": "person",
+      "attributes": {
+        "role": "Customer Experience (CX) Lead",
+        "affiliation": "Preserve product team",
+        "owns": "refunds, replacements, support and the post-purchase journey",
+        "goals": [
+          "publish a plain refund-or-replacement promise (proposal; policy currently UNKNOWN)",
+          "communicate a delivery date and order updates during the 3-4 week wait",
+          "create a dead-seed remedy flow instead of 'message me'"
+        ],
+        "likely_conflicts": [
+          "vs Finance on the cost of refunds and replacements",
+          "vs Legal on wording of promises",
+          "vs Founder on public vs DM-only answers"
+        ],
+        "starting_stance": "Champion of the remedy-first fix; sees silence on remedy as the biggest repeat killer.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Customer Experience (CX) Lead in the Preserve pain-point workshop; refunds, replacements, support and the post-purchase journey.",
+      "importance": 0.85
+    },
+    {
+      "id": "ent_010",
+      "name": "Operations & Supply Chain Lead",
+      "type": "person",
+      "attributes": {
+        "role": "Operations & Supply Chain Lead",
+        "affiliation": "Preserve product team",
+        "owns": "sourcing, painting capacity, shipping time and inventory",
+        "goals": [
+          "give a reliable delivery date inside the 3-4 week wait",
+          "plan hand-painting capacity for 100 units and Archive 002",
+          "source tee, tin and seed with known specs"
+        ],
+        "likely_conflicts": [
+          "vs Growth on promising dates ops cannot hit",
+          "vs Designer on complex packaging",
+          "vs Founder on the 8-week Archive 002 timeline"
+        ],
+        "starting_stance": "Pragmatic; wary of promises that hand-painting and sourcing cannot keep.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Operations & Supply Chain Lead in the Preserve pain-point workshop; sourcing, painting capacity, shipping time and inventory.",
+      "importance": 0.7
+    },
+    {
+      "id": "ent_011",
+      "name": "Finance Lead",
+      "type": "person",
+      "attributes": {
+        "role": "Finance Lead",
+        "affiliation": "Preserve product team",
+        "owns": "unit economics, cost of refunds and replacements, preorder cash flow",
+        "goals": [
+          "protect margin on a Rs 1,099 unit",
+          "price the cost of replacements and refunds",
+          "manage preorder cash flow (100 units, about Rs 1,09,900 gross)"
+        ],
+        "likely_conflicts": [
+          "vs CX on generous remedies",
+          "vs Designer on richer kits",
+          "vs Growth on paid spend"
+        ],
+        "starting_stance": "Cautious; will model the worst case of replacements before agreeing; flags anything expensive.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Finance Lead in the Preserve pain-point workshop; unit economics, cost of refunds and replacements, preorder cash flow.",
+      "importance": 0.7
+    },
+    {
+      "id": "ent_012",
+      "name": "Legal & Compliance Advisor",
+      "type": "person",
+      "attributes": {
+        "role": "Legal & Compliance Advisor",
+        "affiliation": "Preserve product team",
+        "owns": "preorder terms, refund terms and consumer-protection questions",
+        "goals": [
+          "write clear preorder and refund terms (proposals, verify with a professional)",
+          "make sure delivery and scarcity claims are accurate",
+          "never state law as fact"
+        ],
+        "likely_conflicts": [
+          "vs Growth on urgency and scarcity claims",
+          "vs Founder on anonymity and accountability",
+          "vs CX on over-promising"
+        ],
+        "starting_stance": "Careful; every legal point is marked verify with a professional.",
+        "fact_rule": "May only PROPOSE answers to items marked UNKNOWN in the seed, labelled as proposals"
+      },
+      "summary": "Legal & Compliance Advisor in the Preserve pain-point workshop; preorder terms, refund terms and consumer-protection questions.",
+      "importance": 0.6
+    },
+    {
+      "id": "ent_013",
+      "name": "Preserve",
+      "type": "organization",
+      "attributes": {
+        "role": "early founder-led brand",
+        "channel": "Instagram (reel plus bio link)",
+        "history": "none",
+        "scale": "100 units"
+      },
+      "summary": "The brand whose pain points the team is fixing.",
+      "importance": 0.7
+    },
+    {
+      "id": "ent_014",
+      "name": "Preserve Archive 001",
+      "type": "event",
+      "attributes": {
+        "type": "numbered 001-100 limited release",
+        "contents": "hand-painted tin can, T-shirt, marigold seed",
+        "price": "Rs 1,099",
+        "sales": "100% preorder via Instagram",
+        "wait": "3-4 weeks after payment"
+      },
+      "summary": "The first drop whose simulated reception produced the pain points.",
+      "importance": 0.8
+    },
+    {
+      "id": "ent_015",
+      "name": "Archive 002",
+      "type": "event",
+      "attributes": {
+        "timing": "about 8 weeks after Archive 001 ships",
+        "product": "UNKNOWN",
+        "price": "UNKNOWN"
+      },
+      "summary": "The next drop the 30-day plan must prepare for.",
+      "importance": 0.8
+    },
+    {
+      "id": "ent_016",
+      "name": "First Crowdcast simulation report (sim_6ae0fd697403)",
+      "type": "event",
+      "attributes": {
+        "agents": "37 simulated (36 audience)",
+        "status": "LLM hypotheses, not customer evidence",
+        "key_signal": "bloom vs dead seed largest split in repeat intent"
+      },
+      "summary": "Source of the 9 pain points; directional only.",
+      "importance": 0.6
+    },
+    {
+      "id": "ent_017",
+      "name": "Pain-point workshop",
+      "type": "event",
+      "attributes": {
+        "format": "internal product-led working session",
+        "outputs": "fixes with owner, rough cost, real-world test; ranked priority list; 30-day plan"
+      },
+      "summary": "The meeting series being simulated.",
+      "importance": 0.6
+    },
+    {
+      "id": "ent_018",
+      "name": "Hand-painted tin can",
+      "type": "concept",
+      "attributes": {
+        "size": "UNKNOWN",
+        "capacity_constraint": "hand-painted"
+      },
+      "summary": "Collectible object; some see it as the product, others as the pot.",
+      "importance": 0.45
+    },
+    {
+      "id": "ent_019",
+      "name": "T-shirt",
+      "type": "concept",
+      "attributes": {
+        "fabric": "UNKNOWN",
+        "sizes": "UNKNOWN",
+        "fit": "UNKNOWN",
+        "colours": "UNKNOWN"
+      },
+      "summary": "Streetwear component with unanswered specs.",
+      "importance": 0.4
+    },
+    {
+      "id": "ent_020",
+      "name": "Marigold seed",
+      "type": "concept",
+      "attributes": {
+        "germination_rate": "UNKNOWN",
+        "grow_method": "UNKNOWN (pot, soil, instructions)"
+      },
+      "summary": "The plant element driving repeat intent in both directions.",
+      "importance": 0.5
+    },
+    {
+      "id": "ent_021",
+      "name": "Instagram",
+      "type": "location",
+      "attributes": {
+        "use": "reel plus bio link, faceless marketing"
+      },
+      "summary": "The sole sales and marketing channel.",
+      "importance": 0.4
+    },
+    {
+      "id": "ent_022",
+      "name": "Streetwear & sneaker collectors",
+      "type": "group",
+      "attributes": {
+        "hypothesis": "~60% of audience (unproven)",
+        "age": "19-28",
+        "sim1": "converted best, wanted legitimacy first"
+      },
+      "summary": "Audience hypothesis A.",
+      "importance": 0.35
+    },
+    {
+      "id": "ent_023",
+      "name": "Gift buyers",
+      "type": "group",
+      "attributes": {
+        "hypothesis": "~40% of audience (unproven); founder survey says main group (details UNKNOWN)",
+        "sim1": "fragile after dead plant, rarely repeat"
+      },
+      "summary": "Audience hypothesis B.",
+      "importance": 0.35
+    },
+    {
+      "id": "ent_024",
+      "name": "Skeptical scrollers",
+      "type": "group",
+      "attributes": {
+        "sim1": "mostly stable non-buyers, some moved after blooms"
+      },
+      "summary": "Discovery drop-off segment.",
+      "importance": 0.3
+    },
+    {
+      "id": "ent_025",
+      "name": "Founder survey",
+      "type": "concept",
+      "attributes": {
+        "claim": "gift buyers are the main group",
+        "details": "UNKNOWN"
+      },
+      "summary": "Unverified evidence the founder relies on.",
+      "importance": 0.35
+    },
+    {
+      "id": "ent_026",
+      "name": "Founder-led budget constraint",
+      "type": "concept",
+      "attributes": {
+        "rule": "flag anything expensive"
+      },
+      "summary": "Every proposal must fit a tiny brand's budget.",
+      "importance": 0.45
+    },
+    {
+      "id": "ent_027",
+      "name": "Real-world test requirement",
+      "type": "concept",
+      "attributes": {
+        "rule": "every fix needs a test with real people",
+        "examples": "waitlist A/B with and without refund line, small paid pilot, bloom-or-not follow-up"
+      },
+      "summary": "Ground rule turning ideas into tests.",
+      "importance": 0.5
+    },
+    {
+      "id": "ent_028",
+      "name": "30-day plan before Archive 002",
+      "type": "event",
+      "attributes": {
+        "output": "ranked priority list plus 30-day plan"
+      },
+      "summary": "Target deliverable of the workshop.",
+      "importance": 0.6
+    },
+    {
+      "id": "ent_029",
+      "name": "Pain point 1: Dead marigold with no remedy or growing guide",
+      "type": "concept",
+      "attributes": {
+        "sim1_evidence": "bloomed 5 of 6 said yes; dead 0 of 5 said yes (simulated events)",
+        "unknowns": "germination rate, grow method",
+        "role": "workshop agenda item"
+      },
+      "summary": "Workshop agenda item: dead marigold with no remedy or growing guide.",
+      "importance": 0.75
+    },
+    {
+      "id": "ent_030",
+      "name": "Pain point 2: No refund or replacement policy",
+      "type": "concept",
+      "attributes": {
+        "sim1_evidence": "cited by 8 of 28 non-yes agents; 'message me' did not count",
+        "status": "policy UNKNOWN",
+        "role": "workshop agenda item"
+      },
+      "summary": "Workshop agenda item: no refund or replacement policy.",
+      "importance": 0.75
+    },
+    {
+      "id": "ent_031",
+      "name": "Pain point 3: Archive 002 product and price unnamed",
+      "type": "concept",
+      "attributes": {
+        "sim1_evidence": "cited by 8 of 28 non-yes agents",
+        "status": "UNKNOWN",
+        "role": "workshop agenda item"
+      },
+      "summary": "Workshop agenda item: archive 002 product and price unnamed.",
+      "importance": 0.65
+    },
+    {
+      "id": "ent_032",
+      "name": "Pain point 4: Prepay trust gap",
+      "type": "concept",
+      "attributes": {
+        "causes": "faceless founder, no brand history, paying before product exists",
+        "sim1_evidence": "6 of 28",
+        "role": "workshop agenda item"
+      },
+      "summary": "Workshop agenda item: prepay trust gap.",
+      "importance": 0.7
+    },
+    {
+      "id": "ent_033",
+      "name": "Pain point 5: Tee fabric, sizes, payment method and tin size unanswered",
+      "type": "concept",
+      "attributes": {
+        "sim1_evidence": "4 of 28 on fabric/sizes",
+        "status": "all UNKNOWN",
+        "role": "workshop agenda item"
+      },
+      "summary": "Workshop agenda item: tee fabric, sizes, payment method and tin size unanswered.",
+      "importance": 0.55
+    },
+    {
+      "id": "ent_034",
+      "name": "Pain point 6: Scarcity alone does not win collectors",
+      "type": "concept",
+      "attributes": {
+        "sim1_evidence": "collector lead bought only after reseller rumour was answered",
+        "role": "workshop agenda item"
+      },
+      "summary": "Workshop agenda item: scarcity alone does not win collectors.",
+      "importance": 0.55
+    },
+    {
+      "id": "ent_035",
+      "name": "Pain point 7: Tin vs plant identity split",
+      "type": "concept",
+      "attributes": {
+        "sim1_evidence": "'a candle shop, not a drop'; some value tin over plant",
+        "role": "workshop agenda item"
+      },
+      "summary": "Workshop agenda item: tin vs plant identity split.",
+      "importance": 0.55
+    },
+    {
+      "id": "ent_036",
+      "name": "Pain point 8: Gift buyers rarely repeat; collector vs gift split untested",
+      "type": "concept",
+      "attributes": {
+        "sim1_evidence": "gift buyer repeat 1 of 4 buyers",
+        "founder_survey": "details UNKNOWN",
+        "role": "workshop agenda item"
+      },
+      "summary": "Workshop agenda item: gift buyers rarely repeat; collector vs gift split untested.",
+      "importance": 0.6
+    },
+    {
+      "id": "ent_037",
+      "name": "Pain point 9: 3-4 week wait with no delivery date",
+      "type": "concept",
+      "attributes": {
+        "sim1_evidence": "3 of 28 on delivery date; gift occasions at risk",
+        "role": "workshop agenda item"
+      },
+      "summary": "Workshop agenda item: 3-4 week wait with no delivery date.",
+      "importance": 0.55
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel_001",
+      "source": "ent_006",
+      "target": "ent_029",
+      "type": "owns",
+      "description": "Owns the growing guide and germination test.",
+      "weight": 0.95
+    },
+    {
+      "id": "rel_002",
+      "source": "ent_009",
+      "target": "ent_029",
+      "type": "owns_remedy_for",
+      "description": "Owns the dead-seed remedy flow.",
+      "weight": 0.85
+    },
+    {
+      "id": "rel_003",
+      "source": "ent_005",
+      "target": "ent_029",
+      "type": "cares_about",
+      "description": "Would add an in-box growing kit or insert.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_004",
+      "source": "ent_011",
+      "target": "ent_029",
+      "type": "costs",
+      "description": "Must cost spare seeds and replacements.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_005",
+      "source": "ent_003",
+      "target": "ent_029",
+      "type": "tests",
+      "description": "Designs the bloom-or-not follow-up.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_006",
+      "source": "ent_001",
+      "target": "ent_029",
+      "type": "cares_about",
+      "description": "The plant story is core to his vision.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_007",
+      "source": "ent_009",
+      "target": "ent_030",
+      "type": "owns",
+      "description": "Drafts the refund-or-replacement promise (proposal).",
+      "weight": 0.95
+    },
+    {
+      "id": "rel_008",
+      "source": "ent_012",
+      "target": "ent_030",
+      "type": "reviews",
+      "description": "Reviews terms; verify with a professional.",
+      "weight": 0.85
+    },
+    {
+      "id": "rel_009",
+      "source": "ent_011",
+      "target": "ent_030",
+      "type": "costs",
+      "description": "Models refund and replacement exposure.",
+      "weight": 0.85
+    },
+    {
+      "id": "rel_010",
+      "source": "ent_001",
+      "target": "ent_030",
+      "type": "decides_on",
+      "description": "Final call on policy generosity.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_011",
+      "source": "ent_003",
+      "target": "ent_030",
+      "type": "tests",
+      "description": "Waitlist A/B with and without a refund line.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_012",
+      "source": "ent_001",
+      "target": "ent_031",
+      "type": "owns",
+      "description": "Decides Archive 002 product and price (UNKNOWN).",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_013",
+      "source": "ent_002",
+      "target": "ent_031",
+      "type": "owns_roadmap_for",
+      "description": "Sequences Archive 002 definition into the roadmap.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_014",
+      "source": "ent_011",
+      "target": "ent_031",
+      "type": "prices",
+      "description": "Sets price guardrails.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_015",
+      "source": "ent_007",
+      "target": "ent_031",
+      "type": "cares_about",
+      "description": "Needs product and price for the announcement.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_016",
+      "source": "ent_004",
+      "target": "ent_031",
+      "type": "shapes",
+      "description": "Owns the Archive 002 story.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_017",
+      "source": "ent_010",
+      "target": "ent_031",
+      "type": "cares_about",
+      "description": "Needs specs to plan capacity.",
+      "weight": 0.5
+    },
+    {
+      "id": "rel_018",
+      "source": "ent_008",
+      "target": "ent_032",
+      "type": "owns",
+      "description": "Builds proof: real buyers, unboxings, receipts.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_019",
+      "source": "ent_001",
+      "target": "ent_032",
+      "type": "is_blocker_for",
+      "description": "His facelessness is a cause of the gap.",
+      "weight": 0.85
+    },
+    {
+      "id": "rel_020",
+      "source": "ent_004",
+      "target": "ent_032",
+      "type": "cares_about",
+      "description": "Balances mystique and transparency.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_021",
+      "source": "ent_012",
+      "target": "ent_032",
+      "type": "cares_about",
+      "description": "Clear preorder terms reduce prepay risk.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_022",
+      "source": "ent_003",
+      "target": "ent_032",
+      "type": "tests",
+      "description": "Tests trust signals with real people.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_023",
+      "source": "ent_005",
+      "target": "ent_033",
+      "type": "owns",
+      "description": "Defines tee and tin specs.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_024",
+      "source": "ent_010",
+      "target": "ent_033",
+      "type": "owns_sourcing_for",
+      "description": "Sources to confirmed specs.",
+      "weight": 0.75
+    },
+    {
+      "id": "rel_025",
+      "source": "ent_009",
+      "target": "ent_033",
+      "type": "owns_faq_for",
+      "description": "Publishes a pre-purchase FAQ.",
+      "weight": 0.65
+    },
+    {
+      "id": "rel_026",
+      "source": "ent_011",
+      "target": "ent_033",
+      "type": "owns_payment_method_for",
+      "description": "Chooses payment method (proposal).",
+      "weight": 0.5
+    },
+    {
+      "id": "rel_027",
+      "source": "ent_008",
+      "target": "ent_034",
+      "type": "owns",
+      "description": "Turns legitimacy proof into collector trust.",
+      "weight": 0.85
+    },
+    {
+      "id": "rel_028",
+      "source": "ent_007",
+      "target": "ent_034",
+      "type": "cares_about",
+      "description": "Funnel relies on scarcity hooks.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_029",
+      "source": "ent_004",
+      "target": "ent_034",
+      "type": "cares_about",
+      "description": "Numbered-drop identity.",
+      "weight": 0.65
+    },
+    {
+      "id": "rel_030",
+      "source": "ent_001",
+      "target": "ent_034",
+      "type": "challenged_by",
+      "description": "His scarcity thesis is challenged.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_031",
+      "source": "ent_004",
+      "target": "ent_035",
+      "type": "owns",
+      "description": "Resolves what the product is.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_032",
+      "source": "ent_005",
+      "target": "ent_035",
+      "type": "cares_about",
+      "description": "Unboxing must explain the object.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_033",
+      "source": "ent_001",
+      "target": "ent_035",
+      "type": "cares_about",
+      "description": "Wants both scarcity and plant.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_034",
+      "source": "ent_007",
+      "target": "ent_035",
+      "type": "cares_about",
+      "description": "Messaging clarity in hooks.",
+      "weight": 0.55
+    },
+    {
+      "id": "rel_035",
+      "source": "ent_003",
+      "target": "ent_036",
+      "type": "owns",
+      "description": "Tests the real segment split and survey.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_036",
+      "source": "ent_007",
+      "target": "ent_036",
+      "type": "cares_about",
+      "description": "Targeting depends on segment.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_037",
+      "source": "ent_001",
+      "target": "ent_036",
+      "type": "cares_about",
+      "description": "Relies on his survey.",
+      "weight": 0.65
+    },
+    {
+      "id": "rel_038",
+      "source": "ent_009",
+      "target": "ent_036",
+      "type": "cares_about",
+      "description": "Gift buyers most exposed to delivery and refunds.",
+      "weight": 0.55
+    },
+    {
+      "id": "rel_039",
+      "source": "ent_010",
+      "target": "ent_037",
+      "type": "owns",
+      "description": "Commits a realistic delivery date.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_040",
+      "source": "ent_009",
+      "target": "ent_037",
+      "type": "owns_comms_for",
+      "description": "Sends order and shipping updates.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_041",
+      "source": "ent_012",
+      "target": "ent_037",
+      "type": "cares_about",
+      "description": "Delivery claims must be accurate.",
+      "weight": 0.5
+    },
+    {
+      "id": "rel_042",
+      "source": "ent_007",
+      "target": "ent_037",
+      "type": "cares_about",
+      "description": "Date on the reel and bio link.",
+      "weight": 0.5
+    },
+    {
+      "id": "rel_043",
+      "source": "ent_002",
+      "target": "ent_017",
+      "type": "facilitates",
+      "description": "Runs the session and owns the problem list.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_044",
+      "source": "ent_001",
+      "target": "ent_013",
+      "type": "leads",
+      "description": "Founder with the final call.",
+      "weight": 0.95
+    },
+    {
+      "id": "rel_045",
+      "source": "ent_008",
+      "target": "ent_001",
+      "type": "challenges",
+      "description": "Pushes the founder to show a face or real people to close the trust gap.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_046",
+      "source": "ent_001",
+      "target": "ent_008",
+      "type": "resists",
+      "description": "Wants to stay faceless for mystique.",
+      "weight": 0.75
+    },
+    {
+      "id": "rel_047",
+      "source": "ent_009",
+      "target": "ent_011",
+      "type": "opposes",
+      "description": "Wants generous refunds and replacements; Finance worries about cost.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_048",
+      "source": "ent_011",
+      "target": "ent_009",
+      "type": "pushes_back_on",
+      "description": "Models replacement cost before agreeing to a promise.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_049",
+      "source": "ent_003",
+      "target": "ent_001",
+      "type": "challenges",
+      "description": "Questions the unpublished founder survey and simulated numbers as evidence.",
+      "weight": 0.75
+    },
+    {
+      "id": "rel_050",
+      "source": "ent_003",
+      "target": "ent_007",
+      "type": "challenges",
+      "description": "Demands real conversion tests over vanity metrics.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_051",
+      "source": "ent_007",
+      "target": "ent_004",
+      "type": "clashes_with",
+      "description": "Aggressive hooks vs brand mystique.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_052",
+      "source": "ent_004",
+      "target": "ent_001",
+      "type": "debates_with",
+      "description": "Drop vs plant-gift identity.",
+      "weight": 0.65
+    },
+    {
+      "id": "rel_053",
+      "source": "ent_005",
+      "target": "ent_011",
+      "type": "competes_with",
+      "description": "Richer growing kit vs unit cost.",
+      "weight": 0.65
+    },
+    {
+      "id": "rel_054",
+      "source": "ent_005",
+      "target": "ent_010",
+      "type": "depends_on",
+      "description": "Packaging complexity vs hand-painting capacity.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_055",
+      "source": "ent_010",
+      "target": "ent_007",
+      "type": "pushes_back_on",
+      "description": "Will not let marketing promise dates ops cannot hit.",
+      "weight": 0.65
+    },
+    {
+      "id": "rel_056",
+      "source": "ent_012",
+      "target": "ent_007",
+      "type": "constrains",
+      "description": "Scarcity and urgency claims must be accurate.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_057",
+      "source": "ent_012",
+      "target": "ent_009",
+      "type": "advises",
+      "description": "Wording of refund promises (verify with a professional).",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_058",
+      "source": "ent_006",
+      "target": "ent_009",
+      "type": "allies_with",
+      "description": "Guide plus remedy as a combined dead-seed fix.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_059",
+      "source": "ent_006",
+      "target": "ent_005",
+      "type": "collaborates_with",
+      "description": "Growing kit and printed guide in the tin.",
+      "weight": 0.75
+    },
+    {
+      "id": "rel_060",
+      "source": "ent_006",
+      "target": "ent_001",
+      "type": "agrees_with",
+      "description": "No invented germination figure; pushes a real germination test instead.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_061",
+      "source": "ent_008",
+      "target": "ent_007",
+      "type": "allies_with",
+      "description": "Bloom and unboxing proof as funnel content.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_062",
+      "source": "ent_002",
+      "target": "ent_001",
+      "type": "pressures",
+      "description": "Forces the founder to name Archive 002 product and price on the roadmap.",
+      "weight": 0.65
+    },
+    {
+      "id": "rel_063",
+      "source": "ent_002",
+      "target": "ent_011",
+      "type": "consults",
+      "description": "Rough cost for each fix.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_064",
+      "source": "ent_011",
+      "target": "ent_010",
+      "type": "collaborates_with",
+      "description": "Preorder cash flow vs sourcing.",
+      "weight": 0.55
+    },
+    {
+      "id": "rel_065",
+      "source": "ent_001",
+      "target": "ent_025",
+      "type": "relies_on",
+      "description": "Uses survey to claim gift buyers lead.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_066",
+      "source": "ent_003",
+      "target": "ent_025",
+      "type": "questions",
+      "description": "Survey details UNKNOWN.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_067",
+      "source": "ent_003",
+      "target": "ent_027",
+      "type": "champions",
+      "description": "Owns the real-world test rule.",
+      "weight": 0.85
+    },
+    {
+      "id": "rel_068",
+      "source": "ent_011",
+      "target": "ent_026",
+      "type": "enforces",
+      "description": "Flags anything expensive.",
+      "weight": 0.85
+    },
+    {
+      "id": "rel_069",
+      "source": "ent_002",
+      "target": "ent_028",
+      "type": "owns",
+      "description": "Delivers the ranked list and 30-day plan.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_070",
+      "source": "ent_017",
+      "target": "ent_028",
+      "type": "produces",
+      "description": "Session output.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_071",
+      "source": "ent_016",
+      "target": "ent_017",
+      "type": "informs",
+      "description": "Report provides the agenda.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_072",
+      "source": "ent_014",
+      "target": "ent_016",
+      "type": "simulated_in",
+      "description": "Archive 001 reception was simulated.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_073",
+      "source": "ent_013",
+      "target": "ent_014",
+      "type": "released",
+      "description": "First drop.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_074",
+      "source": "ent_013",
+      "target": "ent_015",
+      "type": "plans",
+      "description": "Next drop about 8 weeks after Archive 001 ships.",
+      "weight": 0.85
+    },
+    {
+      "id": "rel_075",
+      "source": "ent_014",
+      "target": "ent_018",
+      "type": "contains",
+      "description": "Component.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_076",
+      "source": "ent_014",
+      "target": "ent_019",
+      "type": "contains",
+      "description": "Component.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_077",
+      "source": "ent_014",
+      "target": "ent_020",
+      "type": "contains",
+      "description": "Component.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_078",
+      "source": "ent_013",
+      "target": "ent_021",
+      "type": "sells_through",
+      "description": "Sole channel.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_079",
+      "source": "ent_007",
+      "target": "ent_021",
+      "type": "operates",
+      "description": "Runs reels and bio link.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_080",
+      "source": "ent_022",
+      "target": "ent_034",
+      "type": "experience",
+      "description": "Want legitimacy before buying.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_081",
+      "source": "ent_023",
+      "target": "ent_036",
+      "type": "experience",
+      "description": "Fragile repeat after dead plant.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_082",
+      "source": "ent_023",
+      "target": "ent_037",
+      "type": "worried_by",
+      "description": "Gift occasions need a date.",
+      "weight": 0.55
+    },
+    {
+      "id": "rel_083",
+      "source": "ent_024",
+      "target": "ent_032",
+      "type": "cite",
+      "description": "Faceless prepay objection.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_084",
+      "source": "ent_020",
+      "target": "ent_029",
+      "type": "causes",
+      "description": "Unknown germination drives dead plants.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_085",
+      "source": "ent_019",
+      "target": "ent_033",
+      "type": "causes",
+      "description": "Specs unknown.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_086",
+      "source": "ent_018",
+      "target": "ent_035",
+      "type": "causes",
+      "description": "Some see the tin as the product.",
+      "weight": 0.55
+    },
+    {
+      "id": "rel_087",
+      "source": "ent_029",
+      "target": "ent_015",
+      "type": "threatens",
+      "description": "Dead-seed owners leave the repeat pool.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_088",
+      "source": "ent_030",
+      "target": "ent_015",
+      "type": "threatens",
+      "description": "Most repeated blocker.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_089",
+      "source": "ent_031",
+      "target": "ent_015",
+      "type": "blocks",
+      "description": "Waiting on product and price.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_090",
+      "source": "ent_029",
+      "target": "ent_030",
+      "type": "compounds",
+      "description": "No remedy for dead seed.",
+      "weight": 0.65
+    },
+    {
+      "id": "rel_091",
+      "source": "ent_028",
+      "target": "ent_015",
+      "type": "prepares",
+      "description": "Must run before Archive 002.",
+      "weight": 0.8
+    }
+  ],
+  "context": {
+    "topic": "An internal product-led workshop where Preserve's 12-role team debates the 9 pain points from the first simulation, agrees fixes with owners, rough cost and real-world tests, and produces a ranked priority list and 30-day plan before Archive 002.",
+    "time_setting": "Late 2026, between Archive 001 and Archive 002 (about 8 weeks after Archive 001 ships); each round is one discussion beat in the meeting series",
+    "key_conflicts": [
+      "faceless mystique vs visible trust and proof",
+      "generous refunds and replacements vs thin unit economics and preorder cash",
+      "scarcity-led streetwear drop vs plant/gift product identity",
+      "speed to Archive 002 vs fixing fundamentals and testing with real people",
+      "LLM simulation hypotheses vs real customer evidence (UNKNOWNs stay unknown, only proposals)"
+    ]
+  }
+}
