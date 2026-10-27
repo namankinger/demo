@@ -1,7 +1,7 @@
 {
   "id": "sim_6ae0fd697403",
   "mode": "forecast",
-  "status": "analyzing",
+  "status": "simulating",
   "prompt": "Preserve Archive 001 reaction simulation (see mirofish_prompt.md)",
   "seed_files": [
     "preserve_seed.md"
@@ -20,7 +20,9 @@
       "crowd_groups": 3
     },
     "simulate": {
-      "status": "pending"
+      "status": "in_progress",
+      "current_round": 0,
+      "total_rounds": 40
     },
     "report": {
       "status": "pending"
