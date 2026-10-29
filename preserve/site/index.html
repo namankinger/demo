@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preserve: numbered objects that grow</title>
+<meta name="description" content="Preserve makes numbered, hand-painted objects with a marigold seed inside. Join the waitlist for Archive 002.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=gambarino@400&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e3e5dc; --surface:#d3d8cb; --ink:#1c2a1f; --muted:#3d4d41;
+  --accent:#e8860c; --accent-ink:#1c2a1f; --field:#1f3a2a; --field-ink:#e8ecdf;
+  --display:"Gambarino",Georgia,"Times New Roman",serif;
+  --text:"General Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --step-small:clamp(.8125rem,.79rem + .1vw,.875rem);
+  --step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);
+  --step-head:clamp(2.5rem,1rem + 4.7vw,5.25rem);
+  --margin:clamp(20px,3vw,40px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--step-body)/1.5 var(--text)}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.02em;line-height:.98;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);font:500 var(--step-body)/1 var(--text);padding:18px 28px;border:0;border-radius:0;text-decoration:none;cursor:pointer;transition:transform .2s var(--ease),background .2s}
+.btn:hover{transform:translateY(-2px)} .btn:active{transform:translateY(1px)}
+.btn.on-field{background:var(--bg);color:var(--ink)}
+
+.split{display:grid;grid-template-columns:47fr 53fr}
+.stage{position:sticky;top:0;height:100svh;background:var(--accent);display:grid;place-items:center;padding:var(--margin);overflow:hidden}
+.stage .tin{width:min(100%,64svh);height:auto;display:block}
+.col{min-width:0;padding-left:clamp(24px,4.5vw,72px);padding-right:var(--margin)}
+.nav{display:flex;gap:28px;justify-content:flex-end;flex-wrap:wrap;padding-top:32px;font-size:var(--step-small)}
+.nav a{text-decoration:none;font-weight:500}
+.nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.nav a.act{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px;text-decoration-color:var(--accent)}
+
+.hero{min-height:calc(100svh - 72px);display:flex;flex-direction:column;position:relative;padding-bottom:40px}
+.hero-body{margin-top:clamp(32px,8svh,96px);max-width:none}
+.hero h1{font-size:var(--step-head)}
+.hero .sub{font-size:var(--step-lead);line-height:1.3;margin-top:28px;max-width:26ch}
+.tryit{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px;align-items:end}
+.field label{display:block;font-weight:500;font-size:var(--step-small);margin-bottom:6px}
+.field input{font:400 var(--step-body)/1 var(--text);color:var(--ink);background:var(--surface);border:0;border-radius:0;padding:16px 18px;width:100%}
+.tryit .field{width:9.5rem}
+.note{font-size:var(--step-small);color:var(--muted);margin-top:14px;max-width:44ch}
+.hero::after{content:'preserve';position:absolute;left:calc(-1*clamp(24px,4.5vw,72px) - 8vw);bottom:56px;font:400 clamp(120px,12vw,200px)/.8 var(--display);letter-spacing:-.04em;white-space:nowrap;transform-origin:left bottom;transform:scale(var(--wm,1));pointer-events:none;color:var(--ink)}
+
+section{padding-block:clamp(96px,14svh,200px)}
+.intro .wrap{max-width:34ch;margin-left:6%}
+.intro p+p{margin-top:1.1em}
+.intro p:first-child{font-weight:500;font-size:var(--step-lead);line-height:1.3}
+.intro p:not(:first-child){color:var(--ink)}
+
+.showcase h2,.faq h2{font-size:clamp(1.75rem,1.4rem + 1.2vw,2.5rem)}
+.tabs{display:flex;gap:26px;margin:28px 0 24px;flex-wrap:wrap}
+.tabs button{font:500 var(--step-body)/1 var(--text);background:none;border:0;padding:8px 0;color:var(--muted);cursor:pointer;border-radius:0}
+.tabs button[aria-selected=true]{color:var(--ink);text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:8px;text-decoration-color:var(--accent)}
+.plate{aspect-ratio:10/7;background:var(--surface);overflow:hidden}
+.plate svg{width:100%;height:100%;display:block}
+.plate [role=tabpanel]{height:100%}
+.plate [hidden]{display:none}
+.showcase .desc{margin-top:28px;max-width:34ch}
+.showcase .desc h3{font-size:clamp(1.75rem,1.4rem + 1.2vw,2.5rem);margin-bottom:12px}
+
+.faq .items{margin-top:32px;max-width:46ch}
+.faq p+p{margin-top:20px}
+.faq b{font-weight:500}
+.undecided{background:var(--field);color:var(--field-ink);margin-top:56px;padding:36px}
+.undecided h3{font-size:clamp(1.5rem,1.2rem + 1vw,2.1rem);margin-bottom:14px}
+
+.cta{background:var(--field);color:var(--field-ink);padding-block:clamp(96px,16svh,200px);padding-inline:var(--margin)}
+.cta .inner{display:grid;grid-template-columns:1fr 1fr;gap:var(--margin);align-items:end;max-width:1500px;margin:0 auto}
+.cta h2{font-size:clamp(2.5rem,1.2rem + 5vw,6rem);line-height:.92}
+.cta .form{max-width:44ch}
+.cta .form p.lead{font-size:var(--step-lead);line-height:1.3;margin-bottom:28px}
+.cta .field input{background:var(--bg)}
+.cta .field+.field{margin-top:18px}
+.cta .btn{margin-top:26px}
+.cta .note{color:var(--field-ink)}
+#status{margin-top:16px;font-size:var(--step-small);min-height:1.5em}
+
+footer{display:grid;grid-template-columns:1fr 1fr;min-height:100svh;background:var(--bg)}
+footer .pic{overflow:hidden;background:var(--accent)} footer .pic svg{width:100%;height:100%;display:block}
+footer .menu{padding:clamp(40px,6vw,88px) var(--margin) var(--margin) clamp(24px,6vw,96px);display:flex;flex-direction:column}
+footer .menu .mark{font:400 var(--step-lead)/1 var(--display)}
+footer ul{list-style:none;margin:80px 0 0;padding:0}
+footer li+li{margin-top:22px}
+footer li a{font:400 clamp(1.75rem,2.6vw,2.6rem)/1 var(--display);text-decoration:none;display:inline-block;transition:transform .25s var(--ease)}
+footer ul:hover a{color:var(--muted)} footer ul a:hover{color:var(--ink);transform:translateX(12px)}
+footer .legal{margin-top:auto;padding-top:48px;font-size:var(--step-small)}
+
+.js .rise{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--i,0)*80ms)}
+.js .rise.in{opacity:1;transform:none}
+.tin{transition:transform .5s var(--ease)} .stage:hover .tin{transform:rotate(-3deg) scale(1.02)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rise{opacity:1;transform:none;transition:none}.tin,.btn{transition:none}}
+
+@media (max-width:820px){
+  .split{display:block}
+  .stage{position:relative;height:58svh}
+  .stage .tin{width:min(100%,48svh)}
+  .col{padding-left:20px;padding-right:20px}
+  .nav{gap:18px;padding-top:20px}
+  .hero{min-height:auto;padding-bottom:140px}
+  .hero::after{left:-4px;font-size:21vw;bottom:32px}
+  .intro .wrap{margin-left:0;max-width:78%}
+  .cta .inner{grid-template-columns:1fr}
+  footer{grid-template-columns:1fr}
+  footer .pic{height:50svh}
+  footer .menu{padding:32px 20px}
+  footer ul{margin-top:36px}
+  footer li a{font-size:8vw}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<div class="split">
+  <div class="stage" aria-hidden="false"><svg class="tin" viewBox="-300 -300 600 600" role="img" aria-label="Top of a hand-painted tin with a marigold and a number">
+  <circle r="290" fill="#14281b"/><circle r="268" fill="#1f3a2a"/>
+  <g transform="translate(0 -40)"><g transform="scale(1)">
+  <g><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(160)" fill="#3f7a4f"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(20)" fill="#2f6240"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(95)" fill="#3f7a4f"/></g>
+  <g><ellipse cx="0" cy="-90.72239743122944" rx="29.693270983264444" ry="90.72239743122944" transform="rotate(-3.0)" fill="#c9650a"/><ellipse cx="0" cy="-88.11944100163852" rx="31.202828686639123" ry="88.11944100163852" transform="rotate(20.8)" fill="#c9650a"/><ellipse cx="0" cy="-88.42792104586397" rx="32.58146401330897" ry="88.42792104586397" transform="rotate(44.0)" fill="#c9650a"/><ellipse cx="0" cy="-87.50939777703462" rx="31.84267054774923" ry="87.50939777703462" transform="rotate(67.8)" fill="#c9650a"/><ellipse cx="0" cy="-81.49126492221434" rx="30.220234960932395" ry="81.49126492221434" transform="rotate(91.9)" fill="#c9650a"/><ellipse cx="0" cy="-87.69342136415347" rx="28.2341012815638" ry="87.69342136415347" transform="rotate(113.7)" fill="#c9650a"/><ellipse cx="0" cy="-84.56338101176702" rx="33.61889129146882" ry="84.56338101176702" transform="rotate(136.1)" fill="#c9650a"/><ellipse cx="0" cy="-79.87057639997013" rx="31.080943871187483" ry="79.87057639997013" transform="rotate(159.3)" fill="#c9650a"/><ellipse cx="0" cy="-87.56361962620338" rx="31.891276258878076" ry="87.56361962620338" transform="rotate(182.5)" fill="#c9650a"/><ellipse cx="0" cy="-90.60313877221343" rx="33.53167179889589" ry="90.60313877221343" transform="rotate(203.0)" fill="#c9650a"/><ellipse cx="0" cy="-82.76125337805658" rx="33.09045992502498" ry="82.76125337805658" transform="rotate(224.2)" fill="#c9650a"/><ellipse cx="0" cy="-80.2749954125262" rx="29.745365414044524" ry="80.2749954125262" transform="rotate(246.5)" fill="#c9650a"/><ellipse cx="0" cy="-82.21027826257529" rx="33.71102253217764" ry="82.21027826257529" transform="rotate(269.6)" fill="#c9650a"/><ellipse cx="0" cy="-88.11810190915973" rx="33.34268242169296" ry="88.11810190915973" transform="rotate(292.8)" fill="#c9650a"/><ellipse cx="0" cy="-81.91947549046924" rx="31.37590614430416" ry="81.91947549046924" transform="rotate(312.4)" fill="#c9650a"/><ellipse cx="0" cy="-83.93162516324392" rx="29.096289380172404" ry="83.93162516324392" transform="rotate(337.6)" fill="#c9650a"/><ellipse cx="0" cy="-64.08587342871627" rx="28.219687981773024" ry="64.08587342871627" transform="rotate(13.5)" fill="#e8860c"/><ellipse cx="0" cy="-70.81520823470093" rx="31.46121771631819" ry="70.81520823470093" transform="rotate(35.8)" fill="#e8860c"/><ellipse cx="0" cy="-65.30767644810848" rx="28.45260575029655" ry="65.30767644810848" transform="rotate(62.5)" fill="#e8860c"/><ellipse cx="0" cy="-67.5036020950338" rx="28.558911698432134" ry="67.5036020950338" transform="rotate(86.8)" fill="#e8860c"/><ellipse cx="0" cy="-69.349529305822" rx="29.661453723889522" ry="69.349529305822" transform="rotate(112.9)" fill="#e8860c"/><ellipse cx="0" cy="-73.48770241674396" rx="28.755453410304828" ry="73.48770241674396" transform="rotate(138.0)" fill="#e8860c"/><ellipse cx="0" cy="-70.49183811633468" rx="29.779228548369947" ry="70.49183811633468" transform="rotate(167.5)" fill="#e8860c"/><ellipse cx="0" cy="-69.05464428542864" rx="30.096171209679994" ry="69.05464428542864" transform="rotate(191.1)" fill="#e8860c"/><ellipse cx="0" cy="-67.85981191637917" rx="30.207744184000298" ry="67.85981191637917" transform="rotate(219.4)" fill="#e8860c"/><ellipse cx="0" cy="-69.95893083181183" rx="28.133409738742472" ry="69.95893083181183" transform="rotate(240.9)" fill="#e8860c"/><ellipse cx="0" cy="-67.80140737317568" rx="30.709382390328397" ry="67.80140737317568" transform="rotate(267.1)" fill="#e8860c"/><ellipse cx="0" cy="-64.70625595440448" rx="30.851285228389912" ry="64.70625595440448" transform="rotate(296.1)" fill="#e8860c"/><ellipse cx="0" cy="-67.9711153347097" rx="26.990715280962508" ry="67.9711153347097" transform="rotate(317.0)" fill="#e8860c"/><ellipse cx="0" cy="-74.47810488847928" rx="27.376031874341905" ry="74.47810488847928" transform="rotate(342.8)" fill="#e8860c"/><ellipse cx="0" cy="-49.0401834430919" rx="24.78553368117918" ry="49.0401834430919" transform="rotate(5.8)" fill="#f2b035"/><ellipse cx="0" cy="-48.98645504647235" rx="27.10935460385371" ry="48.98645504647235" transform="rotate(35.6)" fill="#f2b035"/><ellipse cx="0" cy="-55.249579641693074" rx="26.926104528562217" ry="55.249579641693074" transform="rotate(67.3)" fill="#f2b035"/><ellipse cx="0" cy="-54.17258353707036" rx="23.87710789748333" ry="54.17258353707036" transform="rotate(97.4)" fill="#f2b035"/><ellipse cx="0" cy="-49.905805476971814" rx="22.8801991978568" ry="49.905805476971814" transform="rotate(122.1)" fill="#f2b035"/><ellipse cx="0" cy="-52.972109540706555" rx="23.65688140325103" ry="52.972109540706555" transform="rotate(152.0)" fill="#f2b035"/><ellipse cx="0" cy="-51.91148213307908" rx="25.937626598606645" ry="51.91148213307908" transform="rotate(186.4)" fill="#f2b035"/><ellipse cx="0" cy="-55.17896332188462" rx="23.675811847753735" ry="55.17896332188462" transform="rotate(213.4)" fill="#f2b035"/><ellipse cx="0" cy="-55.2803870328145" rx="23.09186328928539" ry="55.2803870328145" transform="rotate(244.2)" fill="#f2b035"/><ellipse cx="0" cy="-47.86470851929146" rx="27.06495416563235" ry="47.86470851929146" transform="rotate(274.9)" fill="#f2b035"/><ellipse cx="0" cy="-55.51201372623072" rx="22.604986033451272" ry="55.51201372623072" transform="rotate(305.8)" fill="#f2b035"/><ellipse cx="0" cy="-49.40527517659835" rx="27.343685750311096" ry="49.40527517659835" transform="rotate(337.4)" fill="#f2b035"/><ellipse cx="0" cy="-36.0045035473092" rx="18.111831174610106" ry="36.0045035473092" transform="rotate(20.4)" fill="#f7cf6a"/><ellipse cx="0" cy="-33.370033956118874" rx="19.244761046741512" ry="33.370033956118874" transform="rotate(58.3)" fill="#f7cf6a"/><ellipse cx="0" cy="-36.50877157948388" rx="19.762671118817607" ry="36.50877157948388" transform="rotate(97.3)" fill="#f7cf6a"/><ellipse cx="0" cy="-34.98984847347711" rx="17.22437788803334" ry="34.98984847347711" transform="rotate(141.3)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.346565850985506" rx="17.596889026880678" ry="37.346565850985506" transform="rotate(177.7)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.20092863338111" rx="17.240831553256527" ry="37.20092863338111" transform="rotate(221.1)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.02365439013749" rx="20.872405920444244" ry="37.02365439013749" transform="rotate(262.3)" fill="#f7cf6a"/><ellipse cx="0" cy="-36.48335513597511" rx="18.694487012082007" ry="36.48335513597511" transform="rotate(302.7)" fill="#f7cf6a"/><ellipse cx="0" cy="-36.27492951791498" rx="20.45241944079866" ry="36.27492951791498" transform="rotate(338.5)" fill="#f7cf6a"/></g>
+  <circle r="26" fill="#7a3d0a"/><circle r="12" fill="#c9650a"/>
+</g></g>
+  <text id="tin-number" x="0" y="236" text-anchor="middle" font-size="84" fill="#e8ecdf" font-family="var(--display)">047</text>
+</svg></div>
+  <div class="col">
+    <nav class="nav" aria-label="Main">
+      <a href="#about">What it is</a><a href="#box">The box</a><a href="#questions">Questions</a><a class="act" href="#waitlist">Join the waitlist</a>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-body">
+        <h1 class="rise" style="--i:0">Numbered objects that grow.</h1>
+        <p class="sub rise" style="--i:1">Archive 002 is being planned. Join the waitlist to hear about it first.</p>
+        <div class="tryit rise" style="--i:2">
+          <div class="field"><label for="try-number">Try a number</label><input id="try-number" type="number" min="1" max="999" inputmode="numeric" value="47"></div>
+          <a class="btn" href="#waitlist">Join the waitlist</a>
+        </div>
+        <p class="note rise" style="--i:3">The number on the tin changes as you type. How Archive 002 will be numbered has not been decided.</p>
+      </div>
+    </header>
+
+    <section class="intro" id="about">
+      <div class="wrap">
+        <p class="rise" style="--i:0">Preserve makes numbered, limited objects, painted by hand.</p>
+        <p class="rise" style="--i:1">Archive 001 was 100 pieces, numbered 001 to 100. Each one came as a hand-painted tin, a T-shirt and a marigold seed, and was sold as a preorder through Instagram.</p>
+        <p class="rise" style="--i:2">The idea is simple. A thing with a number on it is yours alone, and a seed in the box means it keeps changing after it arrives.</p>
+        <p class="rise" style="--i:3">Archive 002 has no date yet. <a href="#waitlist">The waitlist</a> is where you will hear.</p>
+      </div>
+    </section>
+
+    <section class="showcase" id="box">
+      <h2 class="rise">What was in the box</h2>
+      <div class="tabs rise" role="tablist" aria-label="Parts of an Archive">
+        <button role="tab" id="t-tin" aria-selected="true" aria-controls="p-tin">The tin</button>
+        <button role="tab" id="t-tee" aria-selected="false" aria-controls="p-tee" tabindex="-1">The T-shirt</button>
+        <button role="tab" id="t-seed" aria-selected="false" aria-controls="p-seed" tabindex="-1">The seed</button>
+      </div>
+      <div class="plate rise">
+        <div role="tabpanel" id="p-tin" aria-labelledby="t-tin"><svg viewBox="0 0 600 420" role="img" aria-label="Drawing of a round tin from the side, with a painted band of marigolds">
+  <rect width="600" height="420" fill="#d3d8cb"/>
+  <rect x="120" y="150" width="360" height="190" fill="#1f3a2a"/>
+  <rect x="104" y="120" width="392" height="46" fill="#14281b"/>
+  <ellipse cx="300" cy="352" rx="200" ry="22" fill="#c4c9bb"/>
+  <g transform="translate(180 245) scale(.2)"><g transform="scale(1)">
+  <g><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(160)" fill="#3f7a4f"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(20)" fill="#2f6240"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(95)" fill="#3f7a4f"/></g>
+  <g><ellipse cx="0" cy="-81.39256895482194" rx="30.410281389164872" ry="81.39256895482194" transform="rotate(-0.6)" fill="#c9650a"/><ellipse cx="0" cy="-85.799356194399" rx="30.078916723271327" ry="85.799356194399" transform="rotate(24.8)" fill="#c9650a"/><ellipse cx="0" cy="-88.19453539047136" rx="29.97714025316627" ry="88.19453539047136" transform="rotate(45.7)" fill="#c9650a"/><ellipse cx="0" cy="-83.9494318627517" rx="29.131482872009038" ry="83.9494318627517" transform="rotate(68.9)" fill="#c9650a"/><ellipse cx="0" cy="-91.60255372179792" rx="34.06371279385114" ry="91.60255372179792" transform="rotate(88.9)" fill="#c9650a"/><ellipse cx="0" cy="-90.06180098460139" rx="33.59358226568139" ry="90.06180098460139" transform="rotate(113.3)" fill="#c9650a"/><ellipse cx="0" cy="-86.97492957114007" rx="28.739417157061126" ry="86.97492957114007" transform="rotate(133.2)" fill="#c9650a"/><ellipse cx="0" cy="-85.78027554358368" rx="32.68268957854374" ry="85.78027554358368" transform="rotate(157.5)" fill="#c9650a"/><ellipse cx="0" cy="-84.75618166558267" rx="29.060336130652733" ry="84.75618166558267" transform="rotate(182.7)" fill="#c9650a"/><ellipse cx="0" cy="-80.45897611261299" rx="32.00819507758515" ry="80.45897611261299" transform="rotate(202.2)" fill="#c9650a"/><ellipse cx="0" cy="-85.83670444732378" rx="31.04177987200291" ry="85.83670444732378" transform="rotate(225.1)" fill="#c9650a"/><ellipse cx="0" cy="-83.12936347691779" rx="32.555450783416376" ry="83.12936347691779" transform="rotate(249.0)" fill="#c9650a"/><ellipse cx="0" cy="-82.26417367759356" rx="31.258484981748502" ry="82.26417367759356" transform="rotate(267.2)" fill="#c9650a"/><ellipse cx="0" cy="-88.03185317452618" rx="29.703609295656726" ry="88.03185317452618" transform="rotate(290.7)" fill="#c9650a"/><ellipse cx="0" cy="-87.17018127710102" rx="30.5608595785037" ry="87.17018127710102" transform="rotate(313.4)" fill="#c9650a"/><ellipse cx="0" cy="-88.71119122882895" rx="33.00177162899718" ry="88.71119122882895" transform="rotate(335.0)" fill="#c9650a"/><ellipse cx="0" cy="-73.52660422345932" rx="30.049245049594546" ry="73.52660422345932" transform="rotate(13.5)" fill="#e8860c"/><ellipse cx="0" cy="-63.75835617666988" rx="30.519485098318892" ry="63.75835617666988" transform="rotate(39.5)" fill="#e8860c"/><ellipse cx="0" cy="-71.47337395853987" rx="31.309556416705977" ry="71.47337395853987" transform="rotate(63.0)" fill="#e8860c"/><ellipse cx="0" cy="-64.9809987616823" rx="26.565569569573537" ry="64.9809987616823" transform="rotate(85.4)" fill="#e8860c"/><ellipse cx="0" cy="-64.41670166238058" rx="26.15507879129382" ry="64.41670166238058" transform="rotate(111.5)" fill="#e8860c"/><ellipse cx="0" cy="-73.92106145085816" rx="27.213665446040064" ry="73.92106145085816" transform="rotate(140.2)" fill="#e8860c"/><ellipse cx="0" cy="-65.71248474008985" rx="30.01448865966615" ry="65.71248474008985" transform="rotate(163.1)" fill="#e8860c"/><ellipse cx="0" cy="-68.51818249996667" rx="31.86494621837742" ry="68.51818249996667" transform="rotate(189.5)" fill="#e8860c"/><ellipse cx="0" cy="-70.91823816005058" rx="30.5911942596972" ry="70.91823816005058" transform="rotate(216.2)" fill="#e8860c"/><ellipse cx="0" cy="-68.07746744884061" rx="26.454836363324354" ry="68.07746744884061" transform="rotate(241.8)" fill="#e8860c"/><ellipse cx="0" cy="-72.39632516151123" rx="31.751316957572158" ry="72.39632516151123" transform="rotate(266.5)" fill="#e8860c"/><ellipse cx="0" cy="-73.6979339746283" rx="29.050598473917045" ry="73.6979339746283" transform="rotate(291.8)" fill="#e8860c"/><ellipse cx="0" cy="-65.7998008498176" rx="29.59517397912926" ry="65.7998008498176" transform="rotate(317.3)" fill="#e8860c"/><ellipse cx="0" cy="-64.34199148307647" rx="27.681790324664576" ry="64.34199148307647" transform="rotate(343.3)" fill="#e8860c"/><ellipse cx="0" cy="-52.46680543012303" rx="24.903163508234154" ry="52.46680543012303" transform="rotate(5.9)" fill="#f2b035"/><ellipse cx="0" cy="-48.465924890630845" rx="24.56708944266061" ry="48.465924890630845" transform="rotate(38.0)" fill="#f2b035"/><ellipse cx="0" cy="-47.874655274168894" rx="22.53076499795111" ry="47.874655274168894" transform="rotate(63.9)" fill="#f2b035"/><ellipse cx="0" cy="-48.59998981988058" rx="23.671215584581354" ry="48.59998981988058" transform="rotate(94.5)" fill="#f2b035"/><ellipse cx="0" cy="-54.3084640881738" rx="26.31966943331979" ry="54.3084640881738" transform="rotate(127.5)" fill="#f2b035"/><ellipse cx="0" cy="-54.95309380236692" rx="27.31222138265717" ry="54.95309380236692" transform="rotate(154.6)" fill="#f2b035"/><ellipse cx="0" cy="-53.34652230608581" rx="25.360816336637743" ry="53.34652230608581" transform="rotate(186.8)" fill="#f2b035"/><ellipse cx="0" cy="-51.22626374432178" rx="24.984826211577666" ry="51.22626374432178" transform="rotate(214.1)" fill="#f2b035"/><ellipse cx="0" cy="-52.56098084520595" rx="26.10881332708933" ry="52.56098084520595" transform="rotate(245.0)" fill="#f2b035"/><ellipse cx="0" cy="-53.10502439893085" rx="26.1448754992545" ry="53.10502439893085" transform="rotate(276.0)" fill="#f2b035"/><ellipse cx="0" cy="-54.87192135423046" rx="27.44122629283985" ry="54.87192135423046" transform="rotate(307.3)" fill="#f2b035"/><ellipse cx="0" cy="-51.892309398451964" rx="27.286093619086827" ry="51.892309398451964" transform="rotate(334.6)" fill="#f2b035"/><ellipse cx="0" cy="-34.20352493580595" rx="17.401011632895568" ry="34.20352493580595" transform="rotate(22.9)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.14284327521121" rx="19.7918429650794" ry="37.14284327521121" transform="rotate(59.1)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.54903357129034" rx="20.09062217343162" ry="37.54903357129034" transform="rotate(101.4)" fill="#f7cf6a"/><ellipse cx="0" cy="-33.533710448319894" rx="20.134235476252734" ry="33.533710448319894" transform="rotate(138.2)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.32713042252098" rx="20.14068624611976" ry="37.32713042252098" transform="rotate(177.6)" fill="#f7cf6a"/><ellipse cx="0" cy="-36.184185214333326" rx="19.13632316795938" ry="36.184185214333326" transform="rotate(220.8)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.08348634358658" rx="19.240877019027657" ry="37.08348634358658" transform="rotate(259.7)" fill="#f7cf6a"/><ellipse cx="0" cy="-33.71526418808627" rx="19.70924907690345" ry="33.71526418808627" transform="rotate(302.2)" fill="#f7cf6a"/><ellipse cx="0" cy="-34.41247397466213" rx="17.812562527839358" ry="34.41247397466213" transform="rotate(339.6)" fill="#f7cf6a"/></g>
+  <circle r="26" fill="#7a3d0a"/><circle r="12" fill="#c9650a"/>
+</g></g>
+  <g transform="translate(300 245) scale(.2)"><g transform="scale(1)">
+  <g><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(160)" fill="#3f7a4f"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(20)" fill="#2f6240"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(95)" fill="#3f7a4f"/></g>
+  <g><ellipse cx="0" cy="-81.34765420590884" rx="33.47281470595525" ry="81.34765420590884" transform="rotate(0.5)" fill="#c9650a"/><ellipse cx="0" cy="-82.7967327265985" rx="32.13375020838983" ry="82.7967327265985" transform="rotate(24.4)" fill="#c9650a"/><ellipse cx="0" cy="-79.77654454930524" rx="29.80752125545755" ry="79.77654454930524" transform="rotate(47.3)" fill="#c9650a"/><ellipse cx="0" cy="-78.21790876836418" rx="28.717246570632444" ry="78.21790876836418" transform="rotate(70.0)" fill="#c9650a"/><ellipse cx="0" cy="-78.49348621978122" rx="32.1957319374642" ry="78.49348621978122" transform="rotate(89.4)" fill="#c9650a"/><ellipse cx="0" cy="-80.5524771760928" rx="29.214718475525604" ry="80.5524771760928" transform="rotate(114.9)" fill="#c9650a"/><ellipse cx="0" cy="-87.71779510561275" rx="28.986066779906896" ry="87.71779510561275" transform="rotate(137.7)" fill="#c9650a"/><ellipse cx="0" cy="-86.72155748853532" rx="27.99879417954888" ry="86.72155748853532" transform="rotate(155.2)" fill="#c9650a"/><ellipse cx="0" cy="-86.24554145748056" rx="32.55696400201738" ry="86.24554145748056" transform="rotate(181.9)" fill="#c9650a"/><ellipse cx="0" cy="-82.70532049336718" rx="32.33187489250297" ry="82.70532049336718" transform="rotate(200.3)" fill="#c9650a"/><ellipse cx="0" cy="-85.65065743078043" rx="31.546803131255693" ry="85.65065743078043" transform="rotate(227.7)" fill="#c9650a"/><ellipse cx="0" cy="-87.75385123787163" rx="32.44868238463471" ry="87.75385123787163" transform="rotate(249.2)" fill="#c9650a"/><ellipse cx="0" cy="-79.56351621922269" rx="28.181323393379024" ry="79.56351621922269" transform="rotate(270.6)" fill="#c9650a"/><ellipse cx="0" cy="-81.25838659659884" rx="31.503079413810315" ry="81.25838659659884" transform="rotate(293.2)" fill="#c9650a"/><ellipse cx="0" cy="-81.23333326793897" rx="31.744106790537067" ry="81.23333326793897" transform="rotate(313.5)" fill="#c9650a"/><ellipse cx="0" cy="-89.25449258641083" rx="29.38476314725576" ry="89.25449258641083" transform="rotate(338.3)" fill="#c9650a"/><ellipse cx="0" cy="-64.06243976940515" rx="30.105995061158204" ry="64.06243976940515" transform="rotate(13.4)" fill="#e8860c"/><ellipse cx="0" cy="-72.22336184804485" rx="29.9259931630576" ry="72.22336184804485" transform="rotate(36.2)" fill="#e8860c"/><ellipse cx="0" cy="-64.63537995645561" rx="31.43291515099486" ry="64.63537995645561" transform="rotate(64.3)" fill="#e8860c"/><ellipse cx="0" cy="-72.56543650096535" rx="28.564617391612668" ry="72.56543650096535" transform="rotate(88.1)" fill="#e8860c"/><ellipse cx="0" cy="-72.20829818156002" rx="30.317365704764317" ry="72.20829818156002" transform="rotate(116.1)" fill="#e8860c"/><ellipse cx="0" cy="-72.95414889530937" rx="27.203514863692" ry="72.95414889530937" transform="rotate(142.0)" fill="#e8860c"/><ellipse cx="0" cy="-65.18662834984559" rx="26.82640579330102" ry="65.18662834984559" transform="rotate(166.6)" fill="#e8860c"/><ellipse cx="0" cy="-74.02081652998031" rx="26.427521050594525" ry="74.02081652998031" transform="rotate(193.7)" fill="#e8860c"/><ellipse cx="0" cy="-66.37215598695546" rx="31.55624112414953" ry="66.37215598695546" transform="rotate(214.2)" fill="#e8860c"/><ellipse cx="0" cy="-74.04066749051243" rx="27.706827504284135" ry="74.04066749051243" transform="rotate(244.6)" fill="#e8860c"/><ellipse cx="0" cy="-63.80874320261588" rx="28.82505769176644" ry="63.80874320261588" transform="rotate(266.3)" fill="#e8860c"/><ellipse cx="0" cy="-65.04290397545458" rx="27.97402805233096" ry="65.04290397545458" transform="rotate(294.2)" fill="#e8860c"/><ellipse cx="0" cy="-65.98336448957369" rx="26.41888245806046" ry="65.98336448957369" transform="rotate(319.5)" fill="#e8860c"/><ellipse cx="0" cy="-64.5123548528889" rx="29.750223960285176" ry="64.5123548528889" transform="rotate(342.6)" fill="#e8860c"/><ellipse cx="0" cy="-54.563882784398224" rx="26.140599387530518" ry="54.563882784398224" transform="rotate(4.8)" fill="#f2b035"/><ellipse cx="0" cy="-53.667211781175446" rx="24.4401479661186" ry="53.667211781175446" transform="rotate(35.1)" fill="#f2b035"/><ellipse cx="0" cy="-55.87078786419276" rx="26.353145124787996" ry="55.87078786419276" transform="rotate(65.7)" fill="#f2b035"/><ellipse cx="0" cy="-53.759889333024574" rx="25.516839028809613" ry="53.759889333024574" transform="rotate(97.8)" fill="#f2b035"/><ellipse cx="0" cy="-49.26423897183698" rx="22.827163259651122" ry="49.26423897183698" transform="rotate(126.8)" fill="#f2b035"/><ellipse cx="0" cy="-53.22071442079764" rx="24.655811505930412" ry="53.22071442079764" transform="rotate(156.4)" fill="#f2b035"/><ellipse cx="0" cy="-51.05943676889848" rx="24.972220478799297" ry="51.05943676889848" transform="rotate(185.3)" fill="#f2b035"/><ellipse cx="0" cy="-48.39199967678264" rx="22.89577384963435" ry="48.39199967678264" transform="rotate(212.7)" fill="#f2b035"/><ellipse cx="0" cy="-50.70732344313866" rx="23.50066636502774" ry="50.70732344313866" transform="rotate(244.1)" fill="#f2b035"/><ellipse cx="0" cy="-48.88355293292718" rx="22.76090367010837" ry="48.88355293292718" transform="rotate(275.8)" fill="#f2b035"/><ellipse cx="0" cy="-54.79364752318414" rx="26.847308987913333" ry="54.79364752318414" transform="rotate(302.0)" fill="#f2b035"/><ellipse cx="0" cy="-54.231018482144464" rx="24.091123438715528" ry="54.231018482144464" transform="rotate(332.3)" fill="#f2b035"/><ellipse cx="0" cy="-37.28581316186386" rx="20.127657766839327" ry="37.28581316186386" transform="rotate(19.4)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.762750683335014" rx="17.88085576490539" ry="37.762750683335014" transform="rotate(57.1)" fill="#f7cf6a"/><ellipse cx="0" cy="-34.594346759093156" rx="17.226200767665265" ry="34.594346759093156" transform="rotate(100.9)" fill="#f7cf6a"/><ellipse cx="0" cy="-36.429822196545935" rx="19.964696057170954" ry="36.429822196545935" transform="rotate(138.0)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.00227021724091" rx="20.191260078312485" ry="37.00227021724091" transform="rotate(178.5)" fill="#f7cf6a"/><ellipse cx="0" cy="-34.771694753398975" rx="18.23573882697883" ry="34.771694753398975" transform="rotate(218.9)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.1365664423148" rx="20.4061329897056" ry="37.1365664423148" transform="rotate(258.5)" fill="#f7cf6a"/><ellipse cx="0" cy="-34.99145912918796" rx="20.39350360636297" ry="34.99145912918796" transform="rotate(301.1)" fill="#f7cf6a"/><ellipse cx="0" cy="-36.75335633258957" rx="19.990634100926403" ry="36.75335633258957" transform="rotate(341.9)" fill="#f7cf6a"/></g>
+  <circle r="26" fill="#7a3d0a"/><circle r="12" fill="#c9650a"/>
+</g></g>
+  <g transform="translate(420 245) scale(.2)"><g transform="scale(1)">
+  <g><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(160)" fill="#3f7a4f"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(20)" fill="#2f6240"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(95)" fill="#3f7a4f"/></g>
+  <g><ellipse cx="0" cy="-87.60217060959069" rx="29.66947789861331" ry="87.60217060959069" transform="rotate(2.8)" fill="#c9650a"/><ellipse cx="0" cy="-82.61076636706049" rx="33.25676862874849" ry="82.61076636706049" transform="rotate(23.8)" fill="#c9650a"/><ellipse cx="0" cy="-89.69664758308635" rx="31.982849954386637" ry="89.69664758308635" transform="rotate(43.0)" fill="#c9650a"/><ellipse cx="0" cy="-84.55033152399135" rx="32.833524049973825" ry="84.55033152399135" transform="rotate(69.4)" fill="#c9650a"/><ellipse cx="0" cy="-78.7787560391141" rx="29.337282810377555" ry="78.7787560391141" transform="rotate(92.0)" fill="#c9650a"/><ellipse cx="0" cy="-78.51766850851368" rx="31.480783827500787" ry="78.51766850851368" transform="rotate(110.7)" fill="#c9650a"/><ellipse cx="0" cy="-86.72951787138801" rx="33.19136466127418" ry="86.72951787138801" transform="rotate(136.9)" fill="#c9650a"/><ellipse cx="0" cy="-89.26255853393235" rx="29.186171673930332" ry="89.26255853393235" transform="rotate(159.7)" fill="#c9650a"/><ellipse cx="0" cy="-84.45208844163088" rx="30.293582252782578" ry="84.45208844163088" transform="rotate(180.4)" fill="#c9650a"/><ellipse cx="0" cy="-88.41478190189916" rx="31.109149732258704" ry="88.41478190189916" transform="rotate(202.7)" fill="#c9650a"/><ellipse cx="0" cy="-84.99574753101717" rx="29.417520117255638" ry="84.99574753101717" transform="rotate(224.3)" fill="#c9650a"/><ellipse cx="0" cy="-88.69458228838377" rx="29.74382568897858" ry="88.69458228838377" transform="rotate(248.7)" fill="#c9650a"/><ellipse cx="0" cy="-86.55044343003559" rx="31.320361571302808" ry="86.55044343003559" transform="rotate(268.5)" fill="#c9650a"/><ellipse cx="0" cy="-85.92960678959713" rx="29.86089258126956" ry="85.92960678959713" transform="rotate(295.1)" fill="#c9650a"/><ellipse cx="0" cy="-86.00107380440508" rx="31.842211025367586" ry="86.00107380440508" transform="rotate(315.6)" fill="#c9650a"/><ellipse cx="0" cy="-80.39630146501413" rx="29.194123489267252" ry="80.39630146501413" transform="rotate(337.9)" fill="#c9650a"/><ellipse cx="0" cy="-67.16151120714915" rx="29.77693655997372" ry="67.16151120714915" transform="rotate(8.7)" fill="#e8860c"/><ellipse cx="0" cy="-70.59086436997674" rx="28.357726807453542" ry="70.59086436997674" transform="rotate(39.0)" fill="#e8860c"/><ellipse cx="0" cy="-67.87585094023302" rx="26.82854750721182" ry="67.87585094023302" transform="rotate(61.5)" fill="#e8860c"/><ellipse cx="0" cy="-64.06624001053453" rx="28.861229249258166" ry="64.06624001053453" transform="rotate(86.1)" fill="#e8860c"/><ellipse cx="0" cy="-64.48936763452802" rx="29.77849949024548" ry="64.48936763452802" transform="rotate(113.1)" fill="#e8860c"/><ellipse cx="0" cy="-68.53073236372822" rx="26.677287648980176" ry="68.53073236372822" transform="rotate(139.0)" fill="#e8860c"/><ellipse cx="0" cy="-66.50705238624805" rx="27.85967779809594" ry="66.50705238624805" transform="rotate(167.3)" fill="#e8860c"/><ellipse cx="0" cy="-65.72021114870917" rx="28.636857142921937" ry="65.72021114870917" transform="rotate(188.7)" fill="#e8860c"/><ellipse cx="0" cy="-70.18832760035448" rx="29.452851369116853" ry="70.18832760035448" transform="rotate(214.9)" fill="#e8860c"/><ellipse cx="0" cy="-72.14311391116266" rx="28.955609463926223" ry="72.14311391116266" transform="rotate(244.0)" fill="#e8860c"/><ellipse cx="0" cy="-71.03538830408611" rx="26.799376385612124" ry="71.03538830408611" transform="rotate(270.3)" fill="#e8860c"/><ellipse cx="0" cy="-71.608684298009" rx="31.267987363770597" ry="71.608684298009" transform="rotate(294.6)" fill="#e8860c"/><ellipse cx="0" cy="-74.15825597343886" rx="27.785438804647626" ry="74.15825597343886" transform="rotate(320.1)" fill="#e8860c"/><ellipse cx="0" cy="-63.89323848475388" rx="26.69849971905281" ry="63.89323848475388" transform="rotate(348.3)" fill="#e8860c"/><ellipse cx="0" cy="-54.9634578350575" rx="26.99268858856181" ry="54.9634578350575" transform="rotate(3.8)" fill="#f2b035"/><ellipse cx="0" cy="-52.38847089264004" rx="23.696089303677944" ry="52.38847089264004" transform="rotate(36.3)" fill="#f2b035"/><ellipse cx="0" cy="-54.300752270846054" rx="23.42753371965491" ry="54.300752270846054" transform="rotate(65.2)" fill="#f2b035"/><ellipse cx="0" cy="-53.52325334157946" rx="25.40799995554052" ry="53.52325334157946" transform="rotate(96.9)" fill="#f2b035"/><ellipse cx="0" cy="-50.391408103700456" rx="22.64182625810701" ry="50.391408103700456" transform="rotate(127.7)" fill="#f2b035"/><ellipse cx="0" cy="-52.122329360750655" rx="25.570652726139247" ry="52.122329360750655" transform="rotate(156.4)" fill="#f2b035"/><ellipse cx="0" cy="-53.51209725435455" rx="22.727496356343615" ry="53.51209725435455" transform="rotate(186.2)" fill="#f2b035"/><ellipse cx="0" cy="-56.00151340089809" rx="26.72820246043997" ry="56.00151340089809" transform="rotate(216.2)" fill="#f2b035"/><ellipse cx="0" cy="-52.557761443666074" rx="23.59169693248891" ry="52.557761443666074" transform="rotate(246.1)" fill="#f2b035"/><ellipse cx="0" cy="-52.561336099319774" rx="24.697007973304487" ry="52.561336099319774" transform="rotate(275.8)" fill="#f2b035"/><ellipse cx="0" cy="-55.018779763047945" rx="25.764109102666428" ry="55.018779763047945" transform="rotate(302.1)" fill="#f2b035"/><ellipse cx="0" cy="-50.4006731015447" rx="26.22164522936644" ry="50.4006731015447" transform="rotate(337.9)" fill="#f2b035"/><ellipse cx="0" cy="-35.397541794924784" rx="19.464785668423765" ry="35.397541794924784" transform="rotate(22.6)" fill="#f7cf6a"/><ellipse cx="0" cy="-33.555250853931184" rx="18.797176371653183" ry="33.555250853931184" transform="rotate(58.2)" fill="#f7cf6a"/><ellipse cx="0" cy="-32.46474555854907" rx="19.256908862458964" ry="32.46474555854907" transform="rotate(99.6)" fill="#f7cf6a"/><ellipse cx="0" cy="-36.90606750580764" rx="17.423386859764992" ry="36.90606750580764" transform="rotate(141.7)" fill="#f7cf6a"/><ellipse cx="0" cy="-35.64170673649837" rx="18.70490307985102" ry="35.64170673649837" transform="rotate(178.8)" fill="#f7cf6a"/><ellipse cx="0" cy="-33.82368120142431" rx="17.378181943799454" ry="33.82368120142431" transform="rotate(218.9)" fill="#f7cf6a"/><ellipse cx="0" cy="-34.61987009496422" rx="19.5134655431907" ry="34.61987009496422" transform="rotate(259.2)" fill="#f7cf6a"/><ellipse cx="0" cy="-35.24420889310734" rx="18.74137366602261" ry="35.24420889310734" transform="rotate(300.0)" fill="#f7cf6a"/><ellipse cx="0" cy="-37.22788679014327" rx="20.691869886495116" ry="37.22788679014327" transform="rotate(340.7)" fill="#f7cf6a"/></g>
+  <circle r="26" fill="#7a3d0a"/><circle r="12" fill="#c9650a"/>
+</g></g>
+</svg></div>
+        <div role="tabpanel" id="p-tee" aria-labelledby="t-tee" hidden><svg viewBox="0 0 600 420" role="img" aria-label="Drawing of a plain T-shirt">
+  <rect width="600" height="420" fill="#d3d8cb"/>
+  <path d="M215 60 L140 95 L95 175 L150 205 L180 170 L180 360 L420 360 L420 170 L450 205 L505 175 L460 95 L385 60 C365 100 235 100 215 60Z" fill="#aab3a0"/>
+</svg></div>
+        <div role="tabpanel" id="p-seed" aria-labelledby="t-seed" hidden><svg viewBox="0 0 600 420" role="img" aria-label="Drawing of marigold seeds"><rect width="600" height="420" fill="#d3d8cb"/><g transform="translate(120 229.94697804094616) rotate(-80.30066879293912)"><path d="M0 -70 C14 -40 14 40 0 70 C-14 40 -14 -40 0 -70Z" fill="#241c14"/><path d="M0 -70 C9 -56 9 -40 0 -30 C-9 -40 -9 -56 0 -70Z" fill="#e6d9b4"/></g><g transform="translate(165 218.91380202905918) rotate(-56.15200877569244)"><path d="M0 -70 C14 -40 14 40 0 70 C-14 40 -14 -40 0 -70Z" fill="#241c14"/><path d="M0 -70 C9 -56 9 -40 0 -30 C-9 -40 -9 -56 0 -70Z" fill="#e6d9b4"/></g><g transform="translate(210 217.6951960742917) rotate(-40.76390634698975)"><path d="M0 -70 C14 -40 14 40 0 70 C-14 40 -14 -40 0 -70Z" fill="#241c14"/><path d="M0 -70 C9 -56 9 -40 0 -30 C-9 -40 -9 -56 0 -70Z" fill="#e6d9b4"/></g><g transform="translate(255 197.18936744946492) rotate(-23.5786105839436)"><path d="M0 -70 C14 -40 14 40 0 70 C-14 40 -14 -40 0 -70Z" fill="#241c14"/><path d="M0 -70 C9 -56 9 -40 0 -30 C-9 -40 -9 -56 0 -70Z" fill="#e6d9b4"/></g><g transform="translate(300 230.44009627329189) rotate(-3.7735035790938434)"><path d="M0 -70 C14 -40 14 40 0 70 C-14 40 -14 -40 0 -70Z" fill="#241c14"/><path d="M0 -70 C9 -56 9 -40 0 -30 C-9 -40 -9 -56 0 -70Z" fill="#e6d9b4"/></g><g transform="translate(345 194.38210175111055) rotate(16.893075362263748)"><path d="M0 -70 C14 -40 14 40 0 70 C-14 40 -14 -40 0 -70Z" fill="#241c14"/><path d="M0 -70 C9 -56 9 -40 0 -30 C-9 -40 -9 -56 0 -70Z" fill="#e6d9b4"/></g><g transform="translate(390 193.28829255573837) rotate(41.331217455366264)"><path d="M0 -70 C14 -40 14 40 0 70 C-14 40 -14 -40 0 -70Z" fill="#241c14"/><path d="M0 -70 C9 -56 9 -40 0 -30 C-9 -40 -9 -56 0 -70Z" fill="#e6d9b4"/></g><g transform="translate(435 188.46704434066407) rotate(58.177731239319655)"><path d="M0 -70 C14 -40 14 40 0 70 C-14 40 -14 -40 0 -70Z" fill="#241c14"/><path d="M0 -70 C9 -56 9 -40 0 -30 C-9 -40 -9 -56 0 -70Z" fill="#e6d9b4"/></g><g transform="translate(480 198.4231256499994) rotate(82.08189780548304)"><path d="M0 -70 C14 -40 14 40 0 70 C-14 40 -14 -40 0 -70Z" fill="#241c14"/><path d="M0 -70 C9 -56 9 -40 0 -30 C-9 -40 -9 -56 0 -70Z" fill="#e6d9b4"/></g></svg></div>
+      </div>
+      <div class="desc rise" id="desc" aria-live="polite">
+        <h3 id="desc-title">The tin</h3>
+        <p id="desc-text">Round, hand-painted with a marigold, and numbered. No two are painted exactly alike. The drawings here stand in for photographs.</p>
+      </div>
+    </section>
+
+    <section class="faq" id="questions">
+      <h2 class="rise">Questions</h2>
+      <div class="items">
+        <p class="rise"><b>What is Preserve?</b> A small brand that makes numbered, limited objects by hand.</p>
+        <p class="rise"><b>What was Archive 001?</b> 100 pieces, numbered 001 to 100: a hand-painted tin, a T-shirt and a marigold seed, sold as a preorder.</p>
+        <p class="rise"><b>What is Archive 002?</b> It has not been announced. The waitlist is how you will hear.</p>
+        <p class="rise"><b>Will it be 100 pieces again?</b> Not decided.</p>
+        <p class="rise"><b>Where is it sold?</b> Archive 001 was sold through Instagram. Where Archive 002 will be sold has not been announced.</p>
+      </div>
+      <div class="undecided rise">
+        <h3>Not decided yet</h3>
+        <p>The price, the date, the T-shirt fabric and sizes, how you will pay, and the refund and replacement policy. We would rather say so than guess.</p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<section class="cta" id="waitlist" aria-labelledby="cta-h">
+  <div class="inner">
+    <h2 id="cta-h" class="rise">Be early for the next number.</h2>
+    <form class="form rise" id="wl" novalidate>
+      <p class="lead">Leave your email. We will write when Archive 002 is announced.</p>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="num">A number you would like (optional)</label><input id="num" name="number" type="number" min="1" max="999" inputmode="numeric"></div>
+      <button class="btn on-field" type="submit">Join the waitlist</button>
+      <p id="status" role="status"></p>
+      <p class="note">Design preview: this form is not connected yet, so nothing is sent.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="pic"><svg viewBox="-260 -260 520 520" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A painted marigold, cropped close"><rect x="-260" y="-260" width="520" height="520" fill="#e8860c"/><g transform="translate(40 40)"><g transform="scale(1.7)">
+  <g><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(160)" fill="#3f7a4f"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(20)" fill="#2f6240"/><path d="M0 0 C60 -70 150 -80 200 -20 C150 40 60 40 0 0Z" transform="rotate(95)" fill="#3f7a4f"/></g>
+  <g><ellipse cx="0" cy="-88.47749121630449" rx="27.9888389015984" ry="88.47749121630449" transform="rotate(0.7)" fill="#c9650a"/><ellipse cx="0" cy="-90.59331527333396" rx="32.663878921123164" ry="90.59331527333396" transform="rotate(24.5)" fill="#c9650a"/><ellipse cx="0" cy="-79.18735436507843" rx="29.023665148077377" ry="79.18735436507843" transform="rotate(47.7)" fill="#c9650a"/><ellipse cx="0" cy="-91.57138588790382" rx="30.855311146730237" ry="91.57138588790382" transform="rotate(64.7)" fill="#c9650a"/><ellipse cx="0" cy="-85.31828176077376" rx="33.07953166262225" ry="85.31828176077376" transform="rotate(88.7)" fill="#c9650a"/><ellipse cx="0" cy="-88.95409836264052" rx="27.959803057024164" ry="88.95409836264052" transform="rotate(113.7)" fill="#c9650a"/><ellipse cx="0" cy="-86.58782596345425" rx="32.54588236820227" ry="86.58782596345425" transform="rotate(132.7)" fill="#c9650a"/><ellipse cx="0" cy="-82.11031784336564" rx="30.412820541631813" ry="82.11031784336564" transform="rotate(155.0)" fill="#c9650a"/><ellipse cx="0" cy="-87.39044369700851" rx="31.814760062990135" ry="87.39044369700851" transform="rotate(181.6)" fill="#c9650a"/><ellipse cx="0" cy="-90.85325011045359" rx="34.08842350281236" ry="90.85325011045359" transform="rotate(200.4)" fill="#c9650a"/><ellipse cx="0" cy="-88.01475451002584" rx="28.893390443172954" ry="88.01475451002584" transform="rotate(225.7)" fill="#c9650a"/><ellipse cx="0" cy="-80.37051685926063" rx="30.032095020512163" ry="80.37051685926063" transform="rotate(249.8)" fill="#c9650a"/><ellipse cx="0" cy="-83.92698939932836" rx="30.776998086216395" ry="83.92698939932836" transform="rotate(271.2)" fill="#c9650a"/><ellipse cx="0" cy="-84.29038505949565" rx="31.319890341730737" ry="84.29038505949565" transform="rotate(295.4)" fill="#c9650a"/><ellipse cx="0" cy="-79.58870281306501" rx="28.961375804274052" ry="79.58870281306501" transform="rotate(316.0)" fill="#c9650a"/><ellipse cx="0" cy="-89.5952385992721" rx="29.985724660980388" ry="89.5952385992721" transform="rotate(335.6)" fill="#c9650a"/><ellipse cx="0" cy="-69.45562327991037" rx="26.846259024434843" ry="69.45562327991037" transform="rotate(14.0)" fill="#e8860c"/><ellipse cx="0" cy="-69.08704378336996" rx="26.176107715012556" ry="69.08704378336996" transform="rotate(36.6)" fill="#e8860c"/><ellipse cx="0" cy="-72.51946204368" rx="28.62098687976645" ry="72.51946204368" transform="rotate(62.7)" fill="#e8860c"/><ellipse cx="0" cy="-64.21808141459621" rx="29.785067363029846" ry="64.21808141459621" transform="rotate(86.4)" fill="#e8860c"/><ellipse cx="0" cy="-64.91449242643756" rx="30.930292082312654" ry="64.91449242643756" transform="rotate(113.5)" fill="#e8860c"/><ellipse cx="0" cy="-73.55684587977679" rx="30.275948203809538" ry="73.55684587977679" transform="rotate(136.7)" fill="#e8860c"/><ellipse cx="0" cy="-70.86956920252628" rx="30.05576121218305" ry="70.86956920252628" transform="rotate(167.6)" fill="#e8860c"/><ellipse cx="0" cy="-66.51780688814718" rx="30.019396804235598" ry="66.51780688814718" transform="rotate(193.0)" fill="#e8860c"/><ellipse cx="0" cy="-63.49190392502207" rx="26.808854484236264" ry="63.49190392502207" transform="rotate(216.5)" fill="#e8860c"/><ellipse cx="0" cy="-64.126041279885" rx="29.092353981729765" ry="64.126041279885" transform="rotate(240.0)" fill="#e8860c"/><ellipse cx="0" cy="-65.92641809599773" rx="28.195638470675625" ry="65.92641809599773" transform="rotate(265.9)" fill="#e8860c"/><ellipse cx="0" cy="-66.17923659182118" rx="27.523416003968297" ry="66.17923659182118" transform="rotate(294.8)" fill="#e8860c"/><ellipse cx="0" cy="-71.76291044248404" rx="30.0485217037371" ry="71.76291044248404" transform="rotate(320.9)" fill="#e8860c"/><ellipse cx="0" cy="-65.46918228264396" rx="27.711088904091664" ry="65.46918228264396" transform="rotate(347.5)" fill="#e8860c"/><ellipse cx="0" cy="-51.20304431297027" rx="25.460197170246484" ry="51.20304431297027" transform="rotate(5.3)" fill="#f2b035"/><ellipse cx="0" cy="-52.423439818668854" rx="26.89485118230565" ry="52.423439818668854" transform="rotate(34.4)" fill="#f2b035"/><ellipse cx="0" cy="-51.234115699023995" rx="24.292399937655965" ry="51.234115699023995" transform="rotate(67.1)" fill="#f2b035"/><ellipse cx="0" cy="-53.99172915566327" rx="27.182643769626807" ry="53.99172915566327" transform="rotate(97.8)" fill="#f2b035"/><ellipse cx="0" cy="-55.833241163638064" rx="27.117931048673547" ry="55.833241163638064" transform="rotate(123.4)" fill="#f2b035"/><ellipse cx="0" cy="-52.56391443174515" rx="25.73909515665802" ry="52.56391443174515" transform="rotate(156.3)" fill="#f2b035"/><ellipse cx="0" cy="-49.357015651574834" rx="24.905081741700453" ry="49.357015651574834" transform="rotate(187.4)" fill="#f2b035"/><ellipse cx="0" cy="-54.25004256368152" rx="26.24120660766084" ry="54.25004256368152" transform="rotate(214.7)" fill="#f2b035"/><ellipse cx="0" cy="-52.930910225795074" rx="22.52894527513019" ry="52.930910225795074" transform="rotate(246.2)" fill="#f2b035"/><ellipse cx="0" cy="-54.16282407369596" rx="25.30300877886033" ry="54.16282407369596" transform="rotate(273.8)" fill="#f2b035"/><ellipse cx="0" cy="-52.42890917842692" rx="27.13735686365392" ry="52.42890917842692" transform="rotate(302.2)" fill="#f2b035"/><ellipse cx="0" cy="-55.76479976069405" rx="25.835082923683846" ry="55.76479976069405" transform="rotate(332.1)" fill="#f2b035"/><ellipse cx="0" cy="-37.0196302633824" rx="20.578246310389716" ry="37.0196302633824" transform="rotate(20.3)" fill="#f7cf6a"/><ellipse cx="0" cy="-32.5104553674862" rx="19.96585233829257" ry="32.5104553674862" transform="rotate(62.5)" fill="#f7cf6a"/><ellipse cx="0" cy="-36.11473181392752" rx="17.437654889904735" ry="36.11473181392752" transform="rotate(99.2)" fill="#f7cf6a"/><ellipse cx="0" cy="-32.644915734438655" rx="18.25272233921696" ry="32.644915734438655" transform="rotate(139.5)" fill="#f7cf6a"/><ellipse cx="0" cy="-33.96572736136882" rx="18.579124571047316" ry="33.96572736136882" transform="rotate(179.2)" fill="#f7cf6a"/><ellipse cx="0" cy="-34.42321278593653" rx="18.68602040958871" ry="34.42321278593653" transform="rotate(217.1)" fill="#f7cf6a"/><ellipse cx="0" cy="-36.79443640699352" rx="17.298612659237634" ry="36.79443640699352" transform="rotate(261.8)" fill="#f7cf6a"/><ellipse cx="0" cy="-35.40187734663574" rx="19.510669043944528" ry="35.40187734663574" transform="rotate(299.7)" fill="#f7cf6a"/><ellipse cx="0" cy="-32.85552821674176" rx="18.63542988558087" ry="32.85552821674176" transform="rotate(337.8)" fill="#f7cf6a"/></g>
+  <circle r="26" fill="#7a3d0a"/><circle r="12" fill="#c9650a"/>
+</g></g></svg></div>
+  <div class="menu">
+    <p class="mark">preserve</p>
+    <nav aria-label="Footer"><ul>
+      <li><a href="#about">What it is</a></li><li><a href="#box">The box</a></li><li><a href="#questions">Questions</a></li><li><a href="#waitlist">Join the waitlist</a></li>
+    </ul></nav>
+    <p class="legal">All drawings on this page were made for it. Product photographs will replace them. &copy; 2026 Preserve</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var num=document.getElementById('try-number'), tin=document.getElementById('tin-number');
+  function pad(v){v=parseInt(v,10);if(!(v>0))return '---';return String(v).padStart(3,'0')}
+  num.addEventListener('input',function(){tin.textContent=pad(num.value)});
+
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  var copy={tin:['The tin','Round, hand-painted with a marigold, and numbered. No two are painted exactly alike. The drawings here stand in for photographs.'],
+            tee:['The T-shirt','A T-shirt came with Archive 001. Fabric, sizes and colours for Archive 002 have not been announced.'],
+            seed:['The seed','A marigold seed, to grow. How best to grow it is something we are still testing, so we will not guess here.']};
+  function show(t){tabs.forEach(function(b){var on=b===t;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;
+      document.getElementById(b.getAttribute('aria-controls')).hidden=!on});
+    var k=t.id.replace('t-','');document.getElementById('desc-title').textContent=copy[k][0];document.getElementById('desc-text').textContent=copy[k][1]}
+  tabs.forEach(function(b,i){b.addEventListener('click',function(){show(b)});
+    b.addEventListener('keydown',function(e){var n=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!n)return;
+      var t=tabs[(i+n+tabs.length)%tabs.length];t.focus();show(t);e.preventDefault()})});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){io.observe(el)});
+  setTimeout(function(){[].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top<innerHeight)el.classList.add('in')})},60);
+
+  var wm=document.querySelector('.hero'),reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce){var tick=false;addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){
+      var p=Math.min(1,scrollY/innerHeight);wm.style.setProperty('--wm',(1-.06*p).toFixed(3));tick=false})},{passive:true})}
+
+  document.getElementById('wl').addEventListener('submit',function(e){e.preventDefault();
+    var m=document.getElementById('email'),s=document.getElementById('status');
+    if(!m.value||m.validity.typeMismatch){s.textContent='Enter an email address like name@example.com.';m.focus();return}
+    s.textContent='Thank you. This is a design preview, so your email was not sent anywhere.'});
+})();
+</script>
+</body>
+</html>
