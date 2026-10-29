@@ -146,6 +146,12 @@
       "skillPath": "skills/email-marketing/SKILL.md",
       "computedHash": "d79751c066156fffe38574738b0db6433f2d9ffe6b1dfd25ee2ddb12bb478c22"
     },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "computedHash": "913b9d37d0d54047dd65222bb8c67b2bf04e3cb87dcad1729068d7a8b2c8c396"
+    },
     "google-ads": {
       "source": "arnabbagxd/brand-building-skills",
       "sourceType": "github",
