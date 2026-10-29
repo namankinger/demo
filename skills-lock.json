@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "skills": {
+    "aso": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/aso/SKILL.md",
+      "computedHash": "424a07a770f9fee268028ec2864cbe0b2008d0220b62541ab5e5be41b70dff09"
+    },
+    "b2b-brand-marketing": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/b2b-brand-marketing/SKILL.md",
+      "computedHash": "ee3ce694a34887e68eeaef9e260e31e1bb9ff8b05453de2a2f90c45b137a0f46"
+    },
+    "brand-architecture": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-architecture/SKILL.md",
+      "computedHash": "4288facab9f85a584c8db38e567a6ef9bc815863c5a26cc246bc14f31d9c75ee"
+    },
+    "brand-audit": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-audit/SKILL.md",
+      "computedHash": "98f82d464676344fc7ef76be5c4b94f47a231c4531053c22c8e3bb0cc1bf4bb0"
+    },
+    "brand-context": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-context/SKILL.md",
+      "computedHash": "469f811f23c0b8716b9ba6920cb6f62e0778e40071087b4305fcea939296a948"
+    },
+    "brand-guidelines": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-guidelines/SKILL.md",
+      "computedHash": "abe8eeec3b08ef687c646009b3e71d95e902c3aedb4a0b33d761e8102c0be1af"
+    },
+    "brand-identity": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-identity/SKILL.md",
+      "computedHash": "793fdbaf6ff1a53984897a01cbb4e42c5b2b5226ec397d1741c9b5b3c12ac0b2"
+    },
+    "brand-launch": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-launch/SKILL.md",
+      "computedHash": "bebf6b5f946e834ef91667a237e91889126e494b742946cd5a00034114b1faa2"
+    },
+    "brand-manifesto": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-manifesto/SKILL.md",
+      "computedHash": "e6c49d965408dffc4edc0aae6bc94563662c7980f26874008539e941f2ee4d20"
+    },
+    "brand-measurement": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-measurement/SKILL.md",
+      "computedHash": "fe97a68d3c352f6533e52b3a033c350ffc2ebdbfcbd5d53653eb06d3df517ca8"
+    },
+    "brand-messaging": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-messaging/SKILL.md",
+      "computedHash": "86a18bdb61a602fabb1b81f9e0a3e80e4904afaba0f7d3b7f9065a709a5be81c"
+    },
+    "brand-naming": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-naming/SKILL.md",
+      "computedHash": "391c6bbda904c3e4379fb6a741fde4d500aa4ff326ae7d9b1e5f8e8091772bb3"
+    },
+    "brand-packaging": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-packaging/SKILL.md",
+      "computedHash": "f2a1d320d181aa1729e728c93f49ceb9e9393da6bb8441fba65989e136cbb7b9"
+    },
+    "brand-partnerships": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-partnerships/SKILL.md",
+      "computedHash": "7b5a27608e1ae05b3edfcc9101c32de78ae474202200f93ead3ada6c30b57307"
+    },
+    "brand-positioning": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-positioning/SKILL.md",
+      "computedHash": "bc0ae740c12153cd7f791cb14e44f9fb1e606ed701504c808d6119389811822a"
+    },
+    "brand-story": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-story/SKILL.md",
+      "computedHash": "900df958c59687f5d7322d4fdabd1906b0b28e9fa1e5791da5cd943081948106"
+    },
+    "brand-strategy": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-strategy/SKILL.md",
+      "computedHash": "d567086cf9294b88678b38f1a990e1ab34f8adc3af41510beabb14e1d34a213b"
+    },
+    "brand-voice": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-voice/SKILL.md",
+      "computedHash": "c04b1875dd7c3669834bccc68a0c7523468dd62166d2b3289fc8bc3d6035a656"
+    },
+    "canvas-design": {
+      "source": "ComposioHQ/awesome-claude-skills",
+      "ref": "master",
+      "sourceType": "github",
+      "skillPath": "canvas-design/SKILL.md",
+      "computedHash": "a2fe47d24b3fd8e52faef731fff099c557e698083cd644b2e5695cc4dd8c7715"
+    },
+    "competitor-branding": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/competitor-branding/SKILL.md",
+      "computedHash": "8410f7b961549ca7e8fab91247ddbd5a667bdfbd9829c863ffa981293ba2bbcc"
+    },
+    "crowdcast": {
+      "source": "TheQmaks/crowdcast",
+      "sourceType": "github",
+      "skillPath": "skills/crowdcast/SKILL.md",
+      "computedHash": "d48b3b834abf228d53d29d1746064d77e287e3d184ecfef4d0d1d7d1847e052b"
+    },
+    "d2c-marketing": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/d2c-marketing/SKILL.md",
+      "computedHash": "949ddab5e890044d9a1ddca69b62ed73609ce7784735a6ebd2172fb6f95553e8"
+    },
+    "deploy-to-vercel": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/deploy-to-vercel/SKILL.md",
+      "computedHash": "a024eac409b1bb2e072a19e7e0d7f194ac5482c87fb1a2ad6f62d041b454040c"
+    },
+    "design-taste-frontend": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "computedHash": "6ac8ba6089dcbc303744a507a4587113c5d845ca2f658b3ce2b0b5eab108fb0d"
+    },
+    "email-marketing": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/email-marketing/SKILL.md",
+      "computedHash": "d79751c066156fffe38574738b0db6433f2d9ffe6b1dfd25ee2ddb12bb478c22"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "computedHash": "913b9d37d0d54047dd65222bb8c67b2bf04e3cb87dcad1729068d7a8b2c8c396"
+    },
+    "google-ads": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/google-ads/SKILL.md",
+      "computedHash": "06f5464b0ba70cdc5ac31cf8c3b7ef7bae9344e33fe2e0df79e6da016c5cf9ee"
+    },
+    "influencer-marketing": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/influencer-marketing/SKILL.md",
+      "computedHash": "7ff62db93081cb0dfa4b3f021346faeeee581d9348793f8862229acb27dce777"
+    },
+    "meta-ads": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/meta-ads/SKILL.md",
+      "computedHash": "c20e1e1cd0ad2ed13d4eda85c93d5b5611f7e72de059285c2181a2ea4cd56dcc"
+    },
+    "personal-brand": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/personal-brand/SKILL.md",
+      "computedHash": "b9c8d535aa3faa02d3ac20b69df6f63bf190687ffce90d5ac0f205230a365a8e"
+    },
+    "rebranding": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/rebranding/SKILL.md",
+      "computedHash": "59fe2350a117cea153f1e557f269134571e72e46ee5e68aaa4ae41f7635f0f7f"
+    },
+    "target-audience": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/target-audience/SKILL.md",
+      "computedHash": "5955947e128eb6bc8654081c2a53106118474b042d7dca0e124d75b071d07acb"
+    },
+    "ugc-strategy": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ugc-strategy/SKILL.md",
+      "computedHash": "8bd7708deab9ef8c03a3afe9db73ee5ad095dd526b8f138e51f90ffcf7c75b08"
+    },
+    "vercel-cli-with-tokens": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/vercel-cli-with-tokens/SKILL.md",
+      "computedHash": "a2f596ac516fe8986386f9562f4c94604af9fb6a0fc417d263cbe6dc05117b72"
+    },
+    "vercel-composition-patterns": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/composition-patterns/SKILL.md",
+      "computedHash": "f98931159fa9c7fed043bcd18a891a46dcf89ababa38df13a4c5b7b30dc0ce07"
+    },
+    "vercel-optimize": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/vercel-optimize/SKILL.md",
+      "computedHash": "9d4ace02972b9b1c462f097c7322eb32c9f04bba6f2fb5cf482086d402eeec33"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "computedHash": "3219a1944e404ffc14d1d9d6aef6dd2e3855b81387ee0a044ccbfe14d34c2357"
+    },
+    "vercel-react-native-skills": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/react-native-skills/SKILL.md",
+      "computedHash": "2e9088a7333666d8c2833b8ff58bd51b955501c42b4c7244f72b4cbf22dafcc4"
+    },
+    "vercel-react-view-transitions": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/react-view-transitions/SKILL.md",
+      "computedHash": "6c9169eb561dcdea32408e2525a2eb5375d709dd8dbb3412b895e6c58a8dc22e"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "computedHash": "a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a"
+    },
+    "whatsapp-marketing": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/whatsapp-marketing/SKILL.md",
+      "computedHash": "15b19c6c79087fa86a7912b76c3cd980efd10269c19cc405494e30ef77f121c9"
+    },
+    "writing-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/writing-guidelines/SKILL.md",
+      "computedHash": "e90462d4f801d823603b12c345ad0ff91a7489415274432681d21c7129123c26"
+    }
+  }
+}

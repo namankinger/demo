@@ -1,0 +1,6 @@
+{"agent_id": "preserve_founder", "role": "key", "action": "post", "content": "Archive 001 starts shipping this week. I will post when the first ones land.", "post_id": "post_011", "target": null, "sentiment": 0.6, "round_time": "Day 30, 06:00"}
+{"agent_id": "archetype_drop_culture_collector_lead", "role": "key", "action": "comment", "content": "Shipping at last. Waiting for the first unboxing before I celebrate or complain.", "target": "post_011", "sentiment": 0.3, "round_time": "Day 30, 06:00"}
+{"agent_id": "archetype_skeptical_scroller", "role": "key", "action": "comment", "content": "A shipping announcement with no tracking details and no photo. We will see.", "target": "post_011", "sentiment": -0.3, "round_time": "Day 30, 06:00"}
+{"agent_id": "group_a_collectors_02", "role": "crowd", "group": "group_a_collectors", "action": "nothing", "content": null, "target": null, "sentiment": 0.0, "round_time": "Day 30, 06:00"}
+{"agent_id": "group_a_collectors_06", "role": "crowd", "group": "group_a_collectors", "action": "nothing", "content": null, "target": null, "sentiment": 0.0, "round_time": "Day 30, 06:00"}
+{"agent_id": "group_a_collectors_13", "role": "crowd", "group": "group_a_collectors", "action": "nothing", "content": "One unboxing does not undo the prepay risk.", "target": null, "sentiment": 0.0, "round_time": "Day 30, 06:00"}

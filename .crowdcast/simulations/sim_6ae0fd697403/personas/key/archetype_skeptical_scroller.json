@@ -1,0 +1,73 @@
+{
+  "id": "archetype_skeptical_scroller",
+  "name": "Archetype: Skeptical Scroller",
+  "role": "key",
+  "profile": {
+    "bio": "A general Instagram user who briefly stops on the faceless reel but distrusts unknown brands asking for payment before the product exists. Voices the objections of the scroll-past audience: no brand history, no visible product, a 3-4 week wait. Likely to comment doubts or simply move on, and sets the discovery drop-off.",
+    "personality": "Cynical, impatient, sharp-witted, guarded, vocal",
+    "stance": "Opposed for now - will not prepay an unknown brand; says wait until others have received and reviewed it, and treats the preorder trust gap as a reason to pass",
+    "mbti": "ISTP",
+    "interests": [
+      "scams and trust",
+      "online shopping risk",
+      "social media ads",
+      "consumer protection",
+      "brand reviews"
+    ],
+    "influence": 0.7
+  },
+  "memory": [
+    {
+      "round": 10,
+      "type": "summary",
+      "content": "Rounds 1-10: Called out the preorder trust gap from the first hour, ran the numbers on what 100 prepaid units mean, and mocked the founder's 'proper post later' promises. Amplified doubt around the reseller rumour without claiming proof, then watched the collector lead commit."
+    },
+    {
+      "round": 20,
+      "type": "summary",
+      "content": "Rounds 11-20: Mocked the collector lead's decision, watched shipping week with scepticism, and conceded 'it exists' once the first unboxing appeared. Kept attacking the missing growing method and absent care guidance."
+    },
+    {
+      "round": 30,
+      "type": "summary",
+      "content": "Rounds 21-30: Conceded the tin was real and the founder gave one straight answer, but refused to prepay Archive 002 blind, asking for blooms first."
+    },
+    {
+      "round": 40,
+      "type": "summary",
+      "content": "Rounds 31-40: Saw the blooms she had asked for, cautioned that one bloom is not a rate, and finished at maybe-leaning-no because the Archive 002 announcement still had no product, price or refund policy."
+    }
+  ],
+  "stats": {
+    "posts": 3,
+    "likes_received": 3,
+    "comments_received": 12,
+    "influence_score": 0.2423
+  },
+  "decision_log": [
+    {
+      "stage": "discovery",
+      "stopped": true,
+      "preorder": false,
+      "blocker": "pay before product exists, no brand history, no face",
+      "round": 1
+    },
+    {
+      "stage": "repeat",
+      "repeat": "no",
+      "reason": "will not prepay a second time without bloom evidence and a refund policy",
+      "buyer": false,
+      "round": 24
+    },
+    {
+      "stage": "repeat",
+      "repeat": "maybe",
+      "reason": "blooms seen, but no refund policy and product or price unnamed",
+      "buyer": false,
+      "marigold": "none",
+      "final": true,
+      "lean": "no",
+      "round": 38
+    }
+  ]
+}

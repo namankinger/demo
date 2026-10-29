@@ -1,0 +1,3 @@
+{"agent_id": "archetype_drop_culture_collector_lead", "role": "key", "action": "post", "content": "Mine landed. Tin first impressions: genuinely good. Tee review after I have worn it. I will not hype what I have not worn.", "post_id": "post_015", "target": null, "sentiment": 0.5, "round_time": "Day 39, 06:00", "decision": {"stage": "delivery", "received": true}}
+{"agent_id": "group_a_collectors_08", "role": "crowd", "group": "group_a_collectors", "action": "like", "content": null, "target": "post_011", "sentiment": 0.43, "round_time": "Day 39, 06:00"}
+{"agent_id": "skeptic_scroll_past_02", "role": "crowd", "group": "skeptic_scroll_past", "action": "nothing", "content": null, "target": null, "sentiment": 0.0, "round_time": "Day 39, 06:00"}

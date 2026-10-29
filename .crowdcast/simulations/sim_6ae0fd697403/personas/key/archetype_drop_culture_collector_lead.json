@@ -1,0 +1,95 @@
+{
+  "id": "archetype_drop_culture_collector_lead",
+  "name": "Archetype: Drop-Culture Collector Lead",
+  "role": "key",
+  "profile": {
+    "bio": "A 19-28 year old voice in the Indian streetwear and sneaker scene who sets the tone for collector opinion. Familiar with Gully Labs, Comet and numbered drops, and judges Preserve against those benchmarks before committing. Cares about the numbering and scarcity of 001-100 but wants proof of legitimacy from a brand with no history.",
+    "personality": "Hype-savvy, status-conscious, opinionated, quick-to-judge, community-minded",
+    "stance": "Cautiously interested - drawn to numbered scarcity but withholds endorsement until the brand proves legitimacy; wary of prepaying with unknown fabric, fit, sizes and refund policy and would flex on a low number or a flopped drop",
+    "mbti": "ESTP",
+    "interests": [
+      "streetwear drops",
+      "sneaker culture",
+      "resale and scarcity",
+      "Gully Labs and Comet",
+      "brand legitimacy"
+    ],
+    "influence": 0.75
+  },
+  "memory": [
+    {
+      "round": 10,
+      "type": "summary",
+      "content": "Rounds 1-10: Opened curious but unconvinced, demanding to know who is behind the brand and what the fabric and sizes are. Pushed back on the skeptic's maths while admitting the numbering appeals. After the founder's non-answer on the reseller rumour, decided to buy a number anyway and said so publicly."
+    },
+    {
+      "round": 20,
+      "type": "summary",
+      "content": "Rounds 11-20: Bought a number, waited, and received it in round 17, praising the tin while holding back on the tee until it was worn. Kept pressing for a growing method as seed reports started to come in mixed."
+    },
+    {
+      "round": 30,
+      "type": "summary",
+      "content": "Rounds 21-30: Withheld a tee verdict because fabric and size were never stated, asked the founder for product and price on Archive 002, then reported his own seed finally up in round 30 while still calling the open questions open."
+    },
+    {
+      "round": 40,
+      "type": "summary",
+      "content": "Rounds 31-40: Followed the first bloom reports, saw his own marigold bloom in round 39, and ended leaning toward Archive 002 but demanding the product and price first, with fabric and size info still missing."
+    }
+  ],
+  "stats": {
+    "posts": 7,
+    "likes_received": 7,
+    "comments_received": 16,
+    "influence_score": 0.4365
+  },
+  "decision_log": [
+    {
+      "stage": "discovery",
+      "stopped": true,
+      "preorder": false,
+      "blocker": "brand legitimacy; fabric, sizes and refund info unknown",
+      "round": 2
+    },
+    {
+      "stage": "preorder",
+      "stopped": true,
+      "preorder": true,
+      "round": 10
+    },
+    {
+      "stage": "delivery",
+      "received": true,
+      "round": 17
+    },
+    {
+      "stage": "delivery",
+      "received": true,
+      "note": "tee review withheld pending fabric/size info",
+      "round": 22
+    },
+    {
+      "stage": "repeat",
+      "repeat": "maybe",
+      "reason": "needs Archive 002 product and price, plus fabric and size info",
+      "buyer": true,
+      "round": 25
+    },
+    {
+      "stage": "marigold",
+      "outcome": "sprouted",
+      "round": 30
+    },
+    {
+      "stage": "repeat",
+      "repeat": "maybe",
+      "reason": "needs Archive 002 product and price plus fabric and size info",
+      "buyer": true,
+      "marigold": "bloomed",
+      "final": true,
+      "lean": "yes",
+      "round": 39
+    }
+  ]
+}

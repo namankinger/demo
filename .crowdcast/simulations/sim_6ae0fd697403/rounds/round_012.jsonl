@@ -1,0 +1,4 @@
+{"agent_id": "archetype_drop_culture_collector_lead", "role": "key", "action": "like", "content": null, "target": "post_006", "sentiment": 0.2, "round_time": "Day 27, 00:00"}
+{"agent_id": "group_a_collectors_04", "role": "crowd", "group": "group_a_collectors", "action": "repost", "content": null, "target": "post_006", "sentiment": 0.32, "round_time": "Day 27, 00:00"}
+{"agent_id": "group_a_collectors_05", "role": "crowd", "group": "group_a_collectors", "action": "comment", "content": "The tin alone is a display piece. Paying for the tin, the tee is a bonus.", "target": "post_009", "sentiment": 0.6, "round_time": "Day 27, 00:00", "decision": {"stage": "preorder", "stopped": true, "preorder": true}}
+{"agent_id": "group_a_collectors_10", "role": "crowd", "group": "group_a_collectors", "action": "like", "content": null, "target": "post_004", "sentiment": 0.0, "round_time": "Day 27, 00:00", "decision": {"stage": "discovery", "stopped": true}}

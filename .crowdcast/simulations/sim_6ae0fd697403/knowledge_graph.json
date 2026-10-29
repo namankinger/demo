@@ -1,0 +1,395 @@
+{
+  "entities": [
+    {
+      "id": "ent_001",
+      "name": "Preserve Founder",
+      "type": "person",
+      "attributes": {
+        "role": "founder, sole voice of brand (faceless on Instagram)",
+        "affiliation": "Preserve",
+        "note": "unnamed in seed"
+      },
+      "summary": "Sole source of all seed facts and the Archive 001/002 decisions.",
+      "importance": 0.9
+    },
+    {
+      "id": "ent_002",
+      "name": "Archetype: Drop-Culture Collector Lead",
+      "type": "person",
+      "attributes": {
+        "role": "synthetic opinion leader in Group A",
+        "age_range": "19-28",
+        "affiliation": "Indian streetwear/sneaker scene",
+        "note": "archetype, not named in seed"
+      },
+      "summary": "Representative collector whose stance shapes Group A scarcity/legitimacy judgments.",
+      "importance": 0.75
+    },
+    {
+      "id": "ent_003",
+      "name": "Archetype: Gift Buyer Lead",
+      "type": "person",
+      "attributes": {
+        "role": "synthetic opinion leader in Group B",
+        "affiliation": "gift buyers for partner or friend",
+        "note": "archetype, not named in seed"
+      },
+      "summary": "Representative gifter weighing plant-growing idea against gifting risk (no product visible, uncertain delivery).",
+      "importance": 0.75
+    },
+    {
+      "id": "ent_004",
+      "name": "Archetype: Skeptical Scroller",
+      "type": "person",
+      "attributes": {
+        "role": "synthetic skeptic who stops on reel but distrusts unknown brands",
+        "affiliation": "general Instagram audience",
+        "note": "archetype, not named in seed"
+      },
+      "summary": "Voices the blockers: paying before product exists, no brand history, wait.",
+      "importance": 0.7
+    },
+    {
+      "id": "ent_005",
+      "name": "Preserve (brand)",
+      "type": "organization",
+      "attributes": {
+        "role": "new brand, no history",
+        "channel": "Instagram only",
+        "marketing": "faceless reel"
+      },
+      "summary": "Brand launching Archive 001 with zero track record.",
+      "importance": 0.8
+    },
+    {
+      "id": "ent_006",
+      "name": "Group A: Streetwear and Sneaker Collectors",
+      "type": "group",
+      "attributes": {
+        "share": "~60% (assumption)",
+        "age": "19-28",
+        "familiar_with": "Gully Labs, Comet, numbered drops"
+      },
+      "summary": "Hypothesized core buyers motivated by scarcity and numbering.",
+      "importance": 0.5
+    },
+    {
+      "id": "ent_007",
+      "name": "Group B: Gift Buyers",
+      "type": "group",
+      "attributes": {
+        "share": "~40% (assumption)",
+        "motivation": "gift for partner/friend, growing a plant",
+        "note": "founder survey suggests they may be the main group; survey details UNKNOWN"
+      },
+      "summary": "Gifters drawn to the plant-growing concept; may outnumber Group A contrary to hypothesis.",
+      "importance": 0.5
+    },
+    {
+      "id": "ent_008",
+      "name": "Skeptic / Scroll-Past Audience",
+      "type": "group",
+      "attributes": {
+        "behavior": "stops briefly or scrolls past; distrusts prepay from unknown brand"
+      },
+      "summary": "Non-buyers who set the discovery drop-off and voice objections.",
+      "importance": 0.4
+    },
+    {
+      "id": "ent_009",
+      "name": "Preserve Archive 001",
+      "type": "concept",
+      "attributes": {
+        "units": "numbered 001-100",
+        "contents": "hand-painted tin can + T-shirt + marigold seed",
+        "price": "Rs 1,099",
+        "sale": "100% preorder",
+        "wait": "3-4 weeks"
+      },
+      "summary": "The product under test; does not exist at time of payment.",
+      "importance": 0.85
+    },
+    {
+      "id": "ent_010",
+      "name": "Instagram Reel and Bio Link",
+      "type": "event",
+      "attributes": {
+        "format": "faceless reel + bio link",
+        "role": "only discovery and purchase channel"
+      },
+      "summary": "Single funnel for discovery and preorder.",
+      "importance": 0.6
+    },
+    {
+      "id": "ent_011",
+      "name": "Archive 002 Announcement",
+      "type": "event",
+      "attributes": {
+        "timing": "~8 weeks after Archive 001 ships",
+        "product": "UNKNOWN",
+        "price": "UNKNOWN"
+      },
+      "summary": "Repeat-purchase decision point.",
+      "importance": 0.7
+    },
+    {
+      "id": "ent_012",
+      "name": "Marigold Seed Outcome (bloomed vs dead)",
+      "type": "concept",
+      "attributes": {
+        "germination_rate": "UNKNOWN",
+        "grow_method": "UNKNOWN"
+      },
+      "summary": "Whether buyer's marigold blooms or dies likely shapes repeat intent and word of mouth.",
+      "importance": 0.65
+    },
+    {
+      "id": "ent_013",
+      "name": "Preorder Trust Gap",
+      "type": "concept",
+      "attributes": {
+        "components": "paying before product exists; no brand history; 3-4 week wait; payment method and refund policy UNKNOWN"
+      },
+      "summary": "Central purchase blocker.",
+      "importance": 0.7
+    },
+    {
+      "id": "ent_014",
+      "name": "Scarcity and Numbering (001-100)",
+      "type": "concept",
+      "attributes": {
+        "mechanic": "limited numbered drop"
+      },
+      "summary": "Appeals to collectors; weak lever for gifters.",
+      "importance": 0.55
+    },
+    {
+      "id": "ent_015",
+      "name": "Gully Labs and Comet (reference labels)",
+      "type": "organization",
+      "attributes": {
+        "role": "established Indian streetwear labels, collector reference points"
+      },
+      "summary": "Benchmarks of drop credibility that Preserve is compared against.",
+      "importance": 0.35
+    },
+    {
+      "id": "ent_016",
+      "name": "Unknown Product Details",
+      "type": "concept",
+      "attributes": {
+        "unknowns": "T-shirt fabric/sizes/fit/colours; tin size; seed growing method; payment/refund; Archive 002 product/price; germination rate"
+      },
+      "summary": "Facts the simulation must not invent; agents should treat as open questions.",
+      "importance": 0.5
+    },
+    {
+      "id": "ent_017",
+      "name": "Founder Survey",
+      "type": "event",
+      "attributes": {
+        "finding": "gift buyers are main group",
+        "details": "UNKNOWN"
+      },
+      "summary": "Evidence that conflicts with the 60/40 collector-heavy assumption.",
+      "importance": 0.4
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel_001",
+      "source": "ent_001",
+      "target": "ent_005",
+      "type": "leads",
+      "description": "Founder runs the brand and is its only voice.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_002",
+      "source": "ent_005",
+      "target": "ent_009",
+      "type": "sells",
+      "description": "Brand sells Archive 001 as a preorder.",
+      "weight": 0.9
+    },
+    {
+      "id": "rel_003",
+      "source": "ent_005",
+      "target": "ent_010",
+      "type": "markets_via",
+      "description": "Brand relies solely on a faceless Instagram reel and bio link.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_004",
+      "source": "ent_010",
+      "target": "ent_009",
+      "type": "promotes",
+      "description": "Reel is the discovery and purchase path for Archive 001.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_005",
+      "source": "ent_002",
+      "target": "ent_006",
+      "type": "represents",
+      "description": "Collector lead is the archetype for Group A.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_006",
+      "source": "ent_003",
+      "target": "ent_007",
+      "type": "represents",
+      "description": "Gift buyer lead is the archetype for Group B.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_007",
+      "source": "ent_004",
+      "target": "ent_008",
+      "type": "represents",
+      "description": "Skeptic voices the scroll-past audience.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_008",
+      "source": "ent_006",
+      "target": "ent_014",
+      "type": "attracted_to",
+      "description": "Collectors respond to numbered scarcity.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_009",
+      "source": "ent_006",
+      "target": "ent_015",
+      "type": "benchmarks_against",
+      "description": "Collectors compare Preserve to Gully Labs and Comet drops.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_010",
+      "source": "ent_007",
+      "target": "ent_012",
+      "type": "attracted_to",
+      "description": "Gifters are drawn to growing a plant.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_011",
+      "source": "ent_007",
+      "target": "ent_009",
+      "type": "considers_gifting",
+      "description": "Gifters weigh Archive 001 as a gift under delivery uncertainty.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_012",
+      "source": "ent_008",
+      "target": "ent_013",
+      "type": "cites",
+      "description": "Skeptics cite the preorder trust gap as reason to pass.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_013",
+      "source": "ent_013",
+      "target": "ent_009",
+      "type": "blocks_purchase_of",
+      "description": "Paying before the product exists, no history, and 3-4 week wait hinder preorder.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_014",
+      "source": "ent_016",
+      "target": "ent_009",
+      "type": "leaves_open",
+      "description": "Unknown fabric, fit, tin, payment, and refund details leave questions on the product.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_015",
+      "source": "ent_012",
+      "target": "ent_011",
+      "type": "influences",
+      "description": "Dead vs bloomed marigold shapes Archive 002 repeat intent.",
+      "weight": 0.8
+    },
+    {
+      "id": "rel_016",
+      "source": "ent_009",
+      "target": "ent_011",
+      "type": "precedes",
+      "description": "Archive 001 outcome gates Archive 002 interest.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_017",
+      "source": "ent_005",
+      "target": "ent_011",
+      "type": "announces",
+      "description": "Brand announces Archive 002 ~8 weeks after shipping.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_018",
+      "source": "ent_017",
+      "target": "ent_007",
+      "type": "suggests_primary",
+      "description": "Founder survey suggests gift buyers are the main group, contradicting 60/40.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_019",
+      "source": "ent_017",
+      "target": "ent_006",
+      "type": "contradicts_assumption_of",
+      "description": "Survey conflicts with collector-majority hypothesis.",
+      "weight": 0.5
+    },
+    {
+      "id": "rel_020",
+      "source": "ent_001",
+      "target": "ent_017",
+      "type": "conducted",
+      "description": "Founder ran the survey.",
+      "weight": 0.5
+    },
+    {
+      "id": "rel_021",
+      "source": "ent_004",
+      "target": "ent_005",
+      "type": "distrusts",
+      "description": "Skeptic distrusts an unknown brand with no history.",
+      "weight": 0.7
+    },
+    {
+      "id": "rel_022",
+      "source": "ent_002",
+      "target": "ent_005",
+      "type": "evaluates",
+      "description": "Collector lead judges brand legitimacy before preordering.",
+      "weight": 0.6
+    },
+    {
+      "id": "rel_023",
+      "source": "ent_003",
+      "target": "ent_005",
+      "type": "evaluates",
+      "description": "Gift lead judges brand reliability before preordering.",
+      "weight": 0.6
+    }
+  ],
+  "context": {
+    "topic": "How Indian buyers react to Preserve Archive 001 (discovery, preorder, shipping wait) and whether they repeat for Archive 002",
+    "time_setting": "Scenario beats spanning ~90 days: discovery and preorder, 3-4 week wait, shipping, ~8 weeks later Archive 002 announcement",
+    "key_conflicts": [
+      "prepaying for a product that does not exist vs brand with no history",
+      "scarcity-driven collectors vs plant-driven gift buyers",
+      "faceless Instagram marketing vs need for trust",
+      "marigold bloomed vs dead as driver of repeat",
+      "founder 60/40 collector assumption vs survey suggesting gifters dominate"
+    ]
+  }
+}

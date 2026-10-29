@@ -1,0 +1,306 @@
+{
+  "group_id": "skeptic_scroll_past",
+  "agents": [
+    {
+      "id": "skeptic_scroll_past_01",
+      "name": "Arjun Khanna",
+      "stance": "critical",
+      "activity": 0.8,
+      "personality_brief": "Vocal commenter who asks why anyone should pay before the product exists."
+    },
+    {
+      "id": "skeptic_scroll_past_02",
+      "name": "Divya Menon",
+      "stance": "critical",
+      "activity": 0.6,
+      "personality_brief": "Has been burned by a preorder that never shipped and warns others."
+    },
+    {
+      "id": "skeptic_scroll_past_03",
+      "name": "Harsh Pandey",
+      "stance": "critical",
+      "activity": 0.5,
+      "personality_brief": "Scrolls past new brands with no history and no visible founder."
+    },
+    {
+      "id": "skeptic_scroll_past_04",
+      "name": "Isha Reddy",
+      "stance": "critical",
+      "activity": 0.4,
+      "personality_brief": "Stops on the reel for the visuals but leaves because no refund policy is mentioned."
+    },
+    {
+      "id": "skeptic_scroll_past_05",
+      "name": "Sameer Qureshi",
+      "stance": "neutral",
+      "activity": 0.3,
+      "personality_brief": "Mildly curious but waits to see reviews or delivered units before deciding."
+    },
+    {
+      "id": "skeptic_scroll_past_06",
+      "name": "Pooja Desai",
+      "stance": "neutral",
+      "activity": 0.55,
+      "personality_brief": "Likes the concept, but will only reconsider after Archive 001 is seen in real hands."
+    },
+    {
+      "id": "skeptic_scroll_past_07",
+      "name": "Karan Bhatia",
+      "stance": "neutral",
+      "activity": 0.7,
+      "personality_brief": "Asks neutral questions in comments about payment method and fabric without taking sides."
+    },
+    {
+      "id": "skeptic_scroll_past_08",
+      "name": "Neha Chopra",
+      "stance": "supportive",
+      "activity": 0.45,
+      "personality_brief": "Skeptic by habit who is quietly won over by the hand-painted tin and might preorder."
+    }
+  ],
+  "collective_memory": [
+    {
+      "round": 10,
+      "summary": "Compressed rounds 1-10: Skeptics dominated with prepay and no-history objections, a reseller rumour was floated without proof, and only one skeptic was won over by the tin; sentiment strongly negative."
+    },
+    {
+      "round": 20,
+      "summary": "Compressed rounds 11-20: Skeptics grudgingly acknowledged that units shipped while insisting on refund policy and bloom evidence; one skeptic-turned-buyer reported a sprout."
+    },
+    {
+      "round": 30,
+      "summary": "Compressed rounds 21-30: Skeptics held position, calling the growing note homework not done and seed-death reports a pattern."
+    },
+    {
+      "round": 40,
+      "summary": "Compressed rounds 31-40: Skeptics conceded blooms were real but mostly held at no or maybe, while the one skeptic buyer who saw a bloom said yes."
+    }
+  ],
+  "stats": {
+    "total_posts": 1,
+    "total_comments": 33,
+    "total_likes": 9,
+    "avg_sentiment": -0.115,
+    "sentiment_n": 44
+  },
+  "decision_log": {
+    "skeptic_scroll_past_03": [
+      {
+        "stage": "discovery",
+        "stopped": false,
+        "round": 2,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": false,
+        "preorder": false,
+        "blocker": "no history, no visible founder",
+        "note": "started reseller rumour, unverified",
+        "round": 8,
+        "kind": "rumor"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "no founder face",
+        "buyer": false,
+        "round": 22,
+        "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "no founder face",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 39,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_01": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "prepay to faceless brand",
+        "round": 6,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "will not prepay again",
+        "buyer": false,
+        "round": 21,
+        "kind": "repeat"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "will not prepay a product that does not exist",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_02": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "burned by earlier preorder that never shipped",
+        "round": 6,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "burned by an earlier preorder; will not prepay a nameless product",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 39,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_07": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 3,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "payment method and fabric unanswered",
+        "round": 6,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "payment method and fabric unanswered",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 40,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_04": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 5,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "no refund policy mentioned",
+        "round": 6,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "no",
+        "reason": "no refund policy mentioned",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "round": 40,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_08": [
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": true,
+        "round": 5,
+        "kind": "buy"
+      },
+      {
+        "stage": "delivery",
+        "received": true,
+        "round": 19,
+        "kind": "receive"
+      },
+      {
+        "stage": "marigold",
+        "outcome": "sprouted",
+        "round": 23,
+        "kind": "outcome"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "yes",
+        "reason": "won over by tin and bloom",
+        "buyer": true,
+        "marigold": "bloomed",
+        "final": true,
+        "round": 38,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_05": [
+      {
+        "stage": "discovery",
+        "stopped": true,
+        "round": 6,
+        "kind": "discover"
+      },
+      {
+        "stage": "preorder",
+        "stopped": true,
+        "preorder": false,
+        "blocker": "waits for reviews or delivered units",
+        "round": 18,
+        "kind": "blocker"
+      },
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "reviews and delivered units appeared; needs product and price",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "lean": "yes",
+        "round": 39,
+        "kind": "repeat"
+      }
+    ],
+    "skeptic_scroll_past_06": [
+      {
+        "stage": "repeat",
+        "repeat": "maybe",
+        "reason": "seen in real hands; needs price",
+        "buyer": false,
+        "marigold": "none",
+        "final": true,
+        "lean": "yes",
+        "round": 39,
+        "kind": "repeat"
+      }
+    ]
+  }
+}

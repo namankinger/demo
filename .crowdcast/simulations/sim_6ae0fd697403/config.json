@@ -1,0 +1,67 @@
+{
+  "mode": "forecast",
+  "total_rounds": 40,
+  "agents_per_round_active_pct": 0.6,
+  "key_agent_ids": [
+    "ent_001",
+    "ent_002",
+    "ent_003",
+    "ent_004"
+  ],
+  "crowd_groups": [
+    {
+      "group_id": "group_a_collectors",
+      "entity_ids": [
+        "ent_006",
+        "ent_crowd_collectors_01",
+        "ent_crowd_collectors_02",
+        "ent_crowd_collectors_03",
+        "ent_crowd_collectors_04",
+        "ent_crowd_collectors_05",
+        "ent_crowd_collectors_06",
+        "ent_crowd_collectors_07",
+        "ent_crowd_collectors_08",
+        "ent_crowd_collectors_09",
+        "ent_crowd_collectors_10",
+        "ent_crowd_collectors_11",
+        "ent_crowd_collectors_12",
+        "ent_crowd_collectors_13",
+        "ent_crowd_collectors_14"
+      ],
+      "size": 15
+    },
+    {
+      "group_id": "group_b_gift_buyers",
+      "entity_ids": [
+        "ent_007",
+        "ent_crowd_giftbuyers_01",
+        "ent_crowd_giftbuyers_02",
+        "ent_crowd_giftbuyers_03",
+        "ent_crowd_giftbuyers_04",
+        "ent_crowd_giftbuyers_05",
+        "ent_crowd_giftbuyers_06",
+        "ent_crowd_giftbuyers_07",
+        "ent_crowd_giftbuyers_08",
+        "ent_crowd_giftbuyers_09"
+      ],
+      "size": 10
+    },
+    {
+      "group_id": "skeptic_scroll_past",
+      "entity_ids": [
+        "ent_008",
+        "ent_crowd_skeptics_01",
+        "ent_crowd_skeptics_02",
+        "ent_crowd_skeptics_03",
+        "ent_crowd_skeptics_04",
+        "ent_crowd_skeptics_05",
+        "ent_crowd_skeptics_06",
+        "ent_crowd_skeptics_07"
+      ],
+      "size": 8
+    }
+  ],
+  "simulation_hours": 2160,
+  "minutes_per_round": 3240,
+  "memory_compression_interval": 10
+}
